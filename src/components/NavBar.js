@@ -25,17 +25,20 @@ const NavBar = () => {
   }, [scrolled])
 
   return (
-    <div className={scrolled}>
-      <div className="navlogo">
-        <Link to="/">DOUG SCHALLMOSER</Link>
+    <section className="nav">
+      <div className={scrolled}>
+        <div className="navlogo">
+          <Link to="/">DOUG SCHALLMOSER</Link>
+        </div>
+        <div className="navlinks">
+          <Link to="/">Contact</Link>
+          <Link to="/">Blog</Link>
+          <Link to="/">Photography</Link>
+          <Link to="/">Projects</Link>
+          <Link to="/">About</Link>
+        </div>
       </div>
-      <div className="navlinks">
-        <Link to="/">Contact</Link>
-        <Link to="/">Photography</Link>
-        <Link to="/">Projects</Link>
-        <Link to="/">About</Link>
-      </div>
-    </div>
+    </section>
   )
 }
 
