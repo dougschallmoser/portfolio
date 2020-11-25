@@ -211,7 +211,6 @@
 .about-icons {
   margin: 30px 0 15px 0;
   text-align: center;
-
 }
 
 .about-icon {
@@ -250,7 +249,6 @@
 
 .projects-grid {
   display: grid;
-  width: 100vw;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -309,6 +307,37 @@
   height: 60vh;
   position: relative;
   background: #353535;
+}
+
+.blog {
+  width: 100vw;
+  position: relative;
+  background: #fff;
+  margin: 4em 0;
+}
+
+.blog-grid {
+  margin: 4em 4em;
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.blog-item {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 15em;
+}
+
+.blog-content {
+  padding: 1.5em 2em;
+}
+
+.blog-title {
+  font-size: 24px;
 }
 
 hr {
