@@ -8,7 +8,7 @@ const NavBar = () => {
   useEffect(() => {
     const scrollListener = document.addEventListener("scroll", e => {
       const scrollPosition = document.scrollingElement.scrollTop
-      if (scrollPosition >= 100) {
+      if (scrollPosition >= 75) {
         if (scrolled !== "nav-scrolled") {
           setScrolled("nav-scrolled")
         }
