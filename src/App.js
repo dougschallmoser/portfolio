@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Splash from './components/Splash';
 import About from './components/About';
 import Projects from './components/Projects';
+import Photography from './components/Photography';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Splash />
       <About />
       <Projects />
+      <Photography />
     </Router>
   )
 }
