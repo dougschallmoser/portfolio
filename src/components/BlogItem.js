@@ -11,7 +11,7 @@ const BlogItem = ({ data }) => {
             {data.title.toUpperCase()}
           </div>
           <div className="blog-date">
-            <Moment format="MMMM Do YYYY">
+            <Moment format="MMMM Do, YYYY">
               {data.pubDate}
             </Moment>
           </div>

@@ -12,7 +12,7 @@ const Projects = () => {
         <Project title="GASTROPODA" snippet="Social SPA literary magazine for showcasing, submitting, and interacting with unique short stories" />
         <Project title="CONNECTAROT" snippet="Interactive MPA for user and computer generated tarot card readings" />
         <Project title="NATPARKREV" snippet="MPA for sharing user generated National Park reviews with the world" />
-        <Project title="HIKINGLOCATOR" snippet="CLI application for locating hiking trails in the US" />
+        <Project title="HIKINGLOCATOR" snippet="CLI application for locating hiking trails in the U.S." />
       </div>
     </section>
   )
