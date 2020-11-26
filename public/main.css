@@ -1,7 +1,7 @@
 * {
   color: #353535;
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Inconsolata', monospace;
 }
 
 .nav-unscrolled,
@@ -168,6 +168,7 @@
   margin-top: 2em;
   position: relative;
   text-shadow: none;
+  cursor: pointer;
 }
 
 .splash-button a {
@@ -204,18 +205,26 @@
 
 .about-content p {
   line-height: 2em;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inconsolata', monospace;
   font-size: 18px;
   color: #929396;
   margin-bottom: 8%;
+  text-align: justify;
 }
 
-.about-icons {
+.about-icons,
+.contact-icons {
   margin: 30px 0 15px 0;
+  position: relative;
   text-align: center;
 }
 
-.about-icon {
+.contact-icons a {
+  text-decoration: none;
+}
+
+.about-icon,
+.contact-icon {
   display: inline-block;
   width: 60px;
   margin-top: 1%;
@@ -224,13 +233,21 @@
   color: #999999;
 }
 
+.contact-icon {
+  cursor: pointer;
+}
+
+.contact-icon:not(:last-child) {
+  margin-right: 4em; 
+}
+
 .about-icon:not(:last-child) {
   margin-right: 2em;
 }
 
 #about-mystory {
   font-size: 36px;
-  margin-bottom: 15px;
+  margin-top: 1em;
   line-height: 1.2em;
   font-weight: 500;
   text-align: center;
@@ -246,7 +263,6 @@
 #projects {
   background: #353535;
   width: 100vw;
-  font-family: 'Arvo', serif;
 }
 
 #projects-header {
@@ -330,6 +346,16 @@
   padding-bottom: 2em;
 }
 
+#blog-header,
+#contact-header {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #353535;
+  font-size: 54px;
+  margin-bottom: 1.5%;
+  font-weight: 500;
+  text-align: center;
+}
+
 .blog-grid {
   margin: 4em 4em;
   display: grid;
@@ -366,7 +392,8 @@
 }
 
 .blog-description {
-  font-weight: 300;
+  font-family: 'Inconsolata', monospace;
+  color: #707070;
 }
 
 .blog-date {
@@ -376,7 +403,15 @@
 }
 
 .blog-date time {
-  color: #707070;
+  color: #c0a583;
+  font-family: 'Inconsolata', monospace;
+}
+
+#contact {
+  position: relative;
+  width: 100vw;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 hr {
@@ -403,6 +438,14 @@ hr.project-line-hover {
   transition: 1.5s ease;
 }
 
+#copyright {
+  margin-top: 6em;
+  margin-bottom: 1em;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 1200px) {
 
   .projects-grid {
@@ -423,6 +466,10 @@ hr.project-line-hover {
     float: left;
     font-size: 32px;
     margin-left: 1em;
+  }
+
+  .about-content {
+    margin: 5% 10%;
   }
   
 }
@@ -455,7 +502,14 @@ hr.project-line-hover {
 
   .about-content {
     margin: 5% 3%;
-    position: relative;
+  }
+
+  .about-content p {
+    line-height: 1.5em;
+  }
+
+  .contact-icon {
+    width: 40px;
   }
 
   .splash-intro {
