@@ -1,21 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Moment from 'react-moment';
 
 const BlogItem = ({ data }) => {
 
-
   return (
-    <div className="blog-item">
-      <div className="blog-content">
-        <div className="blog-title">
-          {data.title}
+    <a href={data.link} target="_blank" rel="noreferrer">
+      <div className="blog-item">
+        <div className="blog-content">
+          <div className="blog-title">
+            {data.title.toUpperCase()}
+          </div>
+          <div className="blog-date">
+            <Moment format="MMMM Do YYYY">
+              {data.pubDate}
+            </Moment>
+          </div>
+          <div className="blog-description">
+            {data.description.substring(4, 150) + '...'}
+          </div>
         </div>
-        <div className="blog-description">
-          {data.content.substring(4, 150) + '...'}
-        </div>
-        {data.pubDate}
       </div>
-    </div>
+    </a>
   )
 }
 
