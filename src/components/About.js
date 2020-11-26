@@ -3,7 +3,7 @@ import Skills from './Skills';
 
 const About = () => {
   return (
-    <section className="about">
+    <section id="about">
       <div className="about-content">
         <div id="about-mystory">
           CIVIL ENGINEER TO SOFTWARE DEVELOPER

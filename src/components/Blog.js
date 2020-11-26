@@ -13,11 +13,11 @@ const Blog = () => {
 
 
   return (
-    <section className="blog">
+    <section id="blog">
       <div id="about-skills">RECENT BLOG POSTS</div>
       <hr />
       <div className="blog-grid">
-        {posts.slice(0, 5).map(post => <BlogItem data={post} key={post.pubDate} />)}
+        {posts.slice(0, 4).map(post => <BlogItem data={post} key={post.pubDate} />)}
       </div>
     </section>
   )

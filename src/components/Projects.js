@@ -4,7 +4,7 @@ import Project from './Project';
 const Projects = () => {
 
   return (
-    <section className="projects">
+    <section id="projects">
       <div id="projects-header">PROJECTS</div>
       <hr />
       <div className="projects-grid">

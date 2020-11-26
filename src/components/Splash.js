@@ -13,7 +13,7 @@ const Splash = () => {
   }
 
   return (
-    <section className="splash">
+    <section id="splash">
       <div className="splash-intro">
         <div className="splash-name">I am Doug Schallmoser.</div>
         <div className="splash-bio">

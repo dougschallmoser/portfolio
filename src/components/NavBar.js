@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll'
 
 const NavBar = () => {
 
@@ -31,11 +31,11 @@ const NavBar = () => {
           <Link to="/">DOUG SCHALLMOSER</Link>
         </div>
         <div className="navlinks">
-          <Link to="/">Contact</Link>
-          <Link to="/">Blog</Link>
-          <Link to="/">Photography</Link>
-          <Link to="/">Projects</Link>
-          <Link to="/">About</Link>
+          <Link to="contact" spy={true} smooth={true} offset={-58}>Contact</Link>
+          <Link to="photography" spy={true} smooth={true} offset={-58}>Photography</Link>
+          <Link to="blog" spy={true} smooth={true} offset={-58}>Blog</Link>
+          <Link to="projects" spy={true} smooth={true} offset={-58}>Projects</Link>
+          <Link to="about" spy={true} smooth={true} offset={-58}>About</Link>
         </div>
       </div>
     </section>
