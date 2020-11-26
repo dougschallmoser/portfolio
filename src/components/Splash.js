@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll'
 
 const Splash = () => {
 
@@ -20,7 +21,9 @@ const Splash = () => {
           I'm a software developer living in Bellingham, WA.
           I love the challenge that coding brings and the subsequent potential it provides to make lives better.
           <div className="splash-button" onMouseEnter={handleButtonHover} onMouseLeave={handleButtonHover}>
-            <a href="#projects">View Projects</a>
+            <Link to="projects" spy={true} smooth={true} offset={-58}>
+              View Projects
+            </Link>
           </div>
         </div>
       </div>

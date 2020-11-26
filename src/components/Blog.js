@@ -14,7 +14,7 @@ const Blog = () => {
 
   return (
     <section id="blog">
-      <div id="about-skills">RECENT BLOG POSTS</div>
+      <div id="blog-header">RECENT BLOG POSTS</div>
       <hr />
       <div className="blog-grid">
         {posts.slice(0, 4).map(post => <BlogItem data={post} key={post.pubDate} />)}
