@@ -247,7 +247,18 @@
   font-family: 'Arvo', serif;
 }
 
+#projects-header {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #fff;
+  font-size: 54px;
+  padding-top: 5%;
+  margin-bottom: 2%;
+  font-weight: 500;
+  text-align: center;
+}
+
 .projects-grid {
+  padding-top: 5%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -320,7 +331,11 @@
   margin: 4em 4em;
   display: grid;
   grid-gap: 3em;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr)
+}
+
+.blog-grid a {
+  text-decoration: none;
 }
 
 .blog-item {
@@ -329,15 +344,36 @@
   cursor: pointer;
   position: relative;
   width: 100%;
-  height: 15em;
+  height: 13em;
+  transition: 1.5s ease;
+}
+
+.blog-item:hover {
+  background: #c0a583;
+  transition: 1.5s ease;
 }
 
 .blog-content {
-  padding: 1.5em 2em;
+  padding: 2em 2em 1.5em 2em;
 }
 
 .blog-title {
   font-size: 24px;
+  margin-bottom: 0.2em;
+}
+
+.blog-description {
+  font-weight: 300;
+}
+
+.blog-date {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 0.75em;
+}
+
+.blog-date time {
+  color: #707070;
 }
 
 hr {
@@ -370,6 +406,10 @@ hr.project-line-hover {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
   .nav-unscrolled a,
   .nav-scrolled a {
     font-size: 14px;
@@ -388,6 +428,22 @@ hr.project-line-hover {
 
   .projects-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog-grid {
+    margin: 2em 1em;
+    grid-gap: 1em;
+    grid-template-columns: repeat(1, 1fr)
+  }
+
+  .blog-title {
+    margin-bottom: 0.3em;
+    font-size: 20px;
+  }
+
+  .blog-date {
+    font-size: 14px;
+    font-weight: 300;
   }
 
   .about-content {
