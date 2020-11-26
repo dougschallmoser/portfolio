@@ -14,8 +14,8 @@ const App = () => {
       <Splash />
       <About />
       <Projects />
-      <Photography />
       <Blog />
+      <Photography />
     </Router>
   )
 }
