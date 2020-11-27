@@ -30,31 +30,28 @@ const Project = ({ title, snippet, url, languages, highlights, github }) => {
     if (languages) {
       return languages.map(language => {
         if (language === "react") {
-          return <ReactIcon key={title + language} cssName="modal-icon" />
+          return <ReactIcon key={title + language} cssName="modal-icon" color="#c0a583" />
         } 
         if (language === "javascript") {
-          return <JSIcon key={title + language} cssName="modal-icon" />
+          return <JSIcon key={title + language} cssName="modal-icon" color="#c0a583" />
         } 
         if (language === "rails") {
-          return <RailsIcon key={title + language} cssName="modal-icon" />
+          return <RailsIcon key={title + language} cssName="modal-icon" color="#c0a583" />
         } 
         if (language === "ruby") {
-          return <RubyIcon key={title + language} cssName="modal-icon" />
+          return <RubyIcon key={title + language} cssName="modal-icon" color="#c0a583" />
         } 
         if (language === "redux") {
-          return <ReduxIcon key={title + language} cssName="modal-icon" />
+          return <ReduxIcon key={title + language} cssName="modal-icon" color="#c0a583" />
         } 
         if (language === "css") {
-          return <CSSIcon key={title + language} cssName="modal-icon" />
+          return <CSSIcon key={title + language} cssName="modal-icon" color="#c0a583" />
         } 
         if (language === "html") {
-          return <HTMLIcon key={title + language} cssName="modal-icon" />
+          return <HTMLIcon key={title + language} cssName="modal-icon" color="#c0a583" />
         } 
         if (language === "ps") {
-          return <PSIcon key={title + language} cssName="modal-icon" />
-        } 
-        if (language === "command-line") {
-          return <div className="modal-icon">Command Line</div>
+          return <PSIcon key={title + language} cssName="modal-icon" color="#c0a583" />
         } 
         return null
       })
