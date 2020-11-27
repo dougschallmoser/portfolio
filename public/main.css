@@ -109,7 +109,7 @@
 }
 
 #splash {
-  background: url(../splash.jpg) no-repeat center center fixed; 
+  background: url(../splash.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -454,11 +454,6 @@ hr.project-line-hover {
     grid-template-columns: repeat(2, 1fr)
   }
 
-  .nav-unscrolled a,
-  .nav-scrolled a {
-    font-size: 14px;
-  }
-
   .nav-unscrolled .navlogo a,
   .nav-scrolled .navlogo a {
     font-size: 32px;
@@ -548,26 +543,22 @@ hr.project-line-hover {
     font-size: 3em;
   }
 
-  .nav-unscrolled a,
-  .nav-scrolled a {
-    font-size: 12px;
-  }
-
-  .navlinks {
-    padding-right: 1.5em;
-  }
-
   .nav-unscrolled .navlinks, 
   .nav-scrolled .navlinks {
-    font-weight: 400;
-    margin-top: 0;
-    margin-right: 0;
-    float: right;
+    margin-left: 1.5em;
+    padding-right: 0;
+    float: left;
   }
 
   .nav-unscrolled,
   .nav-scrolled {
     height: 70px;
   }
-  
+}
+
+@media screen and (max-width: 600px) {
+  .nav-unscrolled .navlinks a, 
+  .nav-scrolled .navlinks a {
+    margin-top: 0;
+  }
 }
