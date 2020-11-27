@@ -37,7 +37,7 @@
 }
 
 .modal-content {
-  font-size: 1.2em;
+  font-size: 1.5vw;
   display: flex;
   text-align: left;
 }
@@ -52,10 +52,9 @@
 
 .modal-column2 {
   flex: 30%;
-  height: 0;
-  /* overflow-y: auto; */
-  margin: 2em 1em 2em 1em;
   position: relative;
+  height: 0;
+  margin: 2em 1em 2em 1em;
 }
 
 .video {
@@ -85,12 +84,12 @@
 
 .modal-icon {
   display: inline-block;
-  width: 40px;
+  width: 3vw;
   margin-top: 1%;
   transition: 0.5s ease;
-  font-size: 12px;
+  font-size: 1vw;
   color: #999999;
-  margin-right: 2em;
+  margin-right: 2.5vw;
 }
 
 .modal-highlights {
@@ -114,10 +113,43 @@
 .view-code a {
   background: #c0a583;
   position: relative;
-  padding: 0.5em 2em;
+  padding: 0.5vw 2vw;
   text-decoration: none;
   color: #fff;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px;
   transition: 0.5s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .modal {
+    width: 95%;
+  }
+
+  .modal-content {
+    font-size: 1.8vw;
+    display: flex;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .modal-content {
+    flex-direction: column;
+    font-size: 2.3vw;
+  }
+
+  .modal-column1 {
+    order: 2
+  }
+
+  .modal-column-2 {
+    order: 1
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .modal-content {
+    font-size: 4vw;
+  }
 }
