@@ -4,7 +4,7 @@ import Modal from "react-modal";
 
 Modal.setAppElement("#root");
 
-const Project = ({ title, snippet, url, languages, highlights }) => {
+const Project = ({ title, snippet, url, languages, highlights, github }) => {
 
   const overlay = React.createRef();
   const line = React.createRef();
@@ -52,6 +52,9 @@ const Project = ({ title, snippet, url, languages, highlights }) => {
         } 
         if (language === "ps") {
           return <PSIcon key={title + language} cssName="modal-icon" />
+        } 
+        if (language === "command-line") {
+          return <div className="modal-icon">Command Line</div>
         } 
         return null
       })
@@ -101,7 +104,7 @@ const Project = ({ title, snippet, url, languages, highlights }) => {
             </div>
             <div className="view-code">
               <a 
-                href="https://github.com/dougschallmoser/trailblaze-react-app" 
+                href={github} 
                 target="_blank" 
                 rel="noreferrer" 
               >
