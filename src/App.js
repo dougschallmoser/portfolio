@@ -4,7 +4,6 @@ import Splash from './components/Splash';
 import About from './components/About';
 import Projects from './components/Projects';
 import Blog from './components/Blog';
-import Photography from './components/Photography';
 import Contact from './components/Contact';
 
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
       <About />
       <Projects />
       <Blog />
-      <Photography />
       <Contact />
     </>
   )
