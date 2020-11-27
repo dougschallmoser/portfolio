@@ -92,6 +92,9 @@ const Project = ({ title, snippet, url, languages, highlights }) => {
           <div className="modal-column2">
             <div className="modal-title">{title}</div>
             {snippet}
+            <ul className="modal-highlights">
+              {highlights.map(highlight => <li key={highlight}>{highlight}</li>)}
+            </ul>
             <div className="modal-languages">
               <p>Software Utilized:</p>
               {mapLanguages()}

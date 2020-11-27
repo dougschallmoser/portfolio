@@ -15,10 +15,26 @@ const Projects = () => {
           url="https://youtube.com/embed/Pzksvd9wRZM"
           languages={["react", "redux", "javascript", "rails", "ruby", "css", "html"]}
         />
-        <Project title="GASTROPODA" snippet="Social SPA literary magazine for showcasing, submitting, and interacting with unique short stories" />
-        <Project title="CONNECTAROT" snippet="Interactive MPA for user and computer generated tarot card readings" />
-        <Project title="NATPARKREV" snippet="MPA for sharing user generated National Park reviews with the world" />
-        <Project title="HIKINGLOCATOR" snippet="CLI application for locating hiking trails in the U.S." />
+        <Project 
+          title="GASTROPODA"
+          snippet="Social SPA literary magazine for showcasing, submitting, and interacting with unique short stories" 
+          highlights={[]}
+        />
+        <Project 
+          title="CONNECTAROT"
+          snippet="Interactive MPA for user and computer generated tarot card readings" 
+          highlights={[]}
+        />
+        <Project 
+          title="NATPARKREV"
+          snippet="MPA for sharing user generated National Park reviews with the world"
+          highlights={[]}
+        />
+        <Project 
+          title="HIKINGLOCATOR" 
+          snippet="CLI application for locating hiking trails in the U.S." 
+          highlights={[]}
+        />
       </div>
     </section>
   )
