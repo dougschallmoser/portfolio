@@ -4,7 +4,7 @@ import Modal from "react-modal";
 
 Modal.setAppElement("#root");
 
-const Project = ({ title, snippet, url, languages }) => {
+const Project = ({ title, snippet, url, languages, highlights }) => {
 
   const overlay = React.createRef();
   const line = React.createRef();
@@ -30,28 +30,28 @@ const Project = ({ title, snippet, url, languages }) => {
     if (languages) {
       return languages.map(language => {
         if (language === "react") {
-          return <ReactIcon />
+          return <ReactIcon key={title + language} cssName="modal-icon" />
         } 
         if (language === "javascript") {
-          return <JSIcon />
+          return <JSIcon key={title + language} cssName="modal-icon" />
         } 
         if (language === "rails") {
-          return <RailsIcon />
+          return <RailsIcon key={title + language} cssName="modal-icon" />
         } 
         if (language === "ruby") {
-          return <RubyIcon />
+          return <RubyIcon key={title + language} cssName="modal-icon" />
         } 
         if (language === "redux") {
-          return <ReduxIcon />
+          return <ReduxIcon key={title + language} cssName="modal-icon" />
         } 
         if (language === "css") {
-          return <CSSIcon />
+          return <CSSIcon key={title + language} cssName="modal-icon" />
         } 
         if (language === "html") {
-          return <HTMLIcon />
+          return <HTMLIcon key={title + language} cssName="modal-icon" />
         } 
         if (language === "ps") {
-          return <PSIcon />
+          return <PSIcon key={title + language} cssName="modal-icon" />
         } 
         return null
       })
@@ -92,7 +92,10 @@ const Project = ({ title, snippet, url, languages }) => {
           <div className="modal-column2">
             <div className="modal-title">{title}</div>
             {snippet}
-            {mapLanguages()}
+            <div className="modal-languages">
+              <p>Software Utilized:</p>
+              {mapLanguages()}
+            </div>
             <div className="view-code">
               <a 
                 href="https://github.com/dougschallmoser/trailblaze-react-app" 

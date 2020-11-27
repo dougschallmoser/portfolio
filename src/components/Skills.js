@@ -5,14 +5,14 @@ const Skills = () => {
   return (
     <div className="about-icons">
       <div id="about-skills">SKILLS THAT KEEP ME CREATIVE</div>
-      <ReactIcon />
-      <JSIcon />
-      <RailsIcon />
-      <RubyIcon />
-      <ReduxIcon />
-      <CSSIcon />
-      <HTMLIcon />
-      <PSIcon />
+      <ReactIcon cssName="about-icon" />
+      <JSIcon cssName="about-icon" />
+      <RailsIcon cssName="about-icon" />
+      <RubyIcon cssName="about-icon" />
+      <ReduxIcon cssName="about-icon" />
+      <CSSIcon cssName="about-icon" />
+      <HTMLIcon cssName="about-icon" />
+      <PSIcon cssName="about-icon" />
     </div>
   )
 }
