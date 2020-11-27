@@ -46,7 +46,7 @@ const Projects = () => {
           highlights={["Implemented Object-Oriented design patterns", "Integrated and parsed API data, scraped webpages with Nokogiri gem", "Utilized Geocoder gem to parse location information from user input"]}
           url="https://youtube.com/embed/rCtUjN31Phw"
           github="https://github.com/dougschallmoser/hiking-trails-locator-cli-app"
-          languages={["ruby", "command-line"]}
+          languages={["ruby"]}
         />
       </div>
     </section>
