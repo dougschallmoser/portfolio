@@ -28,11 +28,10 @@ const NavBar = () => {
     <section className="nav">
       <div className={scrolled}>
         <div className="navlogo">
-          <Link to="/">DOUG SCHALLMOSER</Link>
+          <Link to="splash" spy={true} smooth={true}>DOUG SCHALLMOSER</Link>
         </div>
         <div className="navlinks">
           <Link to="contact" spy={true} smooth={true} offset={-58}>Contact</Link>
-          <Link to="photography" spy={true} smooth={true} offset={-58}>Photography</Link>
           <Link to="blog" spy={true} smooth={true} offset={-58}>Blog</Link>
           <Link to="projects" spy={true} smooth={true} offset={-58}>Projects</Link>
           <Link to="about" spy={true} smooth={true} offset={-58}>About</Link>
