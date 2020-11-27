@@ -53,6 +53,7 @@ const Project = ({ title, snippet, url, languages }) => {
         if (language === "ps") {
           return <PSIcon />
         } 
+        return null
       })
 
     }
