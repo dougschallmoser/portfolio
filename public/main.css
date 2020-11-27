@@ -140,7 +140,7 @@
 
 .splash-intro {
   text-align: center;
-  width: 60%;
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -149,27 +149,33 @@
 }
 
 .splash-name {
+  font-family: 'Barlow Condensed', sans-serif;
   color: #fff;
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 6em;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .splash-bio {
   color: #fff;
-  font-size: 30px;
+  font-size: 2.5em;
   font-weight: 300;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
+.splash-title {
+  font-weight: 600;
+  color: #fff;
+}
+
 .splash-button {
-  margin-top: 2em;
+  margin-top: 1.5em;
   position: relative;
   text-shadow: none;
   cursor: pointer;
 }
 
 .splash-button a {
+  font-size: 0.8em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -206,7 +212,7 @@
   font-family: 'Inconsolata', monospace;
   font-size: 18px;
   color: #929396;
-  margin-bottom: 8%;
+  margin-bottom: 1em;
   text-align: justify;
 }
 
@@ -246,6 +252,7 @@
 #about-mystory {
   font-size: 36px;
   margin-top: 1em;
+  margin-bottom: 0.5em;
   line-height: 1.2em;
   font-weight: 500;
   text-align: center;
@@ -254,6 +261,7 @@
 #about-skills {
   font-size: 36px;
   margin-bottom: 2%;
+  margin-top: 1.5em;
   font-weight: 500;
   text-align: center;
 }
@@ -436,6 +444,14 @@ hr.project-line-hover {
   transition: 1.5s ease;
 }
 
+hr.splash-line {
+  margin: 1em auto;
+  border: 1px solid #fff;
+  width: 200px;
+  background: #fff;
+  opacity: 0.75;
+}
+
 #copyright {
   margin-top: 6em;
   margin-bottom: 1em;
@@ -443,6 +459,7 @@ hr.project-line-hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 @media screen and (max-width: 1200px) {
 
@@ -509,19 +526,14 @@ hr.project-line-hover {
   }
   
   .splash-name {
-    font-size: 36px;;
+    font-size: 4em;
   }
   
   .splash-bio {
-    font-size: 20px;
-  }
-
-  .splash-button {
-    margin-top: 4em;
+    font-size: 2em;
   }
   
   .splash-button a {
-    padding: 0.75em 2.5em;
     width: 7em;
   }
 
