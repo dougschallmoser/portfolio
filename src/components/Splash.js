@@ -16,13 +16,16 @@ const Splash = () => {
   return (
     <section id="splash">
       <div className="splash-intro">
-        <div className="splash-name">I am Doug Schallmoser.</div>
+        <div className="splash-name">DOUG SCHALLMOSER</div>
+        <hr className="splash-line" />
         <div className="splash-bio">
-          I'm a software developer living in Bellingham, WA.
-          I love the challenge that coding brings and the subsequent potential it provides to make lives better.
+          <div className="splash-title">
+            Software Developer
+          </div>
+          Bellingham, WA
           <div className="splash-button" onMouseEnter={handleButtonHover} onMouseLeave={handleButtonHover}>
             <Link to="projects" spy={true} smooth={true} offset={-58}>
-              View Projects
+              VIEW PROJECTS
             </Link>
           </div>
         </div>
