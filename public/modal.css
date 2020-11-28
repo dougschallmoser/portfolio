@@ -149,12 +149,13 @@
   }
 
   .modal-column1 {
-    order: 2
+    order: 2;
   }
-
+  
   .modal-column-2 {
+    position: absolute;
     flex-shrink: 0;
-    order: 1
+    order: 1;
   }
 }
 
