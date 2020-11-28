@@ -139,18 +139,16 @@
 @media screen and (max-width: 800px) {
   .modal-content {
     flex-direction: column;
+    -webkit-box-orient: vertical;
     font-size: 2.3vw;
-    flex-shrink: 0;
   }
 
   .modal-column1 {
-    flex: 0 1 auto;
     order: 2
   }
 
   .modal-column-2 {
     flex-shrink: 0;
-    min-width: auto;
     order: 1
   }
 }
