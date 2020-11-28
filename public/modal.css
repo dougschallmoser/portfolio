@@ -140,10 +140,12 @@
   }
 
   .modal-column1 {
+    -webkit-order: 2;
     order: 2
   }
 
   .modal-column-2 {
+    -webkit-order: 3;
     order: 1
   }
 }
