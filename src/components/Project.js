@@ -60,19 +60,21 @@ const Project = ({ title, snippet, url, languages, highlights, github }) => {
   }
 
   return (
-    <div 
-      onClick={toggleModal}
-      className="project-item" 
-      onMouseEnter={handleButtonHover} 
-      onMouseLeave={handleButtonHover} 
-      style ={ { backgroundImage: `url('./images/${title}.png')` } }
-    >
-      <div className="project-text">
-        {title}
-        <hr ref={line} className="project-line"/>
-        <p>{snippet}</p>
+    <>
+      <div 
+        onClick={toggleModal}
+        className="project-item" 
+        onMouseEnter={handleButtonHover} 
+        onMouseLeave={handleButtonHover} 
+        style ={ { backgroundImage: `url('./images/${title}.png')` } }
+      >
+        <div className="project-text">
+          {title}
+          <hr ref={line} className="project-line"/>
+          <p>{snippet}</p>
+        </div>
+        <div ref={overlay} className="project-overlay"></div>
       </div>
-      <div ref={overlay} className="project-overlay"></div>
 
       <Modal
         isOpen={isOpen}
@@ -110,9 +112,8 @@ const Project = ({ title, snippet, url, languages, highlights, github }) => {
             </div>
           </div>
         </div>
-        
       </Modal>
-    </div>
+    </>
   )
 }
 
