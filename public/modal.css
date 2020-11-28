@@ -151,11 +151,11 @@
 
   .modal-column1 {
     order: 2;
-    margin-top: 30%;
   }
   
-  .modal-column-2 {
+  .modal-column2 {
     order: 1;
+    height: 100%;
   }
 }
 
