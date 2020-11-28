@@ -69,7 +69,7 @@ const Project = ({ title, snippet, url, languages, highlights, github }) => {
         style ={ { backgroundImage: `url('./images/${title}.png')` } }
       >
         <div className="project-text">
-          {title}
+          <div className="project-title">{title}</div>
           <hr ref={line} className="project-line"/>
           <p>{snippet}</p>
         </div>
