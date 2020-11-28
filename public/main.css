@@ -473,6 +473,8 @@ hr.splash-line {
 }
 
 #copyright {
+  width: 100%;
+  text-align: center;
   margin-top: 6em;
   margin-bottom: 1em;
   position: absolute;

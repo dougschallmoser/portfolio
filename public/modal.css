@@ -140,9 +140,11 @@
   .modal-content {
     flex-direction: column;
     font-size: 2.3vw;
+    flex-shrink: 0;
   }
 
   .modal-column1 {
+    -webkit-flex: 0;
     flex-shrink: 0;
     order: 2
   }
