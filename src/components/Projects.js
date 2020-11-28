@@ -33,6 +33,14 @@ const Projects = () => {
           languages={["rails", "ruby", "css", "html"]}
         />
         <Project 
+          title="PORTFOLIO"
+          snippet="SPA for showcasing personal software developer portfolio" 
+          highlights={["Utilizes modern React and JavaScript practices, including hooks and arrow functions", "Responsive and made for all devices", "Custom styling"]}
+          url="https://youtube.com/embed/bd-E0IjS6to"
+          github="https://github.com/dougschallmoser/portfolio-app"
+          languages={["react", "javascript", "css", "html"]}
+        />
+        <Project 
           title="NATPARKREV"
           snippet="MPA for sharing user generated National Park reviews with the world"
           highlights={["Built with Sinatra and Ruby following MVC paradigm", "Integrated CRUD functionality, ActiveRecord, complex forms, join tables, and error handling", "Implemented user accounts, authentication, and validations"]}
