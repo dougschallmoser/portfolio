@@ -36,7 +36,6 @@
   cursor: pointer;
   display: inline-block;
   text-align: center;
-  text-decoration: none;
   font-size: 18px;
   font-weight: 300;
 }
@@ -70,8 +69,7 @@
 .nav-scrolled .navlinks a {
   float: right;
   margin: 9px 12px 5px 12px;
-  padding: 5px 0;
-  transition: 0.2s;
+  padding: 4px 0;
   position: relative;
 }
 
@@ -88,24 +86,24 @@
   color: #c0a583;
 }
 
-.nav-unscrolled .navlinks a::before,
-.nav-scrolled .navlinks a::before {
-  content: "";
+.nav-unscrolled .navlinks a:after,
+.nav-scrolled .navlinks a:after {
+  content: '';
   position: absolute;
-  height: 0.5px;
   width: 100%;
-  left: 0;
+  height: 1px;
   bottom: 0;
-  background: #c0a583;
-  visibility: hidden;
+  left: 0;
+  background-color: #c0a583;
+  transform-origin: bottom right;
   transform: scaleX(0);
-  transition: all 0.2s ease-in-out 0s;
+  transition: transform 0.25s ease-out;
 }
 
-.nav-unscrolled .navlinks a:hover::before,
-.nav-scrolled .navlinks a:hover::before {
-  visibility: visible;
+.nav-unscrolled .navlinks a:hover:after,
+.nav-scrolled .navlinks a:hover:after {
   transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 #splash {
@@ -124,7 +122,7 @@
 
 .splash-overlay {
   background: #000;
-  opacity: 0.40;
+  opacity: 0.30;
   width: 100%;
   height: 100%;
   transition: 1s ease;
@@ -418,6 +416,27 @@
   width: 100vw;
   padding-top: 4em;
   padding-bottom: 4em;
+}
+
+#quote {
+  background: url(../splash3.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 35vh;
+}
+
+.quote-overlay {
+  background: #000;
+  opacity: 0.25;
+  width: 100%;
+  height: 100%;
+  transition: 1s ease;
 }
 
 hr {
