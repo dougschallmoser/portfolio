@@ -13,10 +13,9 @@ const Project = ({ title, snippet, url, languages, highlights, github }) => {
 
   const toggleModal = () => {
     setIsOpen(!isOpen);
-    handleButtonHover();
   }
 
-  const handleButtonHover = () => {
+  const handleButtonHoverEnter = () => {
     if (overlay.current.className === "project-overlay-hover") {
       overlay.current.className = "project-overlay"
       line.current.className = "project-line"
@@ -24,6 +23,11 @@ const Project = ({ title, snippet, url, languages, highlights, github }) => {
       overlay.current.className = "project-overlay-hover"
       line.current.className = "project-line-hover"
     }
+  }
+
+  const handleButtonHoverLeave = () => {
+    overlay.current.className = "project-overlay"
+    line.current.className = "project-line"
   }
 
   const mapLanguages = () => {
@@ -64,8 +68,8 @@ const Project = ({ title, snippet, url, languages, highlights, github }) => {
       <div 
         onClick={toggleModal}
         className="project-item" 
-        onMouseEnter={handleButtonHover} 
-        onMouseLeave={handleButtonHover} 
+        onMouseEnter={handleButtonHoverEnter} 
+        onMouseLeave={handleButtonHoverLeave} 
         style ={ { backgroundImage: `url('./images/${title}.png')` } }
       >
         <div className="project-text">
