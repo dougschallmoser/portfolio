@@ -148,6 +148,7 @@
 }
 
 .splash-name {
+  letter-spacing: 0.1em;
   font-family: 'Barlow Condensed', sans-serif;
   color: #fff;
   font-size: 6em;
@@ -584,7 +585,7 @@ hr.splash-line-hover {
   }
   
   .splash-name {
-    font-size: 4em;
+    font-size: 3.8em;
   }
   
   .splash-bio {
