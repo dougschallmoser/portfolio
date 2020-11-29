@@ -1,10 +1,21 @@
+[Portfolio](https://user-images.githubusercontent.com/65590878/100535056-3fe41880-31ca-11eb-95ac-d363cef10403.png)
 
 # Portfolio
 
-This is my personal portfolio application.
+This is my personal portfolio application. Built with React.
+
+[Live Demo](https://www.dougschallmoser.com/)
 
 
 ## Installation
+
+To run this application in your local environment, please follow these steps:
+
+```
+1. Clone this repository
+2. Run 'npm install'
+3. Run 'npm start'
+```
 
 
 ## Contributing
@@ -23,8 +34,3 @@ This project is intended to be a safe, welcoming space for collaboration, and co
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
-
-
-## Acknowledgments
-
-I would like to acknowledge...
