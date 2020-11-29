@@ -70,7 +70,7 @@ const Project = ({ title, snippet, url, languages, highlights, github }) => {
         className="project-item" 
         onMouseEnter={handleButtonHoverEnter} 
         onMouseLeave={handleButtonHoverLeave} 
-        style ={ { backgroundImage: `url('./images/${title}.png')` } }
+        style ={ { backgroundImage: `url('./images/${title}.jpg')` } }
       >
         <div className="project-text">
           <div className="project-title">{title}</div>
