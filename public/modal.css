@@ -26,7 +26,7 @@
 
 .modal-close {
   position: fixed;
-  right: 0.5em;
+  right: 0.4em;
   font-size: 2.5em;
   cursor: pointer;
   color: #929396;
@@ -134,8 +134,7 @@
   }
 
   .modal-content {
-    font-size: 1.8vw;
-    display: flex;
+    font-size: 1.7vw;
     text-align: left;
   }
 }
@@ -144,17 +143,12 @@
 
   .modal {
     width: 100%;
-    height: 100vh;
     border-radius: 0;
   }
 
   .modal-icon {
     width: 8vw;
     font-size: 2vw;
-  }
-
-  .modal-close {
-    right: 0.3em;
   }
 
   .modal-highlights li {
@@ -179,5 +173,10 @@
 @media screen and (max-width: 600px) {
   .modal-content {
     font-size: 4vw;
+  }
+
+  .modal-icon {
+    width: 10vw;
+    font-size: 2.2vw;
   }
 }
