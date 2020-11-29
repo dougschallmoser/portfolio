@@ -463,7 +463,7 @@
 }
 
 .quote-overlay {
-  background: rgb(148, 118, 83);
+  background: rgb(80, 61, 39);
   opacity: 0.6;
   width: 100%;
   height: 100%;
@@ -493,7 +493,8 @@ hr.project-line-hover {
   transition: 1s ease;
 }
 
-hr.splash-line {
+hr.splash-line,
+hr.contact-line {
   margin: 1em auto;
   border: 1px solid #fff;
   width: 125px;
@@ -502,13 +503,20 @@ hr.splash-line {
   transition: 1s ease;
 }
 
-hr.splash-line-hover {
+hr.splash-line-hover,
+hr.contact-line-hover {
   margin: 1em auto;
   border: 1px solid #fff;
   width: 300px;
   background: #fff;
   opacity: 0.75;
   transition: 1s ease;
+}
+
+hr.contact-line,
+hr.contact-line-hover {
+  border: 1px solid #c0a583;
+  background: #c0a583;
 }
 
 #copyright {
