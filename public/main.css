@@ -639,6 +639,10 @@ hr.contact-line-hover {
     height: 70px;
   }
 
+  #splash {
+    background-attachment: scroll;
+  }
+
   #quote, #quote2 {
     background: #c0a583;
   }
