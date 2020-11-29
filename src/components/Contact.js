@@ -38,7 +38,7 @@ const Contact = () => {
         </a>
       </div>
       <div id="copyright">
-      Doug Schallmoser © 2020
+      Copyright © 2020 Doug Schallmoser
       </div>
     </section>
   )

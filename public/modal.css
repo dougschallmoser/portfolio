@@ -102,7 +102,7 @@
 }
 
 .modal-highlights li {
-  font-size: 0.75em;
+  font-size: 0.85em;
   text-align: left;
 }
 
@@ -150,10 +150,6 @@
   .modal-icon {
     width: 8vw;
     font-size: 2vw;
-  }
-
-  .modal-highlights li {
-    font-size: 1em;
   }
 
   .modal-content {

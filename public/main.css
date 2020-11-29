@@ -130,8 +130,8 @@
 }
 
 .splash-overlay-hover {
-  background: #916936;
-  opacity: 0.65;
+  background: #865e2a;
+  opacity: 0.75;
   width: 100%;
   height: 100%;
   transition: 1s ease;
@@ -222,8 +222,14 @@
   text-align: center;
 }
 
+.contact-icons {
+  padding-bottom: 10em;
+  margin-top: 65px;
+}
+
 .contact-icons a {
   text-decoration: none;
+  color: #fff;
 }
 
 .about-icon,
@@ -238,6 +244,10 @@
 
 .contact-icon {
   cursor: pointer;
+}
+
+.contact-icon:hover {
+  color: #c0a583;
 }
 
 .contact-icon:not(:last-child) {
@@ -266,18 +276,8 @@
 }
 
 #projects {
-  background: #353535;
   width: 100vw;
-  padding-top: 5em;
-}
-
-#projects-header {
-  font-family: 'Barlow Condensed', sans-serif;
-  color: #fff;
-  font-size: 54px;
-  margin-bottom: 1.5%;
-  font-weight: 500;
-  text-align: center;
+  padding-top: 4em;
 }
 
 .projects-grid {
@@ -327,7 +327,7 @@
 
 .project-overlay {
   background: #000;
-  opacity: 0.73;
+  opacity: 0.80;
   width: 100%;
   height: 100%;
   transition: 1s ease;
@@ -335,7 +335,7 @@
 }
 
 .project-overlay-hover {
-  background: #aa9171;
+  background: #c0a583;
   opacity: 0.97;
   width: 100%;
   height: 100%;
@@ -358,13 +358,18 @@
 }
 
 #blog-header,
-#contact-header {
+#contact-header,
+#projects-header {
   font-family: 'Barlow Condensed', sans-serif;
   color: #353535;
   font-size: 54px;
   margin-bottom: 1.5%;
   font-weight: 500;
   text-align: center;
+}
+
+#contact-header {
+  color: #fff;
 }
 
 .blog-grid {
@@ -389,7 +394,7 @@
 }
 
 .blog-item:hover {
-  background: #f0dac0;
+  background: #c0a583;
   transition: 1.5s ease;
 }
 
@@ -421,9 +426,9 @@
 
 #contact {
   position: relative;
+  background: #353535;
   width: 100vw;
-  padding-top: 4em;
-  padding-bottom: 5em;
+  padding-top: 6em;
 }
 
 #quote {
@@ -433,10 +438,27 @@
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width: 100vw;
+  height: 25vh;
+}
+
+#quote2 {
+  background: url(../splash2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
   background-position: left;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 30vh;
+  height: 25vh;
 }
 
 .quote-overlay {
@@ -473,16 +495,26 @@ hr.project-line-hover {
 hr.splash-line {
   margin: 1em auto;
   border: 1px solid #fff;
-  width: 200px;
+  width: 125px;
   background: #fff;
   opacity: 0.75;
+  transition: 1s ease;
+}
+
+hr.splash-line-hover {
+  margin: 1em auto;
+  border: 1px solid #fff;
+  width: 300px;
+  background: #fff;
+  opacity: 0.75;
+  transition: 1s ease;
 }
 
 #copyright {
+  background: #c0a583;
   width: 100%;
   text-align: center;
-  margin-top: 6em;
-  margin-bottom: 2em;
+  padding: 1em 0;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -512,11 +544,6 @@ hr.splash-line {
 }
 
 @media screen and (max-width: 800px) {
-
-  #splash, #quote {
-    background-attachment: scroll;
-  }
-
   .projects-grid {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -602,7 +629,16 @@ hr.splash-line {
   .nav-scrolled {
     height: 70px;
   }
+
+  #splash, #quote, #quote2 {
+    background-attachment: scroll;
+  }
+
+  #quote, #quote2 {
+    height: 10vh;
+  }
 }
+
 
 @media screen and (max-width: 600px) {
   .nav-unscrolled .navlinks a, 

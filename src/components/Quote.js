@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Quote = () => {
+const Quote = ({ id }) => {
   return (
-    <section id="quote">
+    <section id={id || "quote"}>
       <div className="quote-overlay"></div>
     </section>
   )
