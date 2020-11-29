@@ -314,7 +314,7 @@
 
 .project-title {
   letter-spacing: 0.1em;
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: #fff;
   font-weight: 600;
 }
@@ -632,11 +632,11 @@ hr.splash-line-hover {
   }
 
   #splash, #quote, #quote2 {
-    background-attachment: scroll;
+    background: #c0a583;
   }
 
   #quote, #quote2 {
-    height: 10vh;
+    height: 8vh;
   }
 }
 
