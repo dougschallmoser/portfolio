@@ -15,9 +15,6 @@ const BlogItem = ({ data }) => {
               {data.pubDate}
             </Moment>
           </div>
-          <div className="blog-description">
-            {data.description.substring(4, 150) + '...'}
-          </div>
         </div>
       </div>
     </a>

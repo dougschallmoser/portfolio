@@ -268,20 +268,20 @@
 #projects {
   background: #353535;
   width: 100vw;
+  padding-top: 5em;
 }
 
 #projects-header {
   font-family: 'Barlow Condensed', sans-serif;
   color: #fff;
   font-size: 54px;
-  padding-top: 5%;
   margin-bottom: 1.5%;
   font-weight: 500;
   text-align: center;
 }
 
 .projects-grid {
-  padding-top: 2em;
+  padding-top: 3em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -301,7 +301,7 @@
 
 .project-text {
   color: #fff;
-  font-size: 2.3em;
+  font-size: 2.2em;
   text-align: center;
   width: 75%;
   position: absolute;
@@ -309,16 +309,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .project-title {
+  letter-spacing: 0.1em;
   font-size: 1.3em;
   color: #fff;
+  font-weight: 600;
 }
 
 .project-text p {
-  font-size: 0.6em;
+  font-size: 0.7em;
   line-height: 1.5em;
   color: #fff;
   font-weight: 300;
@@ -334,8 +335,8 @@
 }
 
 .project-overlay-hover {
-  background: #ca8b38;
-  opacity: 0.95;
+  background: #aa9171;
+  opacity: 0.97;
   width: 100%;
   height: 100%;
   transition: 1s ease;
@@ -383,33 +384,34 @@
   cursor: pointer;
   position: relative;
   width: 100%;
-  height: 20em;
+  height: 16em;
   transition: 1.5s ease;
 }
 
 .blog-item:hover {
-  background: #e0c7a9;
+  background: #f0dac0;
   transition: 1.5s ease;
 }
 
 .blog-content {
-  padding: 2em 2em 1.5em 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
 }
 
 .blog-title {
-  font-size: 24px;
-  margin-bottom: 0.2em;
-}
-
-.blog-description {
-  font-family: 'Inconsolata', monospace;
-  color: #707070;
+  font-size: 3.5vh;
+  margin-bottom: 0.4em;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .blog-date {
-  font-size: 16px;
+  font-size: 2.5vh;
   font-weight: 300;
   margin-bottom: 0.75em;
+  color: #c0a583;
 }
 
 .blog-date time {
@@ -438,11 +440,10 @@
 }
 
 .quote-overlay {
-  background: #000;
-  opacity: 0.25;
+  background: rgb(148, 118, 83);
+  opacity: 0.6;
   width: 100%;
   height: 100%;
-  transition: 1s ease;
 }
 
 hr {
@@ -457,16 +458,16 @@ hr.project-line {
   border: 0.5px solid #fff;
   background: #fff;
   width: 75px;
-  margin: 15px auto;
-  transition: 1.5s ease;
+  margin: 25px auto;
+  transition: 1s ease;
 }
 
 hr.project-line-hover {
   border: 0.5px solid #fff;
   background: #fff;
-  width: 150px;
-  margin: 15px auto;
-  transition: 1.5s ease;
+  width: 175px;
+  margin: 25px auto;
+  transition: 1s ease;
 }
 
 hr.splash-line {
@@ -530,14 +531,8 @@ hr.splash-line {
     grid-template-columns: repeat(1, 1fr)
   }
 
-  .blog-title {
-    margin-bottom: 0.3em;
-    font-size: 20px;
-  }
-
-  .blog-date {
-    font-size: 14px;
-    font-weight: 300;
+  .blog-item {
+    height: 10em;
   }
 
   .about-content {
@@ -574,7 +569,7 @@ hr.splash-line {
   }
 
   .project-text {
-    width: 95%;
+    width: 90%;
   }
 
   .project-overlay {
