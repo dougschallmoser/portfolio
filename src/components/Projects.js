@@ -35,7 +35,7 @@ const Projects = () => {
         <Project 
           title="PORTFOLIO"
           snippet="SPA for showcasing personal software developer portfolio" 
-          highlights={["Utilizes modern React and JavaScript practices, including hooks and arrow functions", "Responsive and made for all devices", "Custom styling"]}
+          highlights={["Integrated modern React and JS best practices including hooks and arrow functions", "Responsive design with custom styling", "Clean, readable and maintainable code"]}
           url="https://youtube.com/embed/bDkkOsjkGZE"
           github="https://github.com/dougschallmoser/portfolio-app"
           languages={["react", "javascript", "css", "html", "ps"]}
