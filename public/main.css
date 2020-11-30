@@ -119,6 +119,45 @@
   width: 100vw;
   height: 100vh;
   position: relative;
+  animation: shrink 5s infinite alternate;
+  -webkit-animation: shrink 5s infinite alternate;
+  -moz-animation: shrink 5s infinite alternate;
+  -o-animation: shrink 5s infinite alternate;
+}
+
+@keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+@-webkit-keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+@-moz-keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+@-o-keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
 }
 
 .splash-overlay {
