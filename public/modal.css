@@ -25,10 +25,11 @@
 }
 
 .modal-close {
+  font-family: "Times New Roman", Times, serif;
   position: fixed;
   margin-top: 0.1em;
   right: 0.4em;
-  font-size: 2.5em;
+  font-size: 2em;
   cursor: pointer;
   color: #929396;
 }

@@ -89,7 +89,7 @@ const Project = ({ title, snippet, url, languages, highlights, github }) => {
         closeTimeoutMS={0}
       >
 
-        <div className="modal-close" onClick={toggleModal}>x</div>
+        <div className="modal-close" onClick={toggleModal}>&#10006;</div>
         <div className="modal-content">
           <div className="modal-column1">
             <iframe width="420" height="315" src={url} title={title} frameBorder="0" allowFullScreen className="video" >
