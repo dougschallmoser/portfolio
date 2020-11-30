@@ -437,6 +437,11 @@
 
 .blog-item:hover {
   background: #c0a583;
+}
+
+.blog-item:hover .blog-content .blog-title,
+.blog-item:hover .blog-content .blog-date time {
+  color: #fff;
   transition: 1.5s ease;
 }
 
@@ -458,7 +463,6 @@
   font-size: 2.5vh;
   font-weight: 300;
   margin-bottom: 0.75em;
-  color: #c0a583;
 }
 
 .blog-date time {
