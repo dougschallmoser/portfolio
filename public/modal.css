@@ -88,6 +88,8 @@
 }
 
 .modal-icon {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   display: inline-block;
   width: 3vw;
   margin-top: 1%;

@@ -203,6 +203,7 @@
 
 .splash-title {
   font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   color: #fff;
 }
 
@@ -274,6 +275,8 @@
 
 .about-icon,
 .contact-icon {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   display: inline-block;
   width: 60px;
   margin-top: 1%;
