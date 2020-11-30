@@ -22,7 +22,7 @@ const Projects = () => {
           highlights={["Front-end fully built with modern Object-Oriented JavaScript, arrow functions, and custom CSS", "Integrated user interaction features including comment and like functionality", "Utilized AJAX requests, followed MVC paradigm, and implemented RESTful conventions"]}
           url="https://youtube.com/embed/WYrxOOjoNe0"
           github="https://github.com/dougschallmoser/gastropoda-js-app"
-          languages={["javascript", "rails", "ruby", "css", "html"]}
+          languages={["javascript", "rails", "ruby", "css", "html", "ps"]}
         />
         <Project 
           title="CONNECTAROT"
@@ -38,7 +38,7 @@ const Projects = () => {
           highlights={["Utilizes modern React and JavaScript practices, including hooks and arrow functions", "Responsive and made for all devices", "Custom styling"]}
           url="https://youtube.com/embed/bDkkOsjkGZE"
           github="https://github.com/dougschallmoser/portfolio-app"
-          languages={["react", "javascript", "css", "html"]}
+          languages={["react", "javascript", "css", "html", "ps"]}
         />
         <Project 
           title="NATPARKREV"
