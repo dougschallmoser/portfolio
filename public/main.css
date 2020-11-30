@@ -202,7 +202,7 @@
 }
 
 .splash-title {
-  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
   color: #fff;
 }
 
@@ -352,10 +352,9 @@
 }
 
 .project-title {
-  letter-spacing: 0.1em;
   font-size: 1.2em;
   color: #fff;
-  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
 }
 
 .project-text p {
@@ -653,10 +652,12 @@ hr.contact-line-hover {
   }
 
   #about-mystory {
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
   }
   
   #about-skills {
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
   }
 
