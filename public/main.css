@@ -275,6 +275,7 @@
 
 .about-icon,
 .contact-icon {
+  text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   display: inline-block;
@@ -298,7 +299,7 @@
 }
 
 .about-icon:not(:last-child) {
-  margin-right: 2em;
+  margin-right: 2.2em;
 }
 
 #about-mystory {
