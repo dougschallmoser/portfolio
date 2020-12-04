@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import Project from './Project';
 
 const Projects = () => {
 
+  const hr = useRef(null);
+
+  useLayoutEffect(() => {
+    const hrTop = hr.current.getBoundingClientRect().top;
+    const onScroll = () => {
+      if (hrTop < window.scrollY + window.innerHeight) {
+        hr.current.className = "projects-line-hover"
+      } else {
+        hr.current.className = "projects-line"
+      }
+    }
+    
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   return (
     <section id="projects">
       <div id="projects-header">PROJECTS</div>
-      <hr />
+      <hr ref={hr} className="projects-line" />
       <div className="projects-grid">
         <Project 
           title="TRAILBLAZE" 

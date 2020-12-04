@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import Skills from './Skills';
 
 const About = () => {
+
+  const hr = useRef(null);
+
+  useLayoutEffect(() => {
+    const hrTop = hr.current.getBoundingClientRect().top;
+    const onScroll = () => {
+      if (hrTop < window.scrollY + window.innerHeight) {
+        hr.current.className = "about-line-hover"
+      } else {
+        hr.current.className = "about-line"
+      }
+    }
+    
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   return (
     <section id="about">
       <div id="blog-header">MY STORY</div>
-        <hr />
+        <hr ref={hr} className="about-line" />
       <div className="about-content">
         <div id="about-mystory">
           CIVIL ENGINEER TO SOFTWARE DEVELOPER
