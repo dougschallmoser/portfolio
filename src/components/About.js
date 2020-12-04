@@ -9,20 +9,21 @@ const About = () => {
     const hrTop = hr.current.getBoundingClientRect().top;
     const onScroll = () => {
       if (hrTop < window.scrollY + window.innerHeight) {
-        hr.current.className = "about-line-hover"
+        hr.current.className = "line-scroll"
       } else {
-        hr.current.className = "about-line"
+        hr.current.className = "line"
       }
     }
     
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
+    
   }, [])
 
   return (
     <section id="about">
       <div id="blog-header">MY STORY</div>
-        <hr ref={hr} className="about-line" />
+      <hr ref={hr} className="line" />
       <div className="about-content">
         <div id="about-mystory">
           CIVIL ENGINEER TO SOFTWARE DEVELOPER

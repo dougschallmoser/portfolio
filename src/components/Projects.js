@@ -8,21 +8,22 @@ const Projects = () => {
   useLayoutEffect(() => {
     const hrTop = hr.current.getBoundingClientRect().top;
     const onScroll = () => {
-      if (hrTop < window.scrollY + window.innerHeight) {
-        hr.current.className = "projects-line-hover"
+      if (hrTop - 100 < window.scrollY + window.innerHeight) {
+        hr.current.className = "line-scroll"
       } else {
-        hr.current.className = "projects-line"
+        hr.current.className = "line"
       }
     }
     
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
+
   }, [])
 
   return (
     <section id="projects">
       <div id="projects-header">PROJECTS</div>
-      <hr ref={hr} className="projects-line" />
+      <hr ref={hr} className="line" />
       <div className="projects-grid">
         <Project 
           title="TRAILBLAZE" 
