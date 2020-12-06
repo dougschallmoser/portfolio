@@ -37,7 +37,7 @@ const Projects = () => {
           title="GASTROPODA"
           snippet="Social SPA literary magazine for showcasing, submitting, and interacting with unique short stories" 
           highlights={["Front-end fully built with modern Object-Oriented JavaScript, arrow functions, and custom CSS", "Integrated user interaction features including comment and like functionality", "Utilized AJAX requests, followed MVC paradigm, and implemented RESTful conventions"]}
-          url="https://youtube.com/embed/WYrxOOjoNe0"
+          url="https://youtube.com/embed/5GDocLklNW0"
           github="https://github.com/dougschallmoser/gastropoda"
           languages={["javascript", "rails", "ruby", "css", "html", "ps"]}
         />
