@@ -6,6 +6,8 @@ This is my personal portfolio application. Built with React.
 
 [Live Demo](https://www.dougschallmoser.com/)
 
+[Demo Video](https://youtu.be/bDkkOsjkGZE)
+
 
 ## Installation
 
