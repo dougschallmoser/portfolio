@@ -28,7 +28,7 @@ const Projects = () => {
         <Project 
           title="TRAILBLAZE" 
           snippet="Geosocial networking SPA for finding and communicating with new friends in the outdoor adventure space" 
-          highlights={["Integrated Google Maps/Places/Geocoding and Hiking Project API’s to pull and parse location and trail data", "Implemented live chat feature with Rails Action Cable and WebSockets", "Utilized JSON Web Tokens and localStorage to store encrypted user information client-side"]}
+          highlights={["Integrated Google Maps, Places, Geocoding, and Hiking Project API’s", "Implemented live chat feature with Rails Action Cable and WebSockets", "Managed global state with Redux and utilized Thunk middleware for async actions", "Utilized JSON Web Tokens and localStorage to store encrypted user information client-side"]}
           url="https://youtube.com/embed/Pzksvd9wRZM"
           github="https://github.com/dougschallmoser/trailblaze"
           languages={["react", "redux", "javascript", "rails", "ruby", "css", "html"]}

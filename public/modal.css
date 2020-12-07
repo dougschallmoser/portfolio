@@ -107,7 +107,7 @@
 }
 
 .modal-highlights li {
-  font-size: 0.85em;
+  font-size: 0.80em;
   text-align: left;
 }
 
@@ -115,7 +115,7 @@
   text-align: center;
   text-shadow: none;
   cursor: pointer;
-  margin: 2em 0 0 0;
+  margin: 1.5em 0 0 0;
   position: relative;
 }
 
