@@ -4,7 +4,7 @@ import Modal from "react-modal";
 
 Modal.setAppElement("#root");
 
-const Project = ({ title, snippet, url, languages, highlights, github }) => {
+const Project = ({ title, snippet, youtube, github, live, languages, highlights }) => {
 
   const overlay = React.createRef();
   const line = React.createRef();
@@ -92,7 +92,7 @@ const Project = ({ title, snippet, url, languages, highlights, github }) => {
         <div className="modal-close" onClick={toggleModal}>&#10006;</div>
         <div className="modal-content">
           <div className="modal-column1">
-            <iframe width="420" height="315" src={url} title={title} frameBorder="0" allowFullScreen className="video" >
+            <iframe width="420" height="315" src={youtube} title={title} frameBorder="0" allowFullScreen className="video" >
             </iframe>
           </div>
           <div className="modal-column2">
@@ -106,6 +106,13 @@ const Project = ({ title, snippet, url, languages, highlights, github }) => {
               {mapLanguages()}
             </div>
             <div className="view-code">
+              {live ? <a 
+                href={live} 
+                target="_blank" 
+                rel="noreferrer" 
+              >
+                VIEW LIVE
+              </a> : null }
               <a 
                 href={github} 
                 target="_blank" 
