@@ -112,22 +112,25 @@
 }
 
 .view-code {
-  text-align: center;
   text-shadow: none;
   cursor: pointer;
   margin: 1.5em 0 0 0;
   position: relative;
+  text-align: center;
 }
 
 .view-code a {
   background: #c0a583;
-  position: relative;
   padding: 0.5vw 2vw;
   text-decoration: none;
   color: #fff;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px;
   transition: 0.5s ease;
+}
+
+.view-code a:not(:last-child) {
+  margin-right: 1em; 
 }
 
 @media screen and (max-width: 1200px) {
