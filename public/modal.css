@@ -59,7 +59,7 @@
   flex: 30%;
   position: relative;
   height: 0;
-  margin: 2em 1em 2em 1em;
+  margin: 2em 0.5em 2em 1em;
 }
 
 .video {
@@ -135,7 +135,7 @@
 
 .view-code a:hover {
   color: #c0a583;
-  background: #fff7ee;
+  background: #fff;
 }
 
 @media screen and (max-width: 1200px) {
