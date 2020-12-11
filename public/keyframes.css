@@ -1,0 +1,86 @@
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+@keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+@-webkit-keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+@-moz-keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+@-o-keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+
+@keyframes fadeInOverlay {
+  0% {opacity:0.95;}
+  100% {opacity:0.4;}
+}
+
+@-moz-keyframes fadeInOverlay {
+  0% {opacity:0.95;}
+  100% {opacity:0.4;}
+}
+
+@-webkit-keyframes fadeInOverlay {
+  0% {opacity:0.95;}
+  100% {opacity:0.4;}
+}
+
+@-o-keyframes fadeInOverlay {
+  0% {opacity:0.95;}
+  100% {opacity:0.4;}
+}
+
+@-ms-keyframes fadeInOverlay {
+  0% {opacity:0.95;}
+  100% {opacity:0.4;}
+}
