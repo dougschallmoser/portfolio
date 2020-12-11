@@ -96,7 +96,7 @@
   width: 3vw;
   margin-top: 1%;
   transition: 0.5s ease;
-  font-size: 1vw;
+  font-size: 0.80vw;
   color: #999999;
   margin-right: 2.5vw;
 }
@@ -131,6 +131,11 @@
 
 .view-code a:not(:last-child) {
   margin-right: 1em; 
+}
+
+.view-code a:hover {
+  color: #c0a583;
+  background: #fff7ee;
 }
 
 @media screen and (max-width: 1200px) {
