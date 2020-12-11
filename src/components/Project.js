@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ReactIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, CSSIcon, HTMLIcon, PSIcon } from './SkillsIcons';
+import { ReactIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, PostgresIcon, CSSIcon, HTMLIcon, PSIcon } from './SkillsIcons';
 import Modal from "react-modal";
 
 Modal.setAppElement("#root");
@@ -47,6 +47,9 @@ const Project = ({ title, snippet, youtube, github, live, languages, highlights 
         } 
         if (language === "redux") {
           return <ReduxIcon key={title + language} cssName="modal-icon" color="#c0a583" />
+        } 
+        if (language === "postgres") {
+          return <PostgresIcon key={title + language} cssName="modal-icon" color="#c0a583" />
         } 
         if (language === "css") {
           return <CSSIcon key={title + language} cssName="modal-icon" color="#c0a583" />

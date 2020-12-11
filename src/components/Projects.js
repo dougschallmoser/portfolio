@@ -32,7 +32,7 @@ const Projects = () => {
           youtube="https://youtube.com/embed/Pzksvd9wRZM"
           github="https://github.com/dougschallmoser/trailblaze"
           live="https://trailblaze-app.netlify.app/"
-          languages={["react", "redux", "javascript", "rails", "ruby", "css", "html"]}
+          languages={["react", "redux", "javascript", "rails", "ruby", "postgres", "css", "html"]}
         />
         <Project 
           title="GASTROPODA"
@@ -41,7 +41,7 @@ const Projects = () => {
           youtube="https://youtube.com/embed/5GDocLklNW0"
           github="https://github.com/dougschallmoser/gastropoda"
           live="https://gastropoda.netlify.app/"
-          languages={["javascript", "rails", "ruby", "css", "html", "ps"]}
+          languages={["javascript", "rails", "ruby", "postgres", "css", "html", "ps"]}
         />
         <Project 
           title="CONNECTAROT"
@@ -50,7 +50,7 @@ const Projects = () => {
           youtube="https://youtube.com/embed/bd-E0IjS6to"
           github="https://github.com/dougschallmoser/connectarot"
           live="https://connectarot.herokuapp.com/"
-          languages={["rails", "ruby", "css", "html"]}
+          languages={["rails", "ruby", "postgres", "css", "html"]}
         />
         <Project 
           title="PORTFOLIO"

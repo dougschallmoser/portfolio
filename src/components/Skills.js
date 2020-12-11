@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, CSSIcon, HTMLIcon, PSIcon } from './SkillsIcons';
+import { ReactIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, PostgresIcon, CSSIcon, HTMLIcon, PSIcon } from './SkillsIcons';
 
 const Skills = () => {
   return (
@@ -10,6 +10,7 @@ const Skills = () => {
       <RailsIcon cssName="about-icon" />
       <RubyIcon cssName="about-icon" />
       <ReduxIcon cssName="about-icon" />
+      <PostgresIcon cssName="about-icon" />
       <CSSIcon cssName="about-icon" />
       <HTMLIcon cssName="about-icon" />
       <PSIcon cssName="about-icon" />
