@@ -23,7 +23,7 @@ const Splash = () => {
         <hr ref={line} className="splash-line" />
         <div className="splash-bio">
           <div className="splash-title">
-            Software Developer
+            Software Engineer
           </div>
           Bellingham, WA
           <div className="splash-button" onMouseEnter={handleButtonHover} onMouseLeave={handleButtonHover}>
