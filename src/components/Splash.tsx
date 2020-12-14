@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-const Splash = () => {
+const Splash: React.FC = () => {
 
   const overlay = React.createRef<HTMLDivElement>();
   const line = React.createRef<HTMLHRElement>();

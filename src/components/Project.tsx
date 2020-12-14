@@ -1,4 +1,4 @@
-import React, { useState, FC } from 'react';
+import React, { useState } from 'react';
 import { ReactIcon, TSIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, PostgresIcon, CSSIcon, HTMLIcon, PSIcon } from './SkillsIcons';
 import Modal from "react-modal";
 
@@ -14,7 +14,7 @@ type Props = {
   highlights: string[];
 }
 
-const Project: FC<Props> = ({ title, snippet, youtube, github, live, languages, highlights }) => {
+const Project: React.FC<Props> = ({ title, snippet, youtube, github, live, languages, highlights }) => {
 
   const overlay = React.createRef<HTMLDivElement>();
   const line = React.createRef<HTMLHRElement>();

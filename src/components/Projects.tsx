@@ -1,7 +1,7 @@
-import React, { useRef, useLayoutEffect, FC } from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import Project from './Project';
 
-const Projects: FC = () => {
+const Projects: React.FC = () => {
 
   const hr = useRef<HTMLHRElement>(null);
 

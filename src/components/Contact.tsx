@@ -1,12 +1,12 @@
-import React, { useRef, useLayoutEffect, FC } from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 
-const Contact: FC = () => {
+const Contact: React.FC = () => {
 
   const hr = useRef<HTMLHRElement>(null);
 
   useLayoutEffect(() => {
     if (hr.current) {
-      const hrTop = hr.current.getBoundingClientRect().top;
+      const hrTop: number = hr.current.getBoundingClientRect().top;
       const onScroll = () => {
         if (hr.current && hrTop < window.scrollY + window.innerHeight) {
           hr.current.className = "line-scroll"

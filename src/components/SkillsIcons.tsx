@@ -1,11 +1,11 @@
-import { FC } from 'react';
+import React from 'react';
 
 type Props = {
   cssName: string;
   color?: string;
 }
 
-export const ReactIcon: FC<Props> = ({ cssName, color }) => {
+export const ReactIcon: React.FC<Props> = ({ cssName, color }) => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -16,7 +16,7 @@ export const ReactIcon: FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const TSIcon: FC<Props> = ({ cssName, color }) => {
+export const TSIcon: React.FC<Props> = ({ cssName, color }) => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -27,7 +27,7 @@ export const TSIcon: FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const JSIcon: FC<Props> = ({ cssName, color }) => {
+export const JSIcon: React.FC<Props> = ({ cssName, color }) => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -39,7 +39,7 @@ export const JSIcon: FC<Props> = ({ cssName, color }) => {
 }
 
 
-export const RailsIcon: FC<Props> = ({ cssName, color }) => {
+export const RailsIcon: React.FC<Props> = ({ cssName, color }) => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -50,7 +50,7 @@ export const RailsIcon: FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const RubyIcon: FC<Props> = ({ cssName, color }) => {
+export const RubyIcon: React.FC<Props> = ({ cssName, color }) => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -61,7 +61,7 @@ export const RubyIcon: FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const ReduxIcon: FC<Props> = ({ cssName, color }) => {
+export const ReduxIcon: React.FC<Props> = ({ cssName, color }) => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -72,7 +72,7 @@ export const ReduxIcon: FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const PostgresIcon: FC<Props> = ({ cssName, color }) => {
+export const PostgresIcon: React.FC<Props> = ({ cssName, color }) => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -83,7 +83,7 @@ export const PostgresIcon: FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const CSSIcon: FC<Props> = ({ cssName, color }) => {
+export const CSSIcon: React.FC<Props> = ({ cssName, color }) => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -94,7 +94,7 @@ export const CSSIcon: FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const HTMLIcon: FC<Props> = ({ cssName, color }) => {
+export const HTMLIcon: React.FC<Props> = ({ cssName, color }) => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -105,7 +105,7 @@ export const HTMLIcon: FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const PSIcon: FC<Props> = ({ cssName, color }) => {
+export const PSIcon: React.FC<Props> = ({ cssName, color }) => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">

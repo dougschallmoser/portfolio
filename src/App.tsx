@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import NavBar from './components/NavBar';
 import Splash from './components/Splash';
 import About from './components/About';
@@ -7,7 +7,7 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Quote from './components/Quote';
 
-const App: FC = () => {
+const App: React.FC = () => {
   return (
     <>
       <NavBar />

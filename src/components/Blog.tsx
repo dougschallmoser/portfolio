@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef, useLayoutEffect, FC } from 'react';
+import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import BlogItem from './BlogItem';
 
-const Blog: FC = () => {
+const Blog: React.FC = () => {
 
   const [posts, setPosts] = useState<any[]>([])
   const hr = useRef<HTMLHRElement>(null);
@@ -15,7 +15,7 @@ const Blog: FC = () => {
 
   useLayoutEffect(() => {
     if (hr.current) {
-      const hrTop = hr.current.getBoundingClientRect().top;
+      const hrTop: number = hr.current.getBoundingClientRect().top;
       const onScroll = () => {
         if (hr.current && hrTop - 100 < window.scrollY + window.innerHeight) {
           hr.current.className = "line-scroll"

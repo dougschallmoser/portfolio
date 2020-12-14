@@ -1,7 +1,7 @@
-import { useEffect, useState, FC } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll'
 
-const NavBar: FC = () => {
+const NavBar: React.FC = () => {
 
   const [scrolled, setScrolled] = useState<string>("nav-unscrolled")
 
