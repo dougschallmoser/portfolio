@@ -1,7 +1,7 @@
 import React from 'react';
 import Moment from 'react-moment';
 
-type Props = {
+interface Props {
   data: {
     link: string;
     title: string;
@@ -11,7 +11,6 @@ type Props = {
 }
 
 const BlogItem: React.FC<Props> = ({ data }) => {
-
   return (
     <a href={data.link} target="_blank" rel="noreferrer">
       <div className="blog-item">

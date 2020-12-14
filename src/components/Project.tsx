@@ -4,7 +4,7 @@ import Modal from "react-modal";
 
 Modal.setAppElement("#root");
 
-type Props = {
+interface Props {
   title: string;
   snippet: string;
   youtube: string;

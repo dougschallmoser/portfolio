@@ -1,6 +1,6 @@
 import React from 'react';
 
-type Props = {
+interface Props {
   cssName: string;
   color?: string;
 }
