@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const Quote = ({ id }) => {
+type Props = {
+  id?: string | null;
+}
+
+const Quote: FC<Props> = ({ id }) => {
   return (
     <section id={id || "quote"}>
       <div className="quote-overlay"></div>

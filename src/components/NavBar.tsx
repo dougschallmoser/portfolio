@@ -1,27 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState, FC } from 'react';
 import { Link } from 'react-scroll'
 
-const NavBar = () => {
+const NavBar: FC = () => {
 
-  const [scrolled, setScrolled] = useState("nav-unscrolled")
+  const [scrolled, setScrolled] = useState<string>("nav-unscrolled")
 
   useEffect(() => {
-    const scrollListener = document.addEventListener("scroll", e => {
-      const scrollPosition = document.scrollingElement.scrollTop
-      if (scrollPosition >= 60) {
-        if (scrolled !== "nav-scrolled") {
-          setScrolled("nav-scrolled")
-        }
-      } else {
-        if (scrolled !== "nav-unscrolled") {
-          setScrolled("nav-unscrolled")
+    document.addEventListener("scroll", e => {
+      if (document.scrollingElement) {
+        const scrollPosition: number = document.scrollingElement.scrollTop
+        if (scrollPosition >= 60) {
+          if (scrolled !== "nav-scrolled") {
+            setScrolled("nav-scrolled")
+          }
+        } else {
+          if (scrolled !== "nav-unscrolled") {
+            setScrolled("nav-unscrolled")
+          }
         }
       }
     })
-
-    return () => {
-      document.removeEventListener("scroll", scrollListener)
-    }
   }, [scrolled])
 
   return (

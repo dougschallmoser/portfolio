@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { ReactIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, PostgresIcon, CSSIcon, HTMLIcon, PSIcon } from './SkillsIcons';
 
-const Skills = () => {
+const Skills: FC = () => {
   return (
     <div className="about-icons">
       <div id="about-skills">SKILLS THAT KEEP ME CREATIVE</div>

@@ -1,18 +1,20 @@
 import React from 'react';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 
 const Splash = () => {
 
-  const overlay = React.createRef();
-  const line = React.createRef();
+  const overlay = React.createRef<HTMLDivElement>();
+  const line = React.createRef<HTMLHRElement>();
 
   const handleButtonHover = () => {
-    if (overlay.current.className === "splash-overlay-hover") {
-      overlay.current.className = "splash-overlay"
-      line.current.className = "splash-line"
-    } else {
-      overlay.current.className = "splash-overlay-hover"
-      line.current.className = "splash-line-hover"
+    if (overlay.current && line.current) {
+      if (overlay.current.className === "splash-overlay-hover") {
+        overlay.current.className = "splash-overlay"
+        line.current.className = "splash-line"
+      } else {
+        overlay.current.className = "splash-overlay-hover"
+        line.current.className = "splash-line-hover"
+      }
     }
   }
 

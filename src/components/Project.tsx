@@ -1,13 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, FC } from 'react';
 import { ReactIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, PostgresIcon, CSSIcon, HTMLIcon, PSIcon } from './SkillsIcons';
 import Modal from "react-modal";
 
 Modal.setAppElement("#root");
 
-const Project = ({ title, snippet, youtube, github, live, languages, highlights }) => {
+type Props = {
+  title: string;
+  snippet: string;
+  youtube: string;
+  github: string;
+  live?: string;
+  languages: string[];
+  highlights: string[];
+}
 
-  const overlay = React.createRef();
-  const line = React.createRef();
+const Project: FC<Props> = ({ title, snippet, youtube, github, live, languages, highlights }) => {
+
+  const overlay = React.createRef<HTMLDivElement>();
+  const line = React.createRef<HTMLHRElement>();
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,18 +26,22 @@ const Project = ({ title, snippet, youtube, github, live, languages, highlights 
   }
 
   const handleButtonHoverEnter = () => {
-    if (overlay.current.className === "project-overlay-hover") {
-      overlay.current.className = "project-overlay"
-      line.current.className = "project-line"
-    } else {
-      overlay.current.className = "project-overlay-hover"
-      line.current.className = "project-line-hover"
+    if (overlay.current && line.current) {
+      if (overlay.current.className === "project-overlay-hover") {
+        overlay.current.className = "project-overlay"
+        line.current.className = "project-line"
+      } else {
+        overlay.current.className = "project-overlay-hover"
+        line.current.className = "project-line-hover"
+      }
     }
   }
 
   const handleButtonHoverLeave = () => {
-    overlay.current.className = "project-overlay"
-    line.current.className = "project-line"
+    if (overlay.current && line.current) {
+      overlay.current.className = "project-overlay"
+      line.current.className = "project-line"
+    }
   }
 
   const mapLanguages = () => {

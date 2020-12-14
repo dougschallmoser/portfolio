@@ -1,22 +1,24 @@
-import React, { useRef, useLayoutEffect } from 'react';
+import React, { useRef, useLayoutEffect, FC } from 'react';
 import Project from './Project';
 
-const Projects = () => {
+const Projects: FC = () => {
 
-  const hr = useRef(null);
+  const hr = useRef<HTMLHRElement>(null);
 
   useLayoutEffect(() => {
-    const hrTop = hr.current.getBoundingClientRect().top;
-    const onScroll = () => {
-      if (hrTop - 100 < window.scrollY + window.innerHeight) {
-        hr.current.className = "line-scroll"
-      } else {
-        hr.current.className = "line"
+    if (hr.current) {
+      const hrTop = hr.current.getBoundingClientRect().top;
+      const onScroll = () => {
+        if (hr.current && hrTop - 100 < window.scrollY + window.innerHeight) {
+          hr.current.className = "line-scroll"
+        } else if (hr.current) {
+          hr.current.className = "line"
+        }
       }
+      
+      window.addEventListener('scroll', onScroll)
+      return () => window.removeEventListener('scroll', onScroll)
     }
-    
-    window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
 
   }, [])
 
@@ -55,7 +57,7 @@ const Projects = () => {
         <Project 
           title="PORTFOLIO"
           snippet="SPA for showcasing my personal software developer portfolio" 
-          highlights={["Integrated modern React and JS ES6+ best practices including hooks and arrow functions", "Responsive design with custom styling", "Clean, readable and maintainable code"]}
+          highlights={["Integrated modern React and JS ES6+ best practices including hooks and arrow functions", "Responsive design with custom styling", "Integrated TypeScript", "Clean, readable and maintainable code"]}
           youtube="https://youtube.com/embed/bDkkOsjkGZE"
           github="https://github.com/dougschallmoser/portfolio"
           live="https://www.dougschallmoser.com/"

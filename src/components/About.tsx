@@ -1,22 +1,24 @@
-import React, { useRef, useLayoutEffect } from 'react';
+import React, { useRef, useLayoutEffect, FC } from 'react';
 import Skills from './Skills';
 
-const About = () => {
+const About: FC = () => {
 
-  const hr = useRef(null);
+  const hr = useRef<HTMLHRElement>(null);
 
   useLayoutEffect(() => {
-    const hrTop = hr.current.getBoundingClientRect().top;
-    const onScroll = () => {
-      if (hrTop < window.scrollY + window.innerHeight) {
-        hr.current.className = "line-scroll"
-      } else {
-        hr.current.className = "line"
+    if (hr.current) {
+      const hrTop = hr.current.getBoundingClientRect().top;
+      const onScroll = () => {
+        if (hr.current && hrTop < window.scrollY + window.innerHeight) {
+          hr.current.className = "line-scroll"
+        } else if (hr.current) {
+          hr.current.className = "line"
+        }
       }
+      
+      window.addEventListener('scroll', onScroll)
+      return () => window.removeEventListener('scroll', onScroll)
     }
-    
-    window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
     
   }, [])
 

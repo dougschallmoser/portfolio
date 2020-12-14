@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Moment from 'react-moment';
 
-const BlogItem = ({ data }) => {
+type Props = {
+  data: {
+    link: string;
+    title: string;
+    pubDate: string;
+  };
+  key: string;
+}
+
+const BlogItem: FC<Props> = ({ data }) => {
 
   return (
     <a href={data.link} target="_blank" rel="noreferrer">
