@@ -61,7 +61,7 @@ const Projects: FC = () => {
           youtube="https://youtube.com/embed/bDkkOsjkGZE"
           github="https://github.com/dougschallmoser/portfolio"
           live="https://www.dougschallmoser.com/"
-          languages={["react", "javascript", "css", "html", "ps"]}
+          languages={["react", "typescript", "javascript", "css", "html", "ps"]}
         />
         <Project 
           title="NATPARKREV"

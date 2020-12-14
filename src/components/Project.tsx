@@ -1,5 +1,5 @@
 import React, { useState, FC } from 'react';
-import { ReactIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, PostgresIcon, CSSIcon, HTMLIcon, PSIcon } from './SkillsIcons';
+import { ReactIcon, TSIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, PostgresIcon, CSSIcon, HTMLIcon, PSIcon } from './SkillsIcons';
 import Modal from "react-modal";
 
 Modal.setAppElement("#root");
@@ -49,6 +49,9 @@ const Project: FC<Props> = ({ title, snippet, youtube, github, live, languages, 
       return languages.map(language => {
         if (language === "react") {
           return <ReactIcon key={title + language} cssName="modal-icon" color="#c0a583" />
+        } 
+        if (language === "typescript") {
+          return <TSIcon key={title + language} cssName="modal-icon" color="#c0a583" />
         } 
         if (language === "javascript") {
           return <JSIcon key={title + language} cssName="modal-icon" color="#c0a583" />
