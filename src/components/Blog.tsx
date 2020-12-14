@@ -1,9 +1,15 @@
 import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import BlogItem from './BlogItem';
 
+type Post = {
+  link: string;
+  title: string;
+  pubDate: string;
+}
+
 const Blog: React.FC = () => {
 
-  const [posts, setPosts] = useState<any[]>([])
+  const [posts, setPosts] = useState<Post[]>([])
   const hr = useRef<HTMLHRElement>(null);
 
   useEffect(() => {
