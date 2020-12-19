@@ -312,6 +312,7 @@
 #projects {
   width: 100vw;
   padding-top: 4em;
+  background: #353535;
 }
 
 .projects-grid {
@@ -360,7 +361,7 @@
 
 .project-overlay {
   background: #000;
-  opacity: 0.80;
+  opacity: 0.75;
   width: 100%;
   height: 100%;
   transition: 1s ease;
@@ -369,7 +370,7 @@
 
 .project-overlay-hover {
   background: #c0a583;
-  opacity: 0.97;
+  opacity: 0.95;
   width: 100%;
   height: 100%;
   transition: 1s ease;
@@ -401,7 +402,7 @@
   text-align: center;
 }
 
-#contact-header {
+#contact-header, #projects-header {
   color: #fff;
 }
 
