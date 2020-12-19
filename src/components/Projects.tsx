@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
         <Project 
           title="GASTROPODA"
           snippet="Social SPA literary magazine for showcasing, submitting, and interacting with unique short stories" 
-          highlights={["Front-end fully built with modern Object-Oriented JavaScript, arrow functions, and custom CSS", "Integrated user interaction features including comment and like functionality", "Utilized AJAX requests, followed MVC paradigm, and implemented RESTful conventions"]}
+          highlights={["Front-end fully built with modern Object-Oriented JavaScript, arrow functions, and custom CSS", "Integrated user interaction features including liking, commenting, and searching", "Utilized AJAX requests, followed MVC paradigm, and implemented RESTful conventions"]}
           youtube="https://youtube.com/embed/5GDocLklNW0"
           github="https://github.com/dougschallmoser/gastropoda"
           live="https://gastropoda.netlify.app/"
