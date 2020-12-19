@@ -241,7 +241,7 @@
   line-height: 2em;
   font-family: 'Inconsolata', monospace;
   font-size: 18px;
-  color: #929396;
+  color: #353535;
   margin-bottom: 1em;
   text-align: justify;
 }
@@ -273,7 +273,7 @@
   margin-top: 1%;
   transition: 0.5s ease;
   font-size: 14px;
-  color: #999999;
+  color: #353535;
 }
 
 .contact-icon {
@@ -483,7 +483,7 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   width: 100vw;
-  height: 25vh;
+  height: 35vh;
 }
 
 #quote2 {
@@ -496,7 +496,7 @@
   background-position: left;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 25vh;
+  height: 35vh;
 }
 
 .quote-overlay {
@@ -692,6 +692,10 @@
 
   #quote, #quote2 {
     height: 8vh;
+  }
+
+  .quote-overlay {
+    display: none;
   }
 }
 
