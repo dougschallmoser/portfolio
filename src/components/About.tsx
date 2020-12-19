@@ -24,7 +24,7 @@ const About: React.FC = () => {
 
   return (
     <section id="about">
-      <div id="blog-header">MY STORY</div>
+      <div id="projects-header">MY STORY</div>
       <hr ref={hr} className="line" />
       <div className="about-content">
         <div id="about-mystory">
