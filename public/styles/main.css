@@ -118,19 +118,17 @@
 }
 
 #splash {
-  background: #000;
-  background: url(../splash.jpg) no-repeat center center fixed; 
+  background-image: url(../splash.jpg);
+  background-repeat: no-repeat;
+  background-position: none;
+  background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -webkit-background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
-  position: relative;
   animation: shrink 5s infinite alternate;
   -webkit-animation: shrink 5s infinite alternate;
   -moz-animation: shrink 5s infinite alternate;
@@ -312,16 +310,21 @@
 #projects {
   width: 100vw;
   padding-top: 4em;
+  padding-bottom: 15em;
   background: #353535;
 }
 
 .projects-grid {
+  margin: auto 8%;
   padding-top: 3em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5%;
 }
 
 .project-item {
+  border-radius: 10px;
+  border: 1px solid #c0a583;
   cursor: pointer;
   position: relative;
   width: 100%;
@@ -338,7 +341,7 @@
   color: #fff;
   font-size: 2.2em;
   text-align: center;
-  width: 75%;
+  width: 85%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -347,7 +350,6 @@
 }
 
 .project-title {
-  font-size: 1.2em;
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
@@ -360,6 +362,7 @@
 }
 
 .project-overlay {
+  border-radius: 10px;
   background: #000;
   opacity: 0.75;
   width: 100%;
@@ -369,6 +372,7 @@
 }
 
 .project-overlay-hover {
+  border-radius: 10px;
   background: #c0a583;
   opacity: 0.95;
   width: 100%;
@@ -575,6 +579,7 @@
 
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
+    margin: auto 5%;
   }
 
   .blog-grid {
@@ -594,8 +599,10 @@
 }
 
 @media screen and (max-width: 800px) {
+
   .projects-grid {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2em;
   }
 
   .blog-item {
@@ -647,11 +654,6 @@
 
   .project-text {
     width: 90%;
-  }
-
-  .project-overlay {
-    border-top: 1px solid#fff;
-    border-bottom: 1px solid #fff;
   }
 
   #about-mystory {
