@@ -334,6 +334,12 @@
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 15px;
+  transition: 1s ease;
+}
+
+.project-item:hover {
+  transform: scale(1.10);
+  transition: 1s ease;
 }
 
 .project-text {
