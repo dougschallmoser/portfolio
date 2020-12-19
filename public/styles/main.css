@@ -433,17 +433,18 @@
   width: 100%;
   height: 16em;
   background: #fff;
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 
 .blog-item:hover {
   background: #c0a583;
+  box-shadow: #e0c099 0px 3px 30px;
 }
 
 .blog-item:hover .blog-content .blog-title,
 .blog-item:hover .blog-content .blog-date time {
   color: #fff;
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 
 .blog-content {
