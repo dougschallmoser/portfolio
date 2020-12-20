@@ -57,9 +57,6 @@ const Contact: React.FC = () => {
           Instagram
         </a>
       </div>
-      <div id="copyright">
-      Copyright © 2020 Doug Schallmoser
-      </div>
     </section>
   )
 }
