@@ -16,7 +16,6 @@ const App: React.FC = () => {
       <Quote id="quote2" />
       <Projects />
       <Blog />
-      <Quote />
       <Contact />
     </>
   )
