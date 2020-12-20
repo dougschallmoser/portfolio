@@ -382,7 +382,7 @@
   opacity: 0.75;
   width: 100%;
   height: 100%;
-  transition: 1s ease;
+  transition: 2s ease;
 }
 
 .photography {
@@ -572,6 +572,7 @@
 
 #copyright {
   background: #c0a583;
+  color: #fff;
   width: 100%;
   text-align: center;
   padding: 1em 0;
