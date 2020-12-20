@@ -1,13 +1,12 @@
 import React from 'react';
 
-type Props = {
-  id?: string | null;
-}
-
-const Quote: React.FC<Props> = ({ id }) => {
+const Quote: React.FC = () => {
   return (
-    <section id={id || "quote"}>
+    <section id="quote">
       <div className="quote-overlay"></div>
+      <div id="copyright">
+      Copyright © 2020 Doug Schallmoser
+      </div>
     </section>
   )
 }
