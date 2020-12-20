@@ -258,7 +258,7 @@
 
 .contact-icons a {
   text-decoration: none;
-  color: #fff;
+  color: #c0a583;
 }
 
 .about-icon,
@@ -276,10 +276,7 @@
 
 .contact-icon {
   cursor: pointer;
-}
-
-.contact-icon:hover {
-  color: #c0a583;
+  
 }
 
 .contact-icon:not(:last-child) {
@@ -312,6 +309,10 @@
   padding-top: 4em;
   padding-bottom: 15em;
   background: #fff;
+}
+
+section:nth-child(6) {
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
 }
 
 .projects-grid {
@@ -396,8 +397,8 @@
   width: 100vw;
   position: relative;
   background: #353535;
-  padding-top: 4em;
-  padding-bottom: 2em;
+  padding-top: 10em;
+  padding-bottom: 10em;
 }
 
 #blog-header,
@@ -411,7 +412,7 @@
   text-align: center;
 }
 
-#contact-header, #blog-header {
+#blog-header {
   color: #fff;
 }
 
@@ -474,7 +475,7 @@
 
 #contact {
   position: relative;
-  background: #353535;
+  background: #fff;
   width: 100vw;
   padding-top: 6em;
 }
@@ -607,6 +608,10 @@
 
 @media screen and (max-width: 800px) {
 
+  #projects {
+    padding-bottom: 4em;
+  }
+
   .projects-grid {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2em;
@@ -671,6 +676,15 @@
   #about-skills {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
+  }
+
+  section:nth-child(6) {
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  }
+
+  #blog {
+    padding-top: 6em;
+    padding-bottom: 6em;
   }
 
   #blog-header, 
