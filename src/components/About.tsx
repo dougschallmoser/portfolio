@@ -1,5 +1,4 @@
 import React, { useRef, useLayoutEffect } from 'react';
-import Skills from './Skills';
 
 const About: React.FC = () => {
 
@@ -45,7 +44,6 @@ const About: React.FC = () => {
         <p>
         I am continuing my personal education efforts by building new projects and adding to my software knowledge base. My passion for coding combined with my technical background in engineering provides me with a unique skillset and perspective on problem-solving in this vast world of technology and programming.
         </p>
-        <Skills />
       </div>
     </section>
   )
