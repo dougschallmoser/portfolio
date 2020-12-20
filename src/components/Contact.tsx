@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
     if (hr.current) {
       const hrTop: number = hr.current.getBoundingClientRect().top;
       const onScroll = () => {
-        if (hr.current && hrTop < window.scrollY + window.innerHeight) {
+        if (hr.current && hrTop + 200 < window.scrollY + window.innerHeight) {
           hr.current.className = "line-scroll"
         } else if (hr.current) {
           hr.current.className = "line"
