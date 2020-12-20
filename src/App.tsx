@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from './components/NavBar';
 import Splash from './components/Splash';
 import About from './components/About';
+import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
@@ -13,10 +14,11 @@ const App: React.FC = () => {
       <NavBar />
       <Splash />
       <About />
-      <Quote id="quote2" />
+      <Skills />
       <Projects />
       <Blog />
       <Contact />
+      <Quote />
     </>
   )
 }
