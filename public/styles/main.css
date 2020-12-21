@@ -291,13 +291,25 @@
   margin-right: 2.2em;
 }
 
+#about-mystory-container {
+  display: flex;
+}
+
 #about-mystory {
-  font-size: 36px;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  flex: 1;
+  font-size: 26px;
   line-height: 1.2em;
   font-weight: 500;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#about-mystory p {
+  margin-top: 0.5em;
+}
+
+#about-mystory:not(:last-child) {
+  padding-right: 1.5em;
 }
 
 #about-skills {
@@ -307,6 +319,7 @@
   font-weight: 500;
   text-align: center;
   color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 #projects {
@@ -333,7 +346,7 @@ section:nth-child(6) {
   padding-top: 3em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5%;
+  grid-gap: 5% 2%;
 }
 
 .project-item {
@@ -371,7 +384,6 @@ section:nth-child(6) {
 .project-title {
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .project-text p {
@@ -379,7 +391,6 @@ section:nth-child(6) {
   line-height: 1.5em;
   color: #fff;
   font-weight: 300;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .project-overlay {
@@ -397,13 +408,6 @@ section:nth-child(6) {
   width: 100%;
   height: 100%;
   transition: 2s ease;
-}
-
-.photography {
-  width: 100vw;
-  height: 60vh;
-  position: relative;
-  background: #353535;
 }
 
 #blog, #skills {
@@ -451,7 +455,7 @@ section:nth-child(6) {
   cursor: pointer;
   position: relative;
   width: 100%;
-  height: 16em;
+  height: 14em;
   background: #fff;
   transition: 0.5s ease;
 }
@@ -667,13 +671,19 @@ section:nth-child(6) {
     width: 90%;
   }
 
+  #about-mystory-container {
+    display: block;
+  }
+
+  #about-mystory:not(:last-child) {
+    padding-right: 0;
+  }
+
   #about-mystory {
-    font-family: 'Roboto', sans-serif;
     font-size: 24px;
   }
   
   #about-skills {
-    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     padding-bottom: 25px;
   }
