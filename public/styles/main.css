@@ -258,16 +258,14 @@
 
 .contact-icons a {
   text-decoration: none;
-  color: #c0a583;
-  border: 3px solid #c0a583;
+  color: #fff;
   padding: 26px 36px;
   border-radius: 50%;
+  background:#c0a583;
 }
 
 .contact-icons a:hover {
-  border: 1px solid #353535;
-  background: #353535;
-  color: #fff;
+  background:#353535;
 }
 
 .about-icon,
