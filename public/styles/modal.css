@@ -21,7 +21,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.58);
 }
 
 .modal-close {
@@ -73,7 +73,7 @@
 .modal-title {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 2em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
   text-align: center;
 }
 

@@ -259,6 +259,15 @@
 .contact-icons a {
   text-decoration: none;
   color: #c0a583;
+  border: 3px solid #c0a583;
+  padding: 26px 36px;
+  border-radius: 50%;
+}
+
+.contact-icons a:hover {
+  border: 1px solid #353535;
+  background: #353535;
+  color: #fff;
 }
 
 .about-icon,
@@ -284,7 +293,8 @@
 }
 
 .contact-icon:not(:last-child) {
-  margin-right: 4em; 
+  margin-right: 2em; 
+  margin-bottom: 1em;
 }
 
 .about-icon:not(:last-child) {
@@ -645,6 +655,10 @@ section:nth-child(6) {
   .contact-icon {
     width: 48px;
     font-size: 0.8em;
+  }
+
+  .contact-icons a {
+    padding: 16px 26px;
   }
 
   .contact-icon:not(:last-child) {
