@@ -26,61 +26,61 @@
 
 @keyframes shrink {
   0% {
-    background-size: 110% 110%;
+    transform: scale(3,3);
   }
   100% {
-    background-size: 100% 100%;
+    transform: scale(1,1);
   }
 }
 @-webkit-keyframes shrink {
   0% {
-    background-size: 110% 110%;
+    transform: scale(3,3);
   }
   100% {
-    background-size: 100% 100%;
+    transform: scale(1,1);
   }
 }
 
 @-moz-keyframes shrink {
   0% {
-    background-size: 110% 110%;
+    transform: scale(3,3);
   }
   100% {
-    background-size: 100% 100%;
+    transform: scale(1,1);
   }
 }
 
 @-o-keyframes shrink {
   0% {
-    background-size: 110% 110%;
+    transform: scale(3,3);
   }
   100% {
-    background-size: 100% 100%;
+    transform: scale(1,1);
   }
 }
 
 
 @keyframes fadeInOverlay {
   0% {opacity:0.95;}
-  100% {opacity:0.3;}
+  100% {opacity:0.25;}
 }
 
 @-moz-keyframes fadeInOverlay {
   0% {opacity:0.95;}
-  100% {opacity:0.3;}
+  100% {opacity:0.25;}
 }
 
 @-webkit-keyframes fadeInOverlay {
   0% {opacity:0.95;}
-  100% {opacity:0.3;}
+  100% {opacity:0.25;}
 }
 
 @-o-keyframes fadeInOverlay {
   0% {opacity:0.95;}
-  100% {opacity:0.3;}
+  100% {opacity:0.25;}
 }
 
 @-ms-keyframes fadeInOverlay {
   0% {opacity:0.95;}
-  100% {opacity:0.3;}
+  100% {opacity:0.25;}
 }

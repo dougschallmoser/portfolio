@@ -117,27 +117,35 @@
   transform-origin: bottom left;
 }
 
+#splash-container {
+  width: 100vw;
+  height: 120vh;
+}
+
 #splash {
   background-image: url(../splash.jpg);
   background-repeat: no-repeat;
-  background-position: none;
-  background-attachment: fixed;
+  background-position: 100%;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -webkit-background-size: cover;
-  width: 100vw;
-  height: 130vh;
-  animation: shrink 5s infinite alternate;
-  -webkit-animation: shrink 5s infinite alternate;
-  -moz-animation: shrink 5s infinite alternate;
-  -o-animation: shrink 5s infinite alternate;
+  height: 100%;
+  transform: scale(1);
+  animation: shrink 5s 1 alternate;
+  -webkit-animation: shrink 5s 1 alternate;
+  -moz-animation: shrink 5s 1 alternate;
+  -o-animation: shrink 5s 1 alternate;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
 }
 
 .splash-overlay {
   background: #000;
-  opacity: 0.30;
+  opacity: 0.25;
   width: 100%;
   height: 100%;
   transition: 1s ease;
@@ -156,7 +164,7 @@
   text-align: center;
   width: 90%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
