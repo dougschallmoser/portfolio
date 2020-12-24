@@ -744,7 +744,7 @@ section:nth-child(6) {
   }
 
   #splash {
-    background-attachment: scroll;
+    background-position: 75%;
   }
 
   #quote {
