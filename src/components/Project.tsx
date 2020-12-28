@@ -97,7 +97,7 @@ const Project: React.FC<Props> = ({ title, snippet, youtube, github, live, langu
           <hr ref={line} className="project-line"/>
           <p>{snippet}</p>
         </div>
-        <div ref={overlay} className="project-overlay"></div>
+        <div ref={overlay} className="project-overlay" />
       </div>
 
       <Modal
