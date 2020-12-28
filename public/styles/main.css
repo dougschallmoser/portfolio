@@ -273,6 +273,7 @@
 
 .contact-icons a:hover {
   background:#353535;
+  border-radius: 0;
 }
 
 .about-icon,
@@ -533,7 +534,7 @@ section:nth-child(6) {
   background-position: left;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 40vh;
+  height: 30vh;
   margin-top: 25px;
 }
 
@@ -588,6 +589,7 @@ section:nth-child(6) {
   background: #c0a583;
   width: 0px;
   transition: 3s ease;
+  visibility: hidden;
 }
 
 .line-scroll {
