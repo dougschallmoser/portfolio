@@ -25,9 +25,10 @@ const NavBar: React.FC = () => {
   return (
     <section className="nav">
       <div className={scrolled}>
-        <div className="navlogo">
+        {scrolled === 'nav-scrolled' && <div className="navlogo">
           <Link to="splash" smooth={true}>DOUG SCHALLMOSER</Link>
         </div>
+        }
         <div className="navlinks">
           <Link to="contact" smooth={true} offset={-58}>Contact</Link>
           <Link to="blog" smooth={true} offset={-58}>Blog</Link>
