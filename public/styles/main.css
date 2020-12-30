@@ -385,13 +385,15 @@ section:nth-child(6) {
 
 .project-text {
   color: #fff;
-  font-size: 2.2em;
+  font-size: 2em;
   text-align: center;
   width: 85%;
   position: absolute;
-  top: 50%;
+  top: 22%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 4px 10px;
+  border: 2px solid transparent;
+  transform: translate(-50%);
   z-index: 1;
 }
 
