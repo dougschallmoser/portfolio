@@ -762,6 +762,7 @@ section:nth-child(6) {
 
   #splash {
     background-position: 75%;
+    background-attachment: scroll;
   }
 
   #quote {
