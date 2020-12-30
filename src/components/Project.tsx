@@ -95,13 +95,13 @@ const Project: React.FC<Props> = ({ title, snippet, youtube, github, live, langu
         onMouseLeave={handleButtonHoverLeave} 
         style ={ { backgroundImage: `url('./images/${title}.jpg')` } }
       >
-        <div className="project-text" style={displayLang ? {background: "#353535", border: "2px solid #c0a583", padding: "4px 10px", animation: "fadeIn 0.5s"} : {background: "none"}}>
+        <div className="project-text" style={displayLang ? {background: "#353535", border: "2px solid #c0a583", padding: "4px 10px"} : {background: "none"}}>
           <div className="project-title">{title}</div>
           <hr ref={line} className="project-line"/>
           <p>{snippet}</p>
         </div>
           {displayLang ? 
-            <div id="hidden-languages" style={{ animation: "fadeIn 0.5s" }}>
+            <div id="hidden-languages">
               {languages[0]} {`${languages[1] ? '/' : ''}`} {languages[1]}
             </div> : null
           }
