@@ -268,12 +268,11 @@
   color: #fff;
   padding: 26px 36px;
   border-radius: 50%;
-  background:#c0a583;
+  background:#c4c4c4;
 }
 
 .contact-icons a:hover {
-  background:#353535;
-  border-radius: 0;
+  background:#c0a583;
 }
 
 .about-icon,
@@ -636,6 +635,10 @@ section:nth-child(6) {
   .about-content {
     margin: 5% 10%;
   }
+
+  #hidden-languages {
+    font-size: 1em;
+  }
   
 }
 
@@ -670,11 +673,16 @@ section:nth-child(6) {
 
   .contact-icon {
     width: 48px;
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
 
   .contact-icons a {
-    padding: 16px 26px;
+    padding: 14px 20px;
+    background:#c0a583;
+  }
+
+  .contact-icons a:hover {
+    background:#353535;
   }
 
   .contact-icon:not(:last-child) {
