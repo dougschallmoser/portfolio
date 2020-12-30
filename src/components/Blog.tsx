@@ -11,7 +11,6 @@ const Blog: React.FC = () => {
 
   const [posts, setPosts] = useState<Post[]>([])
   const hr = useRef<HTMLHRElement>(null);
-  console.log(posts)
 
   useEffect(() => {
     fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@dougschallmoser')
