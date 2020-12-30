@@ -183,9 +183,9 @@
 }
 
 .splash-bio {
+  font-family: 'Playfair Display', serif;
   color: #fff;
-  font-size: 2.5em;
-  font-weight: 300;
+  font-size: 2em;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   animation: fadeIn ease 2s;
   animation-fill-mode: forwards;
@@ -194,7 +194,7 @@
 }
 
 .splash-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
   color: #fff;
 }
 
@@ -266,7 +266,7 @@
 .contact-icons a {
   text-decoration: none;
   color: #fff;
-  padding: 26px 36px;
+  padding: 24px 36px;
   border-radius: 50%;
   background:#c4c4c4;
 }
@@ -278,7 +278,7 @@
 .about-icon,
 .contact-icon {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   display: inline-block;
   width: 60px;
@@ -316,7 +316,7 @@
   line-height: 1.2em;
   font-weight: 500;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 #about-mystory p {
@@ -399,10 +399,11 @@ section:nth-child(6) {
 
 .project-title {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .project-text p {
+  font-family: 'Playfair Display', serif;
   font-size: 0.7em;
   line-height: 1.5em;
   color: #fff;
@@ -422,7 +423,7 @@ section:nth-child(6) {
 }
 
 .project-overlay {
-  background: rgb(184, 159, 120, 0.95);
+  background: #c0a583f1;
   width: 100%;
   height: 100%;
   transition: 0.5s ease;
@@ -700,7 +701,7 @@ section:nth-child(6) {
   }
   
   .splash-bio {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   
   .splash-button a {
