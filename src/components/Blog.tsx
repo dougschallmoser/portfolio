@@ -11,6 +11,7 @@ const Blog: React.FC = () => {
 
   const [posts, setPosts] = useState<Post[]>([])
   const hr = useRef<HTMLHRElement>(null);
+  console.log(posts)
 
   useEffect(() => {
     fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@dougschallmoser')
@@ -42,7 +43,7 @@ const Blog: React.FC = () => {
       <div id="blog-header">RECENT BLOG POSTS</div>
       <hr ref={hr} />
       <div className="blog-grid">
-        {posts.slice(0, 4).map(post => <BlogItem data={post} key={post.pubDate} />)}
+        {posts.slice(0, 8).map(post => <BlogItem data={post} key={post.pubDate} />)}
       </div>
     </section>
   )
