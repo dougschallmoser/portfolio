@@ -293,7 +293,90 @@
 
 .contact-icon {
   cursor: pointer;
-  
+}
+
+#contact-form {
+  font-size: 1.2em;
+  border-radius: 12px;
+  padding: 2%;
+  margin: 5% auto;
+  text-align: center;
+  width: 450px;
+  opacity: 0.5;
+  background: #c0a583;
+  transition: 2s;
+}
+
+#contact-form:hover {
+  background: #c0a583;
+  opacity: 1;
+}
+
+#contact-form p {
+  margin-bottom: 5%;
+  font-size: 2em;
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#contact-form input[type="text"] {
+  font-size: 1em;
+  padding: 2% 2%;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contact-form input[type="text"]:hover {
+  background: rgb(255, 241, 216);
+}
+
+#contact-form input[type="text"]:focus,
+#contact-form input[type="submit"]:focus,
+#contact-message:focus {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color:#353535;
+  background: #ffead1;
+}
+
+#contact-form input[type="submit"] {
+  font-size: 1em;
+  cursor: pointer;
+  background: #fff;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  padding: 2% 4%;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+#contact-form input[type="submit"]:hover {
+  border: 1px solid #fff;
+  background: #ffead1;
+}
+
+#contact-form div {
+  color: #fff;
+  margin-bottom: 3%;
+}
+
+#contact-message {
+  padding: 2% 2%;
+  font-size: 1em;
+  margin-top: 1%;
+  height: 100px;
+  text-align: top;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contact-message:hover {
+  background: rgb(255, 241, 216);
 }
 
 .contact-icon:not(:last-child) {
@@ -647,6 +730,12 @@ section:nth-child(6) {
 
 @media screen and (max-width: 800px) {
 
+  #contact-form {
+    width: 90vw;
+    margin-top: 10%;
+    opacity: 1;
+  }
+
   #projects {
     padding-bottom: 4em;
   }
@@ -730,11 +819,11 @@ section:nth-child(6) {
   }
 
   section:nth-child(4) {
-    clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0 95%);
+    clip-path: polygon(0 0%, 100% 3%, 100% 100%, 0 97%);
   }
 
   section:nth-child(6) {
-    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
   }
 
   #blog {
