@@ -1,4 +1,5 @@
 import React, { useRef, useLayoutEffect } from 'react';
+import ContactForm from './ContactForm';
 
 const Contact: React.FC = () => {
 
@@ -23,8 +24,9 @@ const Contact: React.FC = () => {
 
   return (
     <section id="contact">
-      <div id="contact-header">REACH OUT TO ME</div>
+      <div id="contact-header">REACH OUT</div>
       <hr ref={hr} className="line" />
+      <ContactForm />
       <div className="contact-icons">
         <a href="mailto:dougschallmoser@gmail.com" target="_blank" rel="noreferrer" className="contact-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
