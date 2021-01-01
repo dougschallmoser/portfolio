@@ -60,6 +60,7 @@
   position: relative;
   height: 0;
   margin: 2em 0.5em 2em 1em;
+  font-family: 'Karla', sans-serif;
 }
 
 .video {
@@ -86,6 +87,7 @@
 .modal-languages p {
   text-align: center;
   margin-bottom: 0.5em;
+  font-family: 'Karla', sans-serif;
 }
 
 .modal-icon {
