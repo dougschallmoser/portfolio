@@ -60,7 +60,7 @@ const ContactForm: React.FC = () => {
         <div style={{textAlign: 'left', marginBottom: '0.2em' }}>Message:</div>
           <textarea id="contact-message" name="message" value={message} onChange={handleChange} />
         </div>
-        {name && email && subject && message && <input type="submit" value="Send" /> }
+        {name && email && email.includes("@") && subject && message && <input type="submit" value="Send" /> }
       </form>
     )
   }
