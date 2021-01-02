@@ -272,6 +272,14 @@
 
 .contact-icons a:hover {
   background:#c0a583;
+  animation: beat 1s 1 alternate;
+  -webkit-animation: beat 1s 1 alternate;
+  -moz-animation: beat 1s 1 alternate;
+  -o-animation: beat 1s 1 alternate;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
 }
 
 .about-icon,
