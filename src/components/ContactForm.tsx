@@ -3,7 +3,14 @@ import * as emailjs from 'emailjs-com';
 
 const ContactForm: React.FC = () => {
 
-  const [inputValues, setInputValues] = useState({
+  interface Form {
+    name: string,
+    email: string,
+    subject: string,
+    message: string
+  }
+
+  const [inputValues, setInputValues] = useState<Form>({
     name: '',
     email: '',
     subject: '',
@@ -45,19 +52,19 @@ const ContactForm: React.FC = () => {
     return (
       <form onSubmit={handleSubmit}>
         <div>
-          <div style={{textAlign: 'left', marginBottom: '0.2em' }}>Name:</div>
+          <span>Name:</span>
           <input type="text" name="name" value={name} onChange={handleChange} />
         </div>
         <div>
-        <div style={{textAlign: 'left', marginBottom: '0.2em' }}>Email:</div>
+        <span>Email:</span>
           <input type="text" name="email" value={email} onChange={handleChange} />
         </div>
         <div>
-        <div style={{textAlign: 'left', marginBottom: '0.2em' }}>Subject:</div>
+        <span>Subject:</span>
           <input type="text" name="subject" value={subject} onChange={handleChange} />
         </div>
         <div>
-        <div style={{textAlign: 'left', marginBottom: '0.2em' }}>Message:</div>
+        <span>Message:</span>
           <textarea id="contact-message" name="message" value={message} onChange={handleChange} />
         </div>
         {name && email && email.includes("@") && subject && message && <input type="submit" value="Send" /> }
