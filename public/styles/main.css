@@ -366,9 +366,15 @@
   background: #ffead1;
 }
 
-#contact-form div {
+#contact-form  span {
+  text-align: left;
   color: #fff;
-  margin-bottom: 3%;
+}
+
+#contact-form form div {
+  text-align: left;
+  color: #fff;
+  margin-bottom: 2%;
   font-family: 'Karla', sans-serif;
   font-size: 0.9em;
 }
