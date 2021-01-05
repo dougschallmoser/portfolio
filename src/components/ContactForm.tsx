@@ -69,9 +69,9 @@ const ContactForm: React.FC = () => {
     <div id="contact-form">
       {sent ? null : <p>Send me a message!</p>}
       {sent ? (
-        <div>
-          <div style={{ fontSize: "2em" }}>Thank you for the message!</div>
-          <div style={{ fontSize: "1.5em" }}>I will get back to you as soon as I can.</div>
+        <div id="contact-form-success">
+          <div style={{ fontSize: "2em", color: "#fff" }}>Thank you for the message!</div>
+          <div style={{ fontSize: "1.5em", color: "#fff" }}>I will get back to you soon.</div>
         </div>) : renderForm()
       }
     </div>
