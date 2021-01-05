@@ -52,19 +52,19 @@ const ContactForm: React.FC = () => {
     return (
       <form onSubmit={handleSubmit}>
         <div>
-          <span>Name:</span>
+          <span>Name*</span>
           <input type="text" name="name" value={name} onChange={handleChange} />
         </div>
         <div>
-        <span>Email:</span>
+        <span>Email*</span>
           <input type="text" name="email" value={email} onChange={handleChange} />
         </div>
         <div>
-        <span>Subject:</span>
+        <span>Subject*</span>
           <input type="text" name="subject" value={subject} onChange={handleChange} />
         </div>
         <div>
-        <span>Message:</span>
+        <span>Message*</span>
           <textarea id="contact-message" name="message" value={message} onChange={handleChange} />
         </div>
         {name && email && email.includes("@") && subject && message && <input type="submit" value="Send" /> }
