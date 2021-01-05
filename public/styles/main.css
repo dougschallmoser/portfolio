@@ -212,9 +212,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background: none;
-  padding: 10px 30px;
   text-decoration: none;
   color: #fff;
+  padding: 10px 30px;
   border-radius: 20px;
   border: 2px solid #fff;
   transition: 0.5s ease;
@@ -233,8 +233,7 @@
 }
 
 .about-content {
-  margin: 5% 20%;
-  margin-top: 0;
+  margin: 3% 20% 5% 20%;
   position: relative;
 }
 
@@ -244,6 +243,27 @@
   color: #353535;
   margin-bottom: 1em;
   text-align: justify;
+}
+
+#about-more {
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 1px solid #353535;
+  margin-top: 1%;
+  color: #353535;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: 0.5s ease;
+}
+
+#about-more:hover {
+  color: #c0a583;
+  border: 1px solid #c0a583;
 }
 
 .about-icons,
