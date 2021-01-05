@@ -30,10 +30,10 @@ const NavBar: React.FC = () => {
         </div>
         }
         <div className="navlinks">
-          <Link to="contact" smooth={true} offset={-58}>Contact</Link>
-          <Link to="blog" smooth={true} offset={-58}>Blog</Link>
-          <Link to="projects" smooth={true} offset={-58}>Projects</Link>
-          <Link to="about" smooth={true} offset={-58}>About</Link>
+          <Link to="contact" smooth={true} offset={-58}>CONTACT</Link>
+          <Link to="blog" smooth={true} offset={-58}>BLOG</Link>
+          <Link to="projects" smooth={true} offset={-58}>PROJECTS</Link>
+          <Link to="about" smooth={true} offset={-58}>ABOUT</Link>
         </div>
       </div>
     </section>
