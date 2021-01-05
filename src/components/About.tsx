@@ -36,7 +36,7 @@ const About: React.FC = () => {
         </p>
         {!clicked && <div id="about-more" onClick={handleClick}>READ MORE</div>}
         {clicked ? 
-          <>
+          <div id="about-more-content">
             <div id="about-mystory-container">
               <div id="about-mystory">
                 CIVIL ENGINEER
@@ -55,7 +55,7 @@ const About: React.FC = () => {
             <p>
             I am continuing my personal education efforts by building new projects and adding to my software knowledge base. My passion for coding combined with my technical background in engineering provides me with a unique skillset and perspective on problem-solving in this vast world of technology and programming.
             </p>
-          </>
+          </div>
         : null }
       </div>
     </section>
