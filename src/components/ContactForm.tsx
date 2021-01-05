@@ -6,14 +6,12 @@ const ContactForm: React.FC = () => {
   interface Form {
     name: string,
     email: string,
-    subject: string,
     message: string
   }
 
   const [inputValues, setInputValues] = useState<Form>({
     name: '',
     email: '',
-    subject: '',
     message: '',
   })
 
@@ -21,11 +19,10 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const { name, email, subject, message } = inputValues;
+    const { name, email, message } = inputValues;
     const templateParams = {
       from_name: name,
       from_email: email,
-      subject,
       message,
     };
     emailjs.send(
@@ -47,7 +44,7 @@ const ContactForm: React.FC = () => {
 
   const renderForm = () => {
     
-    const { name, email, subject, message } = inputValues;
+    const { name, email, message } = inputValues;
 
     return (
       <form onSubmit={handleSubmit}>
@@ -60,14 +57,10 @@ const ContactForm: React.FC = () => {
           <input type="text" name="email" value={email} onChange={handleChange} />
         </div>
         <div>
-        <span>Subject*</span>
-          <input type="text" name="subject" value={subject} onChange={handleChange} />
-        </div>
-        <div>
         <span>Message*</span>
           <textarea id="contact-message" name="message" value={message} onChange={handleChange} />
         </div>
-        {name && email && email.includes("@") && subject && message && <input type="submit" value="Send" /> }
+        {name && email && email.includes("@") && message && <input type="submit" value="Send" /> }
       </form>
     )
   }
