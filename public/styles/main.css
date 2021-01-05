@@ -266,6 +266,11 @@
   border: 1px solid #c0a583;
 }
 
+#about-more-content {
+  animation: fadeIn ease 1s;
+  animation-fill-mode: forwards;
+}
+
 .about-icons,
 .contact-icons {
   margin: 30px 0 15px 0;
@@ -388,6 +393,11 @@
 
 #contact-form form div:hover {
   background: rgb(255, 243, 211);
+}
+
+#contact-form-success {
+  animation: fadeIn ease 1s;
+  animation-fill-mode: forwards;
 }
 
 #contact-message {
