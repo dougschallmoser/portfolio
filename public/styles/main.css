@@ -25,7 +25,6 @@
 .nav-scrolled {
   padding-top: 12px;
   background: #fff;
-  color: #929396;
   height: 58px;
   box-shadow: 0px 1px 1px rgba(0,0,0,0.15);
   transition: 1s ease;
@@ -88,7 +87,7 @@
 }
 
 .nav-scrolled .navlinks a {
-  color: #929396;
+  color: #353535;
 }
 
 .nav-unscrolled .navlinks a:hover,
@@ -330,19 +329,17 @@
   border: 1px solid transparent;
   width: 100%;
   box-sizing: border-box;
+  background: transparent;
 }
 
-#contact-form input[type="text"]:hover {
+/* #contact-form input[type="text"]:hover {
   background: rgb(255, 241, 216);
-}
+} */
 
 #contact-form input[type="text"]:focus,
 #contact-form input[type="submit"]:focus,
 #contact-message:focus {
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color:#353535;
-  background: #ffead1;
+  outline-style: none
 }
 
 #contact-form input[type="submit"] {
@@ -356,21 +353,21 @@
   border: 1px solid transparent;
 }
 
-#contact-form input[type="submit"]:hover {
-  border: 1px solid #fff;
-  background: #ffead1;
-}
-
 #contact-form  span {
   text-align: left;
-  color: #fff;
+  color: rgb(138, 128, 128);
 }
 
 #contact-form form div {
+  padding: 2% 4%;
+  background: #fff;
   text-align: left;
-  color: #fff;
   margin-bottom: 2%;
   font-size: 0.9em;
+}
+
+#contact-form form div:hover {
+  background: rgb(255, 243, 211);
 }
 
 #contact-message {
@@ -383,11 +380,12 @@
   resize: none;
   width: 100%;
   box-sizing: border-box;
+  background: transparent;
 }
 
-#contact-message:hover {
+/* #contact-message:hover {
   background: rgb(255, 241, 216);
-}
+} */
 
 .contact-icon:not(:last-child) {
   margin-right: 2em; 
