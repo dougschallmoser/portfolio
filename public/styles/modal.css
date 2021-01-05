@@ -60,7 +60,6 @@
   position: relative;
   height: 0;
   margin: 2em 0.5em 2em 1em;
-  font-family: 'Karla', sans-serif;
 }
 
 .video {
@@ -87,12 +86,10 @@
 .modal-languages p {
   text-align: center;
   margin-bottom: 0.5em;
-  font-family: 'Karla', sans-serif;
 }
 
 .modal-icon {
   text-align: center;
-  font-family: 'Karla', sans-serif;
   font-weight: 400;
   display: inline-block;
   width: 3vw;
@@ -114,6 +111,7 @@
 }
 
 .view-code {
+  font-size: 0.75em;
   text-shadow: none;
   cursor: pointer;
   margin: 1.5em 0 0 0;

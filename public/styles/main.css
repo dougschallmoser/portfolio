@@ -1,7 +1,7 @@
 * {
   color: #353535;
   margin: 0;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .nav-unscrolled,
@@ -36,7 +36,7 @@
   cursor: pointer;
   display: inline-block;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
 }
 
@@ -78,7 +78,7 @@
 .nav-unscrolled .navlinks a,
 .nav-scrolled .navlinks a {
   float: right;
-  margin: 9px 12px 5px 12px;
+  margin: 14px 12px 5px 12px;
   padding: 4px 0;
   position: relative;
 }
@@ -182,7 +182,6 @@
 }
 
 .splash-bio {
-  font-family: 'Karla', sans-serif;
   color: #fff;
   font-size: 2em;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
@@ -193,7 +192,6 @@
 }
 
 .splash-title {
-  font-family: 'Karla', sans-serif;
   color: #fff;
 }
 
@@ -243,7 +241,6 @@
 
 .about-content p {
   line-height: 1.5em;
-  font-family: 'Inconsolata', monospace;
   font-size: 18px;
   color: #353535;
   margin-bottom: 1em;
@@ -285,7 +282,6 @@
 .about-icon,
 .contact-icon {
   text-align: center;
-  font-family: 'Karla', sans-serif;
   font-weight: 400;
   display: inline-block;
   width: 60px;
@@ -328,7 +324,6 @@
 }
 
 #contact-form input[type="text"] {
-  font-family: 'Karla', sans-serif;
   font-size: 1em;
   padding: 2% 2%;
   border-radius: 4px;
@@ -375,15 +370,12 @@
   text-align: left;
   color: #fff;
   margin-bottom: 2%;
-  font-family: 'Karla', sans-serif;
   font-size: 0.9em;
 }
 
 #contact-message {
-  font-family: 'Karla', sans-serif;
   padding: 2% 2%;
   font-size: 1em;
-  margin-top: 1%;
   height: 100px;
   text-align: top;
   border-radius: 4px;
@@ -416,7 +408,6 @@
   line-height: 1.2em;
   font-weight: 500;
   text-align: center;
-  font-family: 'Karla', sans-serif;
 }
 
 #about-mystory p {
@@ -434,7 +425,6 @@
   font-weight: 500;
   text-align: center;
   color: #fff;
-  font-family: 'Karla', sans-serif;
 }
 
 #projects {
@@ -504,7 +494,6 @@ section:nth-child(6) {
 }
 
 .project-text p {
-  font-family: 'Karla', sans-serif;
   font-size: 0.7em;
   line-height: 1.5em;
   color: #fff;
@@ -621,7 +610,6 @@ section:nth-child(6) {
 .blog-date time {
   color: #c0a583;
   font-size: 0.75em;
-  font-family: 'Karla', sans-serif;
 }
 
 #contact {
