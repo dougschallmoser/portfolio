@@ -28,12 +28,12 @@ const Splash: React.FC = () => {
             <div className="splash-title">
               Software Engineer
             </div>
-            Bellingham, WA
-            <div className="splash-button" onMouseEnter={handleButtonHover} onMouseLeave={handleButtonHover}>
+            <div className='splash-location'>Bellingham, WA</div>
+            <span className="splash-button" onMouseEnter={handleButtonHover} onMouseLeave={handleButtonHover}>
               <Link to="projects" smooth={true} offset={-58}>
                 VIEW PROJECTS
               </Link>
-            </div>
+            </span>
           </div>
         </div>
         <div ref={overlay} className="splash-overlay"></div>

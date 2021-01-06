@@ -194,8 +194,12 @@
   color: #fff;
 }
 
+.splash-location {
+  margin-bottom: 1.5em;
+  color: #fff;
+}
+
 .splash-button {
-  margin-top: 1.5em;
   position: relative;
   text-shadow: none;
   cursor: pointer;
@@ -206,6 +210,7 @@
 }
 
 .splash-button a {
+  margin-top: 1.5em;
   font-size: 0.7em;
   background: none;
   text-decoration: none;
