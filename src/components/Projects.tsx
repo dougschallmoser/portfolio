@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
           title="PORTFOLIO"
           snippet="SPA for showcasing my personal software developer portfolio" 
           highlights={["Integrated modern React and JS ES6+ best practices including hooks and arrow functions", "Responsive design with custom styling", "Integrated TypeScript", "Clean, readable and maintainable code"]}
-          youtube="https://youtube.com/embed/bDkkOsjkGZE"
+          youtube="https://youtube.com/embed/kdalKGQNYH4"
           github="https://github.com/dougschallmoser/portfolio"
           live="https://www.dougschallmoser.com/"
           languages={["react", "typescript", "javascript", "css", "html", "ps"]}
