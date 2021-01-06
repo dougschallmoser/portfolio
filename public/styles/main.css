@@ -362,16 +362,17 @@
 #contact-form input[type="submit"] {
   font-size: 1em;
   cursor: pointer;
-  background: #fff;
+  background: rgb(253, 230, 165);
   margin-top: 2%;
   margin-bottom: 1%;
+  width: 100%;
   padding: 2% 4%;
   border-radius: 4px;
   border: 1px solid transparent;
 }
 
 #contact-form input[type="submit"]:hover {
-  background: rgb(255, 243, 211);
+  background: rgb(255, 218, 115);
 }
 
 #contact-form  span {
