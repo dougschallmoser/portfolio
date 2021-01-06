@@ -118,6 +118,7 @@
 #splash-container {
   width: 100vw;
   height: 100vh;
+  overflow: hidden
 }
 
 #splash {
@@ -130,7 +131,6 @@
   -moz-background-size: cover;
   -ms-background-size: cover;
   height: 100%;
-  transform: scale(1);
   animation: shrink 5s 1 alternate;
   -webkit-animation: shrink 5s 1 alternate;
   -moz-animation: shrink 5s 1 alternate;
@@ -206,11 +206,7 @@
 }
 
 .splash-button a {
-  font-size: 0.8em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 0.7em;
   background: none;
   text-decoration: none;
   color: #fff;
@@ -818,7 +814,8 @@ section:nth-child(6) {
   }
   
   .splash-button a {
-    width: 7em;
+    width: 8em;
+    border: 1px solid #fff;
   }
 
   .project-text {

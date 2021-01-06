@@ -26,36 +26,37 @@
 
 @keyframes shrink {
   0% {
-    background-size: 400%;
+    transform: scale(4)
   }
   100% {
-    background-size: 100%;
+    transform: scale(1)
   }
 }
+
 @-webkit-keyframes shrink {
   0% {
-    background-size: 400%;
+    transform: scale(4)
   }
   100% {
-    background-size: 100%;
+    transform: scale(1)
   }
 }
 
 @-moz-keyframes shrink {
   0% {
-    background-size: 400%;
+    transform: scale(4)
   }
   100% {
-    background-size: 100%;
+    transform: scale(1)
   }
 }
 
 @-o-keyframes shrink {
   0% {
-    background-size: 400%;
+    transform: scale(4)
   }
   100% {
-    background-size: 100%;
+    transform: scale(1)
   }
 }
 
