@@ -1,4 +1,4 @@
-![Portfolio](https://user-images.githubusercontent.com/65590878/100535056-3fe41880-31ca-11eb-95ac-d363cef10403.png)
+![Portfolio](https://user-images.githubusercontent.com/65590878/103802134-8b78b600-5003-11eb-976e-7a414f91660b.png)
 
 # Portfolio
 
