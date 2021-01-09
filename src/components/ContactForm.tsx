@@ -50,17 +50,22 @@ const ContactForm: React.FC = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <span>Name*</span>
+          {name.length > 2 && <span>&#10003;</span>}
           <input type="text" name="name" value={name} onChange={handleChange} />
         </div>
         <div>
-        <span>Email*</span>
+          <span>Email*</span>
+          {email.length > 4 && email.includes("@") && email.includes(".") && <span>&#10003;</span>}
           <input type="text" name="email" value={email} onChange={handleChange} />
         </div>
         <div>
-        <span>Message*</span>
+          <span>Message*</span>
+          {message.length > 2 && <span>&#10003;</span>}
           <textarea id="contact-message" name="message" value={message} onChange={handleChange} />
         </div>
-        {name && email && email.includes("@") && message && <input type="submit" value="Send" /> }
+        {name && email && email.includes("@") && email.includes(".") && message && 
+          message.length > 2 && <input type="submit" value="Send" />
+        }
       </form>
     )
   }
