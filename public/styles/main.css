@@ -357,12 +357,16 @@
   width: 100%;
   box-sizing: border-box;
   background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: 1s;
 }
 
 #contact-form input[type="text"]:focus,
 #contact-form input[type="submit"]:focus,
 #contact-message:focus {
-  outline-style: none
+  outline-style: none;
+  border-bottom: 1px solid #c0a583a9;
+  transition: 1s;
 }
 
 #contact-form input[type="submit"] {
@@ -381,9 +385,15 @@
   background: rgb(255, 218, 115);
 }
 
-#contact-form  span {
+#contact-form span:first-child {
   text-align: left;
   color: rgb(138, 128, 128);
+}
+
+#contact-form span:nth-child(2) {
+  color: rgb(0, 218, 18);
+  float: right;
+  font-size: 0.7em;
 }
 
 #contact-form form div {
@@ -394,17 +404,13 @@
   font-size: 0.7em;
 }
 
-#contact-form form div:hover {
-  background: rgb(255, 243, 211);
-}
-
 #contact-form-success {
   animation: fadeIn ease 1s;
   animation-fill-mode: forwards;
 }
 
 #contact-message {
-  padding: 2% 2 2% 0;
+  padding: 2% 2% 2% 0;
   font-size: 1.5em;
   height: 100px;
   text-align: top;
@@ -413,6 +419,7 @@
   width: 100%;
   box-sizing: border-box;
   background: transparent;
+  transition: 1s;
 }
 
 .contact-icon:not(:last-child) {
