@@ -64,6 +64,15 @@ const Projects: React.FC = () => {
           languages={["react", "typescript", "javascript", "css", "html", "ps"]}
         />
         <Project 
+          title="ERIN'S STORIES"
+          snippet="SPA showcasing portfolio of literary publications" 
+          highlights={["Integrated modern React and JS ES6+ best practices including hooks and arrow functions", "Responsive design with custom styling and CSS animations"]}
+          youtube="https://youtube.com/embed/cBNgUbGjnq8"
+          github="https://github.com/dougschallmoser/erins-stories"
+          live="https://www.erinschallmoser.com/"
+          languages={["react", "javascript", "css", "html"]}
+        />
+        <Project 
           title="NATPARKREV"
           snippet="MPA for sharing user generated National Park reviews with the world"
           highlights={["Built with Sinatra and Ruby following MVC paradigm", "Integrated CRUD functionality, ActiveRecord, complex forms, join tables, and error handling", "Implemented user accounts, authentication, and validations"]}
@@ -72,7 +81,7 @@ const Projects: React.FC = () => {
           languages={["ruby", "css", "html"]}
         />
         <Project 
-          title="HIKINGLOCATOR" 
+          title="HIKING LOCATOR" 
           snippet="CLI application for locating hiking trails in the U.S." 
           highlights={["Implemented Object-Oriented design patterns", "Integrated and parsed API data, scraped webpages with Nokogiri gem", "Utilized Geocoder gem to parse location information from user input"]}
           youtube="https://youtube.com/embed/rCtUjN31Phw"

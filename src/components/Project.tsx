@@ -93,7 +93,7 @@ const Project: React.FC<Props> = ({ title, snippet, youtube, github, live, langu
         className="project-item" 
         onMouseEnter={handleButtonHoverEnter} 
         onMouseLeave={handleButtonHoverLeave} 
-        style ={ { backgroundImage: `url('./images/${title}.jpg')` } }
+        style ={ { backgroundImage: `url('./images/${title.replace(`'`, '').replace(' ', '')}.jpg')` } }
       >
         <div className="project-text" style={displayLang ? {background: "#353535", border: "2px solid #c0a583"} : {background: "none"}}>
           <div className="project-title">{title}</div>
