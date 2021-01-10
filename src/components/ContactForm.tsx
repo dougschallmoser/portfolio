@@ -16,22 +16,32 @@ const ContactForm: React.FC = () => {
   })
 
   const [sent, setSent] = useState<boolean>(false)
+  const [spinner, setSpinner] = useState<boolean>(false)
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    
     const { name, email, message } = inputValues;
+
     const templateParams = {
       from_name: name,
       from_email: email,
       message,
     };
+
     emailjs.send(
       'contact_service',
       'template_mfgiutk',
        templateParams,
        'user_0VKvw65SULVAtSOo2IwhU'
     )
-    setSent(true)
+
+    setSpinner(true);
+
+    setTimeout(() => {
+      setSent(true)
+      setSpinner(false)
+    }, 2000)
   }
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -73,6 +83,7 @@ const ContactForm: React.FC = () => {
   return (
     <div id="contact-form">
       {sent ? null : <p>Send me a message!</p>}
+      {spinner ? <div className="loader"/> : null}
       {sent ? (
         <div id="contact-form-success">
           <div style={{ fontSize: "2em", color: "#fff" }}>Thank you for the message!</div>
