@@ -553,8 +553,9 @@ section:nth-child(6) {
   transition: 0.5s ease;
 }
 
-.project-overlay-hover {
-  background: none;
+.project-item:hover .project-overlay {
+  bottom: 100%;
+  height: 0%;
 }
 
 #blog, #skills {
