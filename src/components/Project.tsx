@@ -26,24 +26,12 @@ const Project: React.FC<Props> = ({ title, snippet, youtube, github, live, langu
     setIsOpen(!isOpen);
   }
 
-  const handleButtonHoverEnter = () => {
-    setDisplayLang(true)
-    if (overlay.current && line.current) {
-      if (overlay.current.className === "project-overlay-hover") {
-        overlay.current.className = "project-overlay"
-        line.current.className = "project-line"
-      } else {
-        overlay.current.className = "project-overlay-hover"
-        line.current.className = "project-line-hover"
-      }
-    }
-  }
-
-  const handleButtonHoverLeave = () => {
-    setDisplayLang(false)
-    if (overlay.current && line.current) {
-      overlay.current.className = "project-overlay"
+  const handleButtonHover = () => {
+    setDisplayLang(!displayLang)
+    if (line.current && line.current.className === "project-line-hover") {
       line.current.className = "project-line"
+    } else if (line.current && line.current.className === "project-line") {
+      line.current.className = "project-line-hover"
     }
   }
 
@@ -91,8 +79,8 @@ const Project: React.FC<Props> = ({ title, snippet, youtube, github, live, langu
       <div 
         onClick={toggleModal}
         className="project-item" 
-        onMouseEnter={handleButtonHoverEnter} 
-        onMouseLeave={handleButtonHoverLeave} 
+        onMouseEnter={handleButtonHover} 
+        onMouseLeave={handleButtonHover} 
         style ={ { backgroundImage: `url('./images/${title.replace(`'`, '').replace(' ', '')}.jpg')` } }
       >
         <div className="project-text" style={displayLang ? {background: "#353535", border: "2px solid #c0a583"} : {background: "none"}}>
