@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll'
+import { NavWrapper } from '../App.styles'
 
 const NavBar: React.FC = () => {
 
@@ -23,7 +24,7 @@ const NavBar: React.FC = () => {
   }, [scrolled])
 
   return (
-    <section className="nav">
+    <NavWrapper>
       <div className={scrolled}>
         {scrolled === 'nav-scrolled' && <div className="navlogo">
           <Link to="splash" smooth={true}>DOUG SCHALLMOSER</Link>
@@ -36,7 +37,7 @@ const NavBar: React.FC = () => {
           <Link to="about" smooth={true} offset={-58}>ABOUT</Link>
         </div>
       </div>
-    </section>
+    </NavWrapper>
   )
 }
 
