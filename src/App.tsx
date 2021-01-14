@@ -7,10 +7,12 @@ import Projects from './components/Projects';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Quote from './components/Quote';
+import { GlobalStyle } from './App.styles';
 
 const App: React.FC = () => {
   return (
     <>
+      <GlobalStyle />
       <NavBar />
       <Splash />
       <About />
