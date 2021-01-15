@@ -32,7 +32,7 @@
   height: 100%;
   transition: 1.5s ease;
   animation: fadeInOverlay ease 4s;
-  animation-delay: 1s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
