@@ -12,7 +12,7 @@ interface Props {
 
 const BlogItem: React.FC<Props> = ({ data }) => {
   return (
-    <a href={data.link} target="_blank" rel="noreferrer">
+    <a href={data.link} title={data.title} target="_blank" rel="noreferrer">
       <div className="blog-item">
         <div className="blog-content">
           <div className="blog-title">
