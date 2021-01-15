@@ -1,19 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 
 const Splash: React.FC = () => {
 
-  const overlay = React.createRef<HTMLDivElement>();
   const line = React.createRef<HTMLHRElement>();
 
+  const [orangeOverlay, setOrangeOverlay] = useState(false);
+
   const handleButtonHover = () => {
-    if (overlay.current && line.current) {
-      if (overlay.current.className === "splash-overlay-hover") {
-        overlay.current.className = "splash-overlay"
-        line.current.className = "splash-line"
+    if (line.current) {
+      setOrangeOverlay(!orangeOverlay)
+      if (orangeOverlay) {
+        line.current.style.width = "125px"
       } else {
-        overlay.current.className = "splash-overlay-hover"
-        line.current.className = "splash-line-hover"
+        line.current.style.width = "300px"
       }
     }
   }
@@ -36,7 +36,7 @@ const Splash: React.FC = () => {
             </span>
           </div>
         </div>
-        <div ref={overlay} className="splash-overlay"></div>
+        <div className="splash-overlay" />
       </div>
     </section>
   )
