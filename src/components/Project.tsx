@@ -77,6 +77,7 @@ const Project: React.FC<Props> = ({ title, snippet, youtube, github, live, langu
   return (
     <>
       <div 
+        title={title}
         onClick={toggleModal}
         className="project-item" 
         onMouseEnter={handleButtonHover} 
