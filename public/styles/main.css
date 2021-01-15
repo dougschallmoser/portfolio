@@ -172,7 +172,7 @@
 .contact-icons a {
   text-decoration: none;
   color: #fff;
-  padding: 20px 28px;
+  padding: 30px 32px;
   border-radius: 50%;
   background:#c4c4c4;
 }
@@ -697,7 +697,7 @@ section:nth-child(6) {
   }
 
   .contact-icons a {
-    padding: 14px 20px;
+    padding: 18px 20px;
     background:#c0a583;
   }
 
