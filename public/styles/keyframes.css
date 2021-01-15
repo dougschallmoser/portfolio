@@ -90,27 +90,27 @@
 
 @keyframes fadeInOverlay {
   0% {opacity:1;}
-  100% {opacity:0.25;}
+  100% {opacity:0.2;}
 }
 
 @-moz-keyframes fadeInOverlay {
   0% {opacity:1;}
-  100% {opacity:0.25;}
+  100% {opacity:0.2;}
 }
 
 @-webkit-keyframes fadeInOverlay {
   0% {opacity:1;}
-  100% {opacity:0.25;}
+  100% {opacity:0.2;}
 }
 
 @-o-keyframes fadeInOverlay {
   0% {opacity:1;}
-  100% {opacity:0.25;}
+  100% {opacity:0.2;}
 }
 
 @-ms-keyframes fadeInOverlay {
   0% {opacity:1;}
-  100% {opacity:0.25;}
+  100% {opacity:0.20;}
 }
 
 @keyframes rock {
