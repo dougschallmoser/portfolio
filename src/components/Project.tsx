@@ -16,23 +16,15 @@ interface Props {
 
 const Project: React.FC<Props> = ({ title, snippet, youtube, github, live, languages, highlights }) => {
 
-  const overlay = React.createRef<HTMLDivElement>();
-  const line = React.createRef<HTMLHRElement>();
-
   const [isOpen, setIsOpen] = useState(false);
-  const [displayLang, setDisplayLang] = useState(false);
+  const [hoverProject, setHoverProject] = useState(false);
 
   const toggleModal = () => {
     setIsOpen(!isOpen);
   }
 
-  const handleButtonHover = () => {
-    setDisplayLang(!displayLang)
-    if (line.current && line.current.className === "project-line-hover") {
-      line.current.className = "project-line"
-    } else if (line.current && line.current.className === "project-line") {
-      line.current.className = "project-line-hover"
-    }
+  const handleProjectHover = () => {
+    setHoverProject(!hoverProject)
   }
 
   const mapLanguages = () => {
@@ -80,21 +72,23 @@ const Project: React.FC<Props> = ({ title, snippet, youtube, github, live, langu
         title={title}
         onClick={toggleModal}
         className="project-item" 
-        onMouseEnter={handleButtonHover} 
-        onMouseLeave={handleButtonHover} 
+        onMouseEnter={handleProjectHover} 
+        onMouseLeave={handleProjectHover} 
         style ={ { backgroundImage: `url('./images/${title.replace(`'`, '').replace(' ', '')}.jpg')` } }
       >
-        <div className="project-text" style={displayLang ? {background: "#353535", border: "2px solid #c0a583"} : {background: "none", transition: "0.75s ease"}}>
-          <div className="project-title">{title}</div>
-          <hr ref={line} className="project-line"/>
-          <p>{snippet}</p>
+        <div className="project-text">
+          <div className="project-title">{title}
+            <hr className="project-line"/>
+          </div>
         </div>
-          {displayLang ? 
-            <div id="hidden-languages">
-              {languages[0]} {`${languages[1] ? '/' : ''}`} {languages[1]}
-            </div> : null
-          }
-        <div ref={overlay} className="project-overlay" />
+      
+        <p>{snippet}</p>
+        
+        <div id="hidden-languages">
+          {languages[0]} {`${languages[1] ? '/' : ''}`} {languages[1]}
+        </div>
+          
+        <div className="project-overlay" />
       </div>
 
       <Modal
