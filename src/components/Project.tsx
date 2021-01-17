@@ -77,9 +77,8 @@ const Project: React.FC<Props> = ({ title, snippet, youtube, github, live, langu
         style ={ { backgroundImage: `url('./images/${title.replace(`'`, '').replace(' ', '')}.jpg')` } }
       >
         <div className="project-text">
-          <div className="project-title">{title}
-            <hr className="project-line"/>
-          </div>
+          <div className="project-title">{title}</div>
+          <div className="project-line"/>
         </div>
       
         <p>{snippet}</p>
