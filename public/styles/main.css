@@ -84,6 +84,7 @@
   position: relative;
   text-shadow: none;
   cursor: pointer;
+  display: inline-block;
   animation: fadeIn ease 2s;
   animation-fill-mode: forwards;
   animation-delay: 4.5s;
@@ -91,7 +92,7 @@
 }
 
 .splash-button a {
-  margin-top: 1.5em;
+  display: inline-block;
   font-size: 0.7em;
   background: none;
   text-decoration: none;
@@ -479,7 +480,7 @@ section:nth-child(6) {
 .project-item:hover .project-line {
   border: 0.5px solid #c0a583;
   width: 175px;
-  margin: 10px auto;
+  margin: 5px auto 10px auto;
   transition: 0.5s ease;
 }
 
@@ -549,16 +550,18 @@ section:nth-child(6) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 85%;
 }
 
 .blog-title {
+  text-align: center;
   font-size: 3.5vh;
   margin-bottom: 0.4em;
   font-family: 'Barlow Condensed', sans-serif;
 }
 
 .blog-date {
+  text-align: center;
   font-size: 2.5vh;
   font-weight: 300;
   margin-bottom: 0.75em;
