@@ -84,7 +84,7 @@
   position: relative;
   text-shadow: none;
   cursor: pointer;
-  padding: 6px 30px;
+  padding: 8px 36px;
   border-radius: 20px;
   border: 1.5px solid #fff;
   display: inline-block;
@@ -96,7 +96,7 @@
 }
 
 .splash-button a {
-  font-size: 0.7em;
+  font-size: 0.75em;
   background: none;
   text-decoration: none;
   color: #fff;
@@ -104,8 +104,7 @@
 }
 
 .splash-button:hover {
-  background: #fff;
-  opacity: 0.75;
+  background: rgba(255, 255, 255, 0.747);
   color: #353535;
   transition: 0.5s ease;
 }
@@ -605,7 +604,6 @@ section:nth-child(6) {
 }
 
 .project-line {
-  /* border: 0.5px solid #fff; */
   height: 2px;
   background: #fff;
   width: 75px;
