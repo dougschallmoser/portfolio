@@ -84,29 +84,34 @@
   position: relative;
   text-shadow: none;
   cursor: pointer;
+  padding: 6px 30px;
+  border-radius: 20px;
+  border: 1.5px solid #fff;
   display: inline-block;
   animation: fadeIn ease 2s;
   animation-fill-mode: forwards;
   animation-delay: 4.5s;
   opacity: 0;
+  transition: 0.5s ease;
 }
 
 .splash-button a {
-  display: inline-block;
   font-size: 0.7em;
   background: none;
   text-decoration: none;
   color: #fff;
-  padding: 10px 30px;
-  border-radius: 20px;
-  border: 2px solid #fff;
   transition: 0.5s ease;
 }
 
-.splash-button a:hover {
+.splash-button:hover {
   background: #fff;
   opacity: 0.75;
   color: #353535;
+  transition: 0.5s ease;
+}
+
+.splash-button:hover a {
+  color: #000;
 }
 
 #about {
@@ -131,7 +136,7 @@
 #about-more {
   padding: 10px 30px;
   border-radius: 20px;
-  border: 1px solid #353535;
+  border: 1.5px solid #353535;
   margin-top: 1%;
   color: #353535;
   text-align: center;
@@ -147,7 +152,7 @@
 #about-more:hover {
   color: #fff;
   background: #c0a583;
-  border: 1px solid transparent;
+  border: 1.5px solid transparent;
   transition: 0.5s ease;
 }
 
@@ -759,7 +764,6 @@ section:nth-child(6) {
   
   .splash-button a {
     width: 8em;
-    border: 1px solid #fff;
   }
 
   .project-text {
