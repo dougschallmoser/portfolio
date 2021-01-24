@@ -113,53 +113,6 @@
   100% {opacity:0.20;}
 }
 
-@keyframes rock {
-  0% {
-    transform: rotateZ(0deg);
-    -webkit-transform: rotateZ(0deg);
-  }
-  25% {
-    transform: rotateZ(-3deg);
-    -webkit-transform: rotateZ(-3deg);
-  }
-  50% {
-    transform: rotateZ(0deg);
-    -webkit-transform: rotateZ(0deg);
-  }
-  75% {
-    transform: rotateZ(3deg);
-    -webkit-transform: rotateZ(3deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-    -webkit-transform: rotateZ(0deg);
-  }
-}
-
-@-webkit-keyframes rock {
-  0% {
-    transform: rotateZ(0deg);
-    -webkit-transform: rotateZ(0deg);
-  }
-  25% {
-    transform: rotateZ(-3deg);
-    -webkit-transform: rotateZ(-3deg);
-  }
-  50% {
-    transform: rotateZ(0deg);
-    -webkit-transform: rotateZ(0deg);
-  }
-  75% {
-    transform: rotateZ(3deg);
-    -webkit-transform: rotateZ(3deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-    -webkit-transform: rotateZ(0deg);
-  }
-}
-
-
 /* Beat */
 
 @keyframes beat {

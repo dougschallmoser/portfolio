@@ -383,14 +383,6 @@ section:nth-child(6) {
   transition: 0.5s ease;
 }
 
-.project-item:hover {
-  animation: rock 0.5s ease;
-  animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation: rock 0.5s ease;
-  transition: 0.5s ease;
-}
-
 .project-text {
   color: #fff;
   font-size: 2em;
@@ -454,8 +446,8 @@ section:nth-child(6) {
 }
 
 .project-item:hover .project-text {
-  background: #353535;
-  width: 94.5%;
+  background: #353535af;
+  width: 94%;
   overflow: hidden;
   top: 37%;
   transition: 0.5s ease;
@@ -463,8 +455,7 @@ section:nth-child(6) {
 
 .project-item:hover p {
   bottom: 100%;
-  top: 0;
-  height: 0%;
+  top: 0%;
   overflow: hidden;
   transition: 0.5s ease;
 }
@@ -477,13 +468,11 @@ section:nth-child(6) {
 }
 
 .project-item:hover .project-title {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   transform: scale(1.5);
   transition: 0.5s ease;
 }
 
 .project-item:hover .project-line {
-  box-shadow: rgba(0, 0, 0, 0.6) 1px 1px 4px;
   width: 90%;
   margin: 15px auto 10px auto;
   transition: 0.5s ease;
