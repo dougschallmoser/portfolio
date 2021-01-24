@@ -454,6 +454,8 @@ section:nth-child(6) {
 }
 
 .project-item:hover .project-text {
+  background: #353535;
+  width: 94.5%;
   overflow: hidden;
   top: 37%;
   transition: 0.5s ease;
