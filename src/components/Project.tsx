@@ -17,14 +17,9 @@ interface Props {
 const Project: React.FC<Props> = ({ title, snippet, youtube, github, live, languages, highlights }) => {
 
   const [isOpen, setIsOpen] = useState(false);
-  const [hoverProject, setHoverProject] = useState(false);
 
   const toggleModal = () => {
     setIsOpen(!isOpen);
-  }
-
-  const handleProjectHover = () => {
-    setHoverProject(!hoverProject)
   }
 
   const mapLanguages = () => {
@@ -71,9 +66,7 @@ const Project: React.FC<Props> = ({ title, snippet, youtube, github, live, langu
       <div 
         title={title}
         onClick={toggleModal}
-        className="project-item" 
-        onMouseEnter={handleProjectHover} 
-        onMouseLeave={handleProjectHover} 
+        className="project-item"  
         style ={ { backgroundImage: `url('./images/${title.replace(`'`, '').replace(' ', '')}.jpg')` } }
       >
         <div className="project-text">
