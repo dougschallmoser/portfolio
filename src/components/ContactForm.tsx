@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import * as EmailValidator from 'email-validator';
 import * as emailjs from 'emailjs-com';
 
 const ContactForm: React.FC = () => {
@@ -52,33 +53,17 @@ const ContactForm: React.FC = () => {
     })
   }
 
-  const renderForm = () => {
-    
-    const { name, email, message } = inputValues;
-
-    return (
-      <form onSubmit={handleSubmit}>
-        <div>
-          <span>Name*</span>
-          {name.length > 2 && <span>&#10003;</span>}
-          <input type="text" name="name" value={name} onChange={handleChange} />
-        </div>
-        <div>
-          <span>Email*</span>
-          {email.length > 4 && email.includes("@") && email.includes(".") && <span>&#10003;</span>}
-          <input type="text" name="email" value={email} onChange={handleChange} />
-        </div>
-        <div>
-          <span>Message*</span>
-          {message.length > 2 && <span>&#10003;</span>}
-          <textarea id="contact-message" name="message" value={message} onChange={handleChange} />
-        </div>
-        {name && email && email.includes("@") && email.includes(".") && message && 
-          message.length > 2 && <input type="submit" value="Send" />
-        }
-      </form>
-    )
+  const validate = (name: string, email: string, message: string) => {
+    return {
+      name: name.length <= 2,
+      email: !EmailValidator.validate(email),
+      message: message.length <= 2
+    }
   }
+    
+  const { name, email, message } = inputValues;
+  const errors: { [key: string]: boolean } = validate(name, email, message);
+  const disabled = Object.keys(errors).some(name => errors[name])
 
   return (
     <div id="contact-form">
@@ -88,7 +73,22 @@ const ContactForm: React.FC = () => {
         <div id="contact-form-success">
           <div style={{ fontSize: "2em", color: "#fff" }}>Thank you for the message!</div>
           <div style={{ fontSize: "1.5em", color: "#fff" }}>I will get back to you soon.</div>
-        </div>) : renderForm()
+        </div>) :
+        <form onSubmit={handleSubmit}>
+          <div className={errors.name ? "error" : ""}>
+            <span>Name*</span>
+            <input type="text" name="name" value={name} onChange={handleChange} />
+          </div>
+          <div className={errors.email ? "error" : ""}>
+            <span>Email*</span>
+            <input type="text" name="email" value={email} onChange={handleChange} />
+          </div>
+          <div className={errors.message ? "error" : ""}>
+            <span>Message*</span>
+            <textarea id="contact-message" name="message" value={message} onChange={handleChange} />
+          </div>
+          <button type="submit" disabled={disabled}>Send</button>
+        </form>
       }
     </div>
   )
