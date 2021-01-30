@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-scroll';
 
 const Splash: React.FC = () => {
 
-  const line = React.createRef<HTMLHRElement>();
+  const line = useRef<HTMLHRElement>(null);
 
-  const [orangeOverlay, setOrangeOverlay] = useState(false);
+  const [buttonHover, setButtonHover] = useState(false);
 
   const handleButtonHover = () => {
     if (line.current) {
-      setOrangeOverlay(!orangeOverlay)
-      if (orangeOverlay) {
+      setButtonHover(!buttonHover)
+      if (buttonHover) {
         line.current.style.width = "125px"
       } else {
         line.current.style.width = "300px"
