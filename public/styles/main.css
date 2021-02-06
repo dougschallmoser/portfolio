@@ -229,10 +229,6 @@
   box-shadow: #e0c099 0px 3px 30px;
 }
 
-form div {
-  border: 1px solid rgb(0, 235, 0);
-}
-
 #contact-form p {
   margin-bottom: 5%;
   font-size: 2em;
@@ -280,17 +276,6 @@ form button:disabled {
   cursor: default;
 }
 
-#contact-form span:first-child {
-  text-align: left;
-  color: rgb(138, 128, 128);
-}
-
-#contact-form span:nth-child(2) {
-  color: rgb(0, 218, 18);
-  float: right;
-  font-size: 0.7em;
-}
-
 #contact-form form div {
   padding: 4% 4% 2% 4%;
   background: #fff;
@@ -317,8 +302,16 @@ form button:disabled {
   transition: 1s;
 }
 
+form div {
+  border: 1px solid transparent;
+}
+
 .error {
   border: 1px solid rgb(255, 145, 145);
+}
+
+.success {
+  border: 1px solid rgb(0, 218, 18);
 }
 
 .contact-icon:not(:last-child) {
