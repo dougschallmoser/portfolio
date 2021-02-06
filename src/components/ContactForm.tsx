@@ -75,15 +75,15 @@ const ContactForm: React.FC = () => {
           <div style={{ fontSize: "1.5em", color: "#fff" }}>I will get back to you soon.</div>
         </div>) :
         <form onSubmit={handleSubmit}>
-          <div className={errors.name ? "error" : ""}>
+          <div className={name.length > 0 ? (errors.name ? "error" : "success") : ""}>
             <span>Name*</span>
             <input type="text" name="name" value={name} onChange={handleChange} />
           </div>
-          <div className={errors.email ? "error" : ""}>
+          <div className={email.length > 0 ? (errors.email ? "error" : "success") : ""}>
             <span>Email*</span>
             <input type="text" name="email" value={email} onChange={handleChange} />
           </div>
-          <div className={errors.message ? "error" : ""}>
+          <div className={message.length > 0 ? (errors.message ? "error" : "success") : ""}>
             <span>Message*</span>
             <textarea id="contact-message" name="message" value={message} onChange={handleChange} />
           </div>
