@@ -438,6 +438,7 @@ section:nth-child(6) {
   color: #fff;
   font-weight: 300;
   top: 45%;
+  overflow: hidden;
   transition: 1.2s ease;
 }
 
