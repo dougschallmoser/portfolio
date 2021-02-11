@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ReactIcon, TSIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, PostgresIcon, CSSIcon, HTMLIcon, PSIcon } from './SkillsIcons';
+import { ReactIcon, TSIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, PostgresIcon, CSSIcon, HTMLIcon, PSIcon } from '../Skills/SkillsIcons';
 import Modal from "react-modal";
 
 Modal.setAppElement("#root");

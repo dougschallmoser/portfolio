@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Quote: React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <section id="quote">
       <div className="quote-overlay"></div>
@@ -11,4 +11,4 @@ const Quote: React.FC = () => {
   )
 }
 
-export default Quote;
+export default Footer;

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll'
-import { NavWrapper } from '../App.styles'
+import { NavWrapper } from '../App/App.styles'
 
-const NavBar: React.FC = () => {
+const Navbar: React.FC = () => {
 
   const [scrolled, setScrolled] = useState<string>("nav-unscrolled")
 
@@ -41,4 +41,4 @@ const NavBar: React.FC = () => {
   )
 }
 
-export default NavBar;
+export default Navbar;
