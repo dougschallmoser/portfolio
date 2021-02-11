@@ -1,0 +1,128 @@
+#about {
+  position: relative;
+  width: 100vw;
+  padding-top: 4em;
+}
+
+.about-content {
+  margin: 3% 20% 5% 20%;
+  position: relative;
+}
+
+.about-content p {
+  line-height: 1.5em;
+  font-size: 18px;
+  color: #353535;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+#about-more {
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 1.5px solid #353535;
+  margin-top: 1%;
+  color: #353535;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: 0.5s ease;
+}
+
+#about-more:hover {
+  color: #fff;
+  background: #c0a583;
+  border: 1.5px solid transparent;
+  transition: 0.5s ease;
+}
+
+#about-more-content {
+  animation: fadeIn ease 1s;
+  animation-fill-mode: forwards;
+}
+
+.about-icons {
+  margin: 30px 0 15px 0;
+  position: relative;
+  text-align: center;
+}
+
+.about-icon {
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  width: 60px;
+  margin-top: 1%;
+  transition: 0.5s ease;
+  font-size: 14px;
+  color: #353535;
+}
+
+.about-icon {
+  color: #fff;
+}
+
+.about-icon:not(:last-child) {
+  margin-right: 2.2em;
+}
+
+#about-mystory-container {
+  display: flex;
+}
+
+#about-mystory {
+  flex: 1;
+  font-size: 26px;
+  line-height: 1.2em;
+  font-weight: 500;
+  text-align: center;
+}
+
+#about-mystory p {
+  margin-top: 0.5em;
+}
+
+#about-mystory:not(:last-child) {
+  padding-right: 1.5em;
+}
+
+#about-skills {
+  font-size: 36px;
+  margin-bottom: 2%;
+  margin-top: 1.5em;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .about-content {
+    margin: 5% 10%;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  #about-mystory-container {
+    display: block;
+  }
+
+  #about-mystory:not(:last-child) {
+    padding-right: 0;
+  }
+
+  #about-mystory {
+    font-size: 24px;
+  }
+  
+  #about-skills {
+    font-size: 24px;
+    padding-bottom: 25px;
+  }
+}
