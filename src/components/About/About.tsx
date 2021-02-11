@@ -1,4 +1,5 @@
 import React, { useRef, useLayoutEffect, useState } from 'react';
+import './About.css';
 
 const About: React.FC = () => {
 
