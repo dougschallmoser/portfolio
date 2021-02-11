@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import BlogItem from './BlogItem';
+import './Blog.css';
 
 type Post = {
   link: string;

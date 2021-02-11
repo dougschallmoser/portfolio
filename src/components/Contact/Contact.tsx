@@ -1,5 +1,6 @@
 import React, { useRef, useLayoutEffect } from 'react';
 import ContactForm from './ContactForm';
+import './Contact.css';
 
 const Contact: React.FC = () => {
 

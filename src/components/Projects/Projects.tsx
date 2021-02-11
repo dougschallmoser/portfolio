@@ -1,5 +1,6 @@
 import React, { useRef, useLayoutEffect } from 'react';
 import Project from './Project';
+import './Projects.css';
 
 const Projects: React.FC = () => {
 

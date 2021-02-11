@@ -1,5 +1,6 @@
 import React from 'react';
 import { ReactIcon, TSIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, PostgresIcon, CSSIcon, HTMLIcon, PSIcon } from './SkillsIcons';
+import './Skills.css';
 
 const Skills: React.FC = () => {
   return (

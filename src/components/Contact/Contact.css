@@ -1,0 +1,212 @@
+#contact {
+  position: relative;
+  background: #fff;
+  width: 100vw;
+  padding-top: 6em;
+}
+
+#contact-header {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #353535;
+  font-size: 54px;
+  margin-bottom: 1.5%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.contact-icons {
+  margin: 30px 0 15px 0;
+  position: relative;
+  text-align: center;
+}
+
+.contact-icons {
+  padding-bottom: 10em;
+  margin-top: 65px;
+}
+
+.contact-icons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 30px 32px;
+  border-radius: 50%;
+  background:#c4c4c4;
+}
+
+.contact-icons a:hover {
+  background:#c0a583;
+  animation: beat 1s 1 alternate;
+  -webkit-animation: beat 1s 1 alternate;
+  -moz-animation: beat 1s 1 alternate;
+  -o-animation: beat 1s 1 alternate;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+}
+
+.contact-icon {
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  width: 60px;
+  margin-top: 1%;
+  transition: 0.5s ease;
+  font-size: 14px;
+  color: #353535;
+}
+
+.contact-icon {
+  cursor: pointer;
+  width: 50px;
+  font-size: 0.75em;
+}
+
+.contact-icon:not(:last-child) {
+  margin-right: 2em; 
+  margin-bottom: 1em;
+}
+
+#contact-form {
+  font-size: 1.2em;
+  border-radius: 12px;
+  padding: 2%;
+  margin: 5% auto;
+  text-align: center;
+  width: 450px;
+  background: #c0a583;
+  transition: 2s;
+}
+
+#contact-form:hover {
+  box-shadow: #e0c099 0px 3px 30px;
+}
+
+#contact-form p {
+  margin-bottom: 5%;
+  font-size: 2em;
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#contact-form input[type="text"] {
+  font-size: 1.5em;
+  padding: 2% 2% 0 0;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: 1s;
+}
+
+#contact-form input[type="text"]:focus,
+button:focus,
+#contact-message:focus {
+  outline-style: none;
+  border-bottom: 1px solid #c0a583a9;
+  transition: 1s;
+}
+
+#contact-form form div {
+  padding: 4% 4% 2% 4%;
+  background: #fff;
+  text-align: left;
+  margin-bottom: 1.5%;
+  font-size: 0.7em;
+}
+
+#contact-form-success {
+  animation: fadeIn ease 1s;
+  animation-fill-mode: forwards;
+}
+
+#contact-message {
+  padding: 2% 2% 2% 0;
+  font-size: 1.5em;
+  height: 100px;
+  text-align: top;
+  border: 1px solid transparent;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  transition: 1s;
+}
+
+form button {
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 1%;
+  background: rgb(255, 218, 115);
+  width: 100%;
+  padding: 4% 4%;
+  border: 1px solid transparent;
+}
+
+form button:hover {
+  background: rgb(255, 205, 66);
+}
+
+form button:disabled {
+  color: rgb(151, 151, 151);
+  background: rgb(253, 230, 165);
+  cursor: default;
+}
+
+form div {
+  border: 1px solid transparent;
+}
+
+.error {
+  border: 1px solid rgb(255, 145, 145);
+}
+
+.success {
+  border: 1px solid rgb(0, 218, 18);
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #c0a583;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  #contact-form {
+    width: 90vw;
+    margin-top: 10%;
+  }
+
+  .contact-icon {
+    width: 48px;
+    font-size: 0.6em;
+  }
+
+  .contact-icons a {
+    padding: 18px 20px;
+    background:#c0a583;
+  }
+
+  .contact-icons a:hover {
+    background:#353535;
+  }
+
+  .contact-icon:not(:last-child) {
+    margin-right: 1.5em; 
+  }
+ 
+  #contact-header {
+    font-size: 3em;
+  }
+}

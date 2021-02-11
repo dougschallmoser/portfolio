@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import * as EmailValidator from 'email-validator';
 import * as emailjs from 'emailjs-com';
+import './Contact.css';
 
 const ContactForm: React.FC = () => {
 
