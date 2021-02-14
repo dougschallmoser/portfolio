@@ -55,6 +55,10 @@
   padding-bottom: 56.25%;
 }
 
+.modal-column1 img {
+  width: 100%;
+}
+
 .modal-column2 {
   flex: 30%;
   position: relative;
