@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
         />
         <Project 
           title="PHOTO STORE"
-          snippet="SPA ecommerce store for photography prints" 
+          snippet="SPA e-commerce store for photography prints" 
           highlights={["Integrated Context API and useReducer for global state management", "Built with modern React and JS ES6+ best practices including hooks", "Custom user interfaces and styling"]}
           snapshot="https://user-images.githubusercontent.com/65590878/107867636-6ca2e600-6e31-11eb-80b7-767e1b610bd8.png"
           github="https://github.com/dougschallmoser/photography-store"
