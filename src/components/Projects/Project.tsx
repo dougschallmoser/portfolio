@@ -8,14 +8,15 @@ Modal.setAppElement("#root");
 interface Props {
   title: string;
   snippet: string;
-  youtube: string;
+  youtube?: string;
   github: string;
+  snapshot?: string;
   live?: string;
   languages: string[];
   highlights: string[];
 }
 
-const Project: React.FC<Props> = ({ title, snippet, youtube, github, live, languages, highlights }) => {
+const Project: React.FC<Props> = ({ title, snippet, youtube, snapshot, github, live, languages, highlights }) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -96,8 +97,10 @@ const Project: React.FC<Props> = ({ title, snippet, youtube, github, live, langu
         <div className="modal-close" onClick={toggleModal}>&#10006;</div>
         <div className="modal-content">
           <div className="modal-column1">
-            <iframe width="420" height="315" src={youtube} title={title} frameBorder="0" allowFullScreen className="video" >
-            </iframe>
+            {snapshot && <img src={snapshot} alt={title} />}
+            {youtube && 
+              <iframe width="420" height="315" src={youtube} title={title} frameBorder="0" allowFullScreen className="video" />
+            }
           </div>
           <div className="modal-column2">
             <div className="modal-title">{title}</div>
