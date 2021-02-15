@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
           snapshot="https://user-images.githubusercontent.com/65590878/107867636-6ca2e600-6e31-11eb-80b7-767e1b610bd8.png"
           github="https://github.com/dougschallmoser/photography-store"
           live="https://photography-store.netlify.app/"
-          languages={["react", "javascript", "css", "html"]}
+          languages={["react", "typescript", "javascript", "css", "html"]}
         />
         <Project 
           title="PORTFOLIO"
