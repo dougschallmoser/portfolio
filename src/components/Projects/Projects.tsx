@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
         <Project 
           title="PHOTO STORE"
           snippet="SPA e-commerce store for photography prints" 
-          highlights={["Integrated Context API and useReducer for global state management", "Built with modern React hooks and JS ES6+", "Custom UI design and styling with styled components"]}
+          highlights={["Integrated Context API and useReducer for global state management", "Built with modern React hooks, JS ES6+, and TypeScript", "Custom UI design and styling with styled components"]}
           snapshot="https://user-images.githubusercontent.com/65590878/107867636-6ca2e600-6e31-11eb-80b7-767e1b610bd8.png"
           github="https://github.com/dougschallmoser/photography-store"
           live="https://photography-store.netlify.app/"
@@ -67,7 +67,7 @@ const Projects: React.FC = () => {
         <Project 
           title="PORTFOLIO"
           snippet="SPA for showcasing my personal software developer portfolio" 
-          highlights={["Integrated modern React hooks and JS ES6+", "Responsive design with custom styling", "Integrated TypeScript", "Clean, readable and maintainable code"]}
+          highlights={["Integrated modern React hooks, JS ES6+, and TypeScript", "Responsive design with custom styling", "Integrated TypeScript", "Clean, readable and maintainable code"]}
           youtube="https://youtube.com/embed/kdalKGQNYH4"
           github="https://github.com/dougschallmoser/portfolio"
           live="https://www.dougschallmoser.com/"
@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
         <Project 
           title="ERIN'S STORIES"
           snippet="SPA showcasing portfolio of literary publications" 
-          highlights={["Integrated modern React and JS ES6+ best practices including hooks and arrow functions", "Responsive design with custom styling and CSS animations"]}
+          highlights={["Integrated modern React hooks and JS ES6+", "Responsive design with custom styling and CSS animations"]}
           youtube="https://youtube.com/embed/cBNgUbGjnq8"
           github="https://github.com/dougschallmoser/erins-stories"
           live="https://www.erinschallmoser.com/"
