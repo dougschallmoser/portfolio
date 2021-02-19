@@ -47,6 +47,15 @@ const Projects: React.FC = () => {
           languages={["javascript", "rails", "ruby", "postgres", "css", "html", "ps"]}
         />
         <Project 
+          title="PHOTO STORE"
+          snippet="SPA e-commerce store for photography prints" 
+          highlights={["Integrated Context API and useReducer for global state management", "Built with modern React hooks, JS ES6+, and TypeScript", "Utilized styled-components for custom UI design and styling", "Integrated Stripe API for secure payment transactions"]}
+          snapshot="https://user-images.githubusercontent.com/65590878/108535967-bdcb3380-7290-11eb-95cc-9f7585f8ea73.png"
+          github="https://github.com/dougschallmoser/photography-store"
+          live="https://photography-store.netlify.app/"
+          languages={["react", "typescript", "javascript", "css", "html"]}
+        />
+        <Project 
           title="CONNECTAROT"
           snippet="Interactive MPA for user and computer generated tarot card readings" 
           highlights={["Implemented full CRUD functionality, complex forms, validations, error handling, and user authorization", "Integrated MVC paradigm, RESTful API architecture complex model associations, ActiveRecord, and scope methods", "Integrated standard user accounts plus third-party user authentication with Github/Facebook through OAuth2"]}
@@ -54,15 +63,6 @@ const Projects: React.FC = () => {
           github="https://github.com/dougschallmoser/connectarot"
           live="https://connectarot.herokuapp.com/"
           languages={["rails", "ruby", "postgres", "css", "html"]}
-        />
-        <Project 
-          title="PHOTO STORE"
-          snippet="SPA e-commerce store for photography prints" 
-          highlights={["Integrated Context API and useReducer for global state management", "Built with modern React hooks, JS ES6+, and TypeScript", "Utilized styled-components for custom UI design and styling", "Integrated Stripe API for secure payment transactions"]}
-          snapshot="https://user-images.githubusercontent.com/65590878/108454788-e7994180-7221-11eb-8635-260805937327.png"
-          github="https://github.com/dougschallmoser/photography-store"
-          live="https://photography-store.netlify.app/"
-          languages={["react", "typescript", "javascript", "css", "html"]}
         />
         <Project 
           title="PORTFOLIO"
