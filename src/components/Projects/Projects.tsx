@@ -50,7 +50,7 @@ const Projects: React.FC = () => {
           title="PHOTO STORE"
           snippet="SPA e-commerce store for photography prints" 
           highlights={["Integrated Context API and useReducer for global state management", "Built with modern React hooks, JS ES6+, and TypeScript", "Utilized styled-components for custom UI design and styling", "Integrated Stripe API for secure payment transactions"]}
-          snapshot="https://user-images.githubusercontent.com/65590878/108535967-bdcb3380-7290-11eb-95cc-9f7585f8ea73.png"
+          snapshot="https://user-images.githubusercontent.com/65590878/108611240-8a240280-7391-11eb-87df-e85a64e8a18d.png"
           github="https://github.com/dougschallmoser/photography-store"
           live="https://photography-store.netlify.app/"
           languages={["react", "typescript", "javascript", "css", "html"]}
