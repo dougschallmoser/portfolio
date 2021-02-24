@@ -65,6 +65,15 @@ const Projects: React.FC = () => {
           languages={["rails", "ruby", "postgres", "css", "html"]}
         />
         <Project 
+          title="EXPENSE TRACKER"
+          snippet="SPA for keeping an accurate record of your money" 
+          highlights={["Built with modern React hooks, JS ES6+, and TypeScript", "Integrated Context API and useReducer for global state management", "Custom styling"]}
+          snapshot="https://user-images.githubusercontent.com/65590878/109062713-205f6d80-769d-11eb-8ce0-f4ad23d6742f.png"
+          github="https://github.com/dougschallmoser/expense-tracker"
+          live="https://doug-expense-tracker.netlify.app/"
+          languages={["react", "typescript", "javascript", "css", "html"]}
+        />
+        <Project 
           title="PORTFOLIO"
           snippet="SPA for showcasing my personal software developer portfolio" 
           highlights={["Integrated modern React hooks, JS ES6+, and TypeScript", "Responsive design with custom styling", "Integrated TypeScript", "Clean, readable and maintainable code"]}
