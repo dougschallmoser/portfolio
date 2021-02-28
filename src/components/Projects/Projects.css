@@ -27,7 +27,7 @@
   padding-top: 3em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5% 2%;
+  grid-gap: 4% 2%;
 }
 
 .project-item {
@@ -144,9 +144,14 @@
 }
 
 @media screen and (max-width: 1200px) {
+  #projects {
+    padding-top: 4em;
+    padding-bottom: 30em;
+  }
 
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2% 2%;
     margin: auto 5%;
   }
 

@@ -87,6 +87,9 @@ section:nth-child(6) {
 
 
 @media screen and (max-width: 1200px) {
+  section:nth-child(6) {
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+  }
 
   .blog-grid {
     grid-template-columns: repeat(2, 1fr)
@@ -94,10 +97,6 @@ section:nth-child(6) {
 }
 
 @media screen and (max-width: 800px) {
-
-  section:nth-child(6) {
-    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
-  }
 
   .blog-grid {
     margin: 2em 1em;
