@@ -48,13 +48,13 @@ const About: React.FC = () => {
               <div id="about-mystory">
                 .... TO SOFTWARE 
                 <p>
-                  My first experience with programming came in high school where I dabbled in web development. In 2019, I began watching online lectures from Harvard's computer science course "CS50". Before I knew it, I was hooked and wanted to pursue coding further. After relocating to Washington, I enrolled in Flatiron School's Software Engineering program and formally began over the summer. I graduated the program in November 2020 having spent 1200+ hours learning and coding during the five-month long program.
+                  My first experience with programming came in high school where I dabbled in web development. In 2019, I began learning online from Harvard's computer science course "CS50". Before I knew it, I was hooked and wanted to pursue coding further. After relocating to Washington state in 2020, I enrolled in Flatiron School's Software Engineering program. I graduated the program in November 2020 having spent 1200+ hours learning and coding during the five-month long program.
                 </p>
               </div>
             </div>
           
             <p>
-            I am continuing my personal education efforts by building new projects and adding to my software knowledge base. My passion for coding combined with my technical background in engineering provides me with a unique skillset and perspective on problem-solving in this vast world of technology and programming.
+            I am continuing my programming education by building new projects and adding to my software development knowledge base. My passion for coding, combined with my technical background in engineering, provides me with a unique skillset for approaching complex topics and tackling real-world problems.
             </p>
           </div>
         : null }
