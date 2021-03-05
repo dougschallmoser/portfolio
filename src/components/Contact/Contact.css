@@ -67,6 +67,24 @@
   margin-bottom: 1em;
 }
 
+#contact-popup {
+  position: absolute;
+  background: #fafafa;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.contact-icon:hover #contact-popup {
+  padding: 12px 12px;
+  bottom: -18px;
+  height: auto;
+  border: 1px solid #eeeeee;
+  transition: 0.5s;
+  opacity: 1;
+}
+
 #contact-form {
   font-size: 1.2em;
   border-radius: 12px;
