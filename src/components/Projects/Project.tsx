@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ReactIcon, TSIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, PostgresIcon, CSSIcon, HTMLIcon, PSIcon } from '../Skills/SkillsIcons';
+import Fade from 'react-reveal/Fade';
 import Modal from "react-modal";
 import './Projects.css';
 
@@ -65,25 +66,27 @@ const Project: React.FC<Props> = ({ title, snippet, youtube, snapshot, github, l
 
   return (
     <>
-      <div 
-        title={title}
-        onClick={toggleModal}
-        className="project-item"  
-        style ={ { backgroundImage: `url('./images/${title.replace(`'`, '').replace(' ', '')}.jpg')` } }
-      >
-        <div className="project-text">
-          <div className="project-title">{title}</div>
-          <div className="project-line"/>
-        </div>
-      
-        <p>{snippet}</p>
+      <Fade bottom>
+        <div 
+          title={title}
+          onClick={toggleModal}
+          className="project-item"  
+          style ={ { backgroundImage: `url('./images/${title.replace(`'`, '').replace(' ', '')}.jpg')` } }
+        >
+          <div className="project-text">
+            <div className="project-title">{title}</div>
+            <div className="project-line"/>
+          </div>
         
-        <div id="hidden-languages">
-          {languages[0]} {`${languages[1] ? '/' : ''}`} {languages[1]}
-        </div>
+          <p>{snippet}</p>
           
-        <div className="project-overlay" />
-      </div>
+          <div id="hidden-languages">
+            {languages[0]} {`${languages[1] ? '/' : ''}`} {languages[1]}
+          </div>
+            
+          <div className="project-overlay" />
+        </div>
+      </Fade>
 
       <Modal
         isOpen={isOpen}

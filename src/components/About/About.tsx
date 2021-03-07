@@ -1,4 +1,5 @@
 import React, { useRef, useLayoutEffect, useState } from 'react';
+import Fade from 'react-reveal/Fade';
 import './About.css';
 
 const About: React.FC = () => {
@@ -32,9 +33,11 @@ const About: React.FC = () => {
       <div id="projects-header">MY STORY</div>
       <hr ref={hr} className="line" />
       <div className="about-content">
-        <p>
-          Hello! My name is Doug Schallmoser and I am a software engineer living in Bellingham, WA. I love the challenge that coding brings and the subsequent potential it has to improve lives. On a more personal level, I love the outdoors and when I'm not programming I'm typically hiking somewhere in the mountains. 
-        </p>
+        <Fade>
+          <p>
+            Hello! My name is Doug Schallmoser and I am a software engineer living in Bellingham, WA. I love the challenge that coding brings and the subsequent potential it has to improve lives. On a more personal level, I love the outdoors and when I'm not programming I'm typically hiking somewhere in the mountains. 
+          </p>
+        </Fade>
         {!clicked && <div id="about-more" title="Read More" onClick={handleClick}>READ MORE</div>}
         {clicked ? 
           <div id="about-more-content">

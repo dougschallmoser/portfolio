@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Fade from 'react-reveal/Fade';
 import * as EmailValidator from 'email-validator';
 import * as emailjs from 'emailjs-com';
 import './Contact.css';
@@ -67,31 +68,33 @@ const ContactForm: React.FC = () => {
   const disabled = Object.keys(errors).some(name => errors[name])
 
   return (
-    <div id="contact-form">
-      {sent ? null : <p>Send me a message!</p>}
-      {spinner ? <div className="loader"/> : null}
-      {sent ? (
-        <div id="contact-form-success">
-          <div style={{ fontSize: "2em", color: "#fff" }}>Thank you for the message!</div>
-          <div style={{ fontSize: "1.5em", color: "#fff" }}>I will get back to you soon.</div>
-        </div>) :
-        <form onSubmit={handleSubmit}>
-          <div className={name.length > 0 ? (errors.name ? "error" : "success") : ""}>
-            <span>Name*</span>
-            <input type="text" name="name" value={name} onChange={handleChange} />
-          </div>
-          <div className={email.length > 0 ? (errors.email ? "error" : "success") : ""}>
-            <span>Email*</span>
-            <input type="text" name="email" value={email} onChange={handleChange} />
-          </div>
-          <div className={message.length > 0 ? (errors.message ? "error" : "success") : ""}>
-            <span>Message*</span>
-            <textarea id="contact-message" name="message" value={message} onChange={handleChange} />
-          </div>
-          <button type="submit" disabled={disabled}>Send</button>
-        </form>
-      }
-    </div>
+    <Fade>
+      <div id="contact-form">
+        {sent ? null : <p>Send me a message!</p>}
+        {spinner ? <div className="loader"/> : null}
+        {sent ? (
+          <div id="contact-form-success">
+            <div style={{ fontSize: "2em", color: "#fff" }}>Thank you for the message!</div>
+            <div style={{ fontSize: "1.5em", color: "#fff" }}>I will get back to you soon.</div>
+          </div>) :
+          <form onSubmit={handleSubmit}>
+            <div className={name.length > 0 ? (errors.name ? "error" : "success") : ""}>
+              <span>Name*</span>
+              <input type="text" name="name" value={name} onChange={handleChange} />
+            </div>
+            <div className={email.length > 0 ? (errors.email ? "error" : "success") : ""}>
+              <span>Email*</span>
+              <input type="text" name="email" value={email} onChange={handleChange} />
+            </div>
+            <div className={message.length > 0 ? (errors.message ? "error" : "success") : ""}>
+              <span>Message*</span>
+              <textarea id="contact-message" name="message" value={message} onChange={handleChange} />
+            </div>
+            <button type="submit" disabled={disabled}>Send</button>
+          </form>
+        }
+      </div>
+    </Fade>
   )
 }
 

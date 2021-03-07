@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
+import Fade from 'react-reveal/Fade';
 import BlogItem from './BlogItem';
 import './Blog.css';
 
@@ -39,13 +40,15 @@ const Blog: React.FC = () => {
 
 
   return (
-    <section id="blog">
-      <div id="blog-header">RECENT BLOG POSTS</div>
-      <hr ref={hr} />
-      <div className="blog-grid">
-        {posts.slice(0, 8).map(post => <BlogItem data={post} key={post.pubDate} />)}
-      </div>
-    </section>
+    <Fade>
+      <section id="blog">
+        <div id="blog-header">RECENT BLOG POSTS</div>
+        <hr ref={hr} />
+        <div className="blog-grid">
+          {posts.slice(0, 8).map(post => <BlogItem data={post} key={post.pubDate} />)}
+        </div>
+      </section>
+    </Fade>
   )
 }
 

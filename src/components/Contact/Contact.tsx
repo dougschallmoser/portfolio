@@ -1,4 +1,5 @@
 import React, { useRef, useLayoutEffect } from 'react';
+import Fade from 'react-reveal/Fade';
 import ContactForm from './ContactForm';
 import './Contact.css';
 
@@ -28,6 +29,7 @@ const Contact: React.FC = () => {
       <div id="contact-header">REACH OUT</div>
       <hr ref={hr} className="line" />
       <ContactForm />
+      <Fade bottom>
       <div className="contact-icons">
         <a href="mailto:dougschallmoser@gmail.com" title="Email" target="_blank" rel="noreferrer" className="contact-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -60,6 +62,7 @@ const Contact: React.FC = () => {
           <div id="contact-popup">Instagram</div>
         </a>
       </div>
+      </Fade>
     </section>
   )
 }

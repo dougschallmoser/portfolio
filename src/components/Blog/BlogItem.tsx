@@ -1,5 +1,6 @@
 import React from 'react';
 import Moment from 'react-moment';
+import Fade from 'react-reveal/Fade';
 import './Blog.css';
 
 interface Props {
@@ -13,6 +14,7 @@ interface Props {
 
 const BlogItem: React.FC<Props> = ({ data }) => {
   return (
+    <Fade bottom>
     <a href={data.link} title={data.title} target="_blank" rel="noreferrer">
       <div className="blog-item">
         <div className="blog-content">
@@ -27,6 +29,7 @@ const BlogItem: React.FC<Props> = ({ data }) => {
         </div>
       </div>
     </a>
+    </Fade>
   )
 }
 
