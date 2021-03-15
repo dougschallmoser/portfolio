@@ -21,7 +21,7 @@ const ContactForm: React.FC = () => {
   const [sent, setSent] = useState<boolean>(false)
   const [spinner, setSpinner] = useState<boolean>(false)
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
     
     const { name, email, message } = inputValues;
@@ -47,7 +47,7 @@ const ContactForm: React.FC = () => {
     }, 2000)
   }
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>): void => {
     setInputValues(prev => {
       return {
         ...prev, [event.target.name]: event.target.value
@@ -65,7 +65,7 @@ const ContactForm: React.FC = () => {
     
   const { name, email, message } = inputValues;
   const errors: { [key: string]: boolean } = validate(name, email, message);
-  const disabled = Object.keys(errors).some(name => errors[name])
+  const disabled: boolean = Object.keys(errors).some(name => errors[name])
 
   return (
     <Fade>

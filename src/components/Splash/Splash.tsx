@@ -8,7 +8,7 @@ const Splash: React.FC = () => {
 
   const [buttonHover, setButtonHover] = useState(false);
 
-  const handleButtonHover = () => {
+  const handleButtonHover = (): void => {
     if (line.current) {
       setButtonHover(!buttonHover)
       if (buttonHover) {

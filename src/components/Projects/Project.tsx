@@ -21,7 +21,7 @@ const Project: React.FC<Props> = ({ title, snippet, youtube, snapshot, github, l
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleModal: () => void = () => {
+  const toggleModal = (): void => {
     setIsOpen(!isOpen);
   }
 
