@@ -24,7 +24,7 @@ const About: React.FC = () => {
     
   }, [])
 
-  const handleClick = () => {
+  const handleClick: () => void = () => {
     setClicked(!clicked)
   }
 

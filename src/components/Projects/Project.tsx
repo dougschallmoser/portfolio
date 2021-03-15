@@ -21,7 +21,7 @@ const Project: React.FC<Props> = ({ title, snippet, youtube, snapshot, github, l
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleModal = () => {
+  const toggleModal: () => void = () => {
     setIsOpen(!isOpen);
   }
 
@@ -96,7 +96,6 @@ const Project: React.FC<Props> = ({ title, snippet, youtube, snapshot, github, l
         overlayClassName="modal-overlay"
         closeTimeoutMS={0}
       >
-
         <div className="modal-close" onClick={toggleModal}>&#10006;</div>
         <div className="modal-content">
           <div className="modal-column1">
