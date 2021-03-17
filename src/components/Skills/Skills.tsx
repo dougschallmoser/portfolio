@@ -3,7 +3,7 @@ import { ReactIcon, TSIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, PostgresIcon
 import Fade from 'react-reveal/Fade';
 import './Skills.css';
 
-const Skills: React.FC = () => {
+const Skills: React.FC = (): JSX.Element => {
   return (
     <Fade>
       <section id="skills">

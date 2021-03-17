@@ -4,7 +4,7 @@ import * as EmailValidator from 'email-validator';
 import * as emailjs from 'emailjs-com';
 import './Contact.css';
 
-const ContactForm: React.FC = () => {
+const ContactForm: React.FC = (): JSX.Element => {
 
   interface Form {
     name: string,

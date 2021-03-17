@@ -2,7 +2,7 @@ import React, { useRef, useLayoutEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import './About.css';
 
-const About: React.FC = () => {
+const About: React.FC = (): JSX.Element => {
 
   const hr = useRef<HTMLHRElement>(null);
   const [clicked, setClicked] = useState<boolean>(false)

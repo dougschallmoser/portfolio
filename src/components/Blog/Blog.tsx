@@ -9,7 +9,7 @@ type Post = {
   pubDate: string;
 }
 
-const Blog: React.FC = () => {
+const Blog: React.FC = (): JSX.Element => {
 
   const [posts, setPosts] = useState<Post[]>([])
   const hr = useRef<HTMLHRElement>(null);

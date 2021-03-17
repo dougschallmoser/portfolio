@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll'
 import { NavWrapper } from './Navbar.styles'
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC = (): JSX.Element => {
 
   const [scrolled, setScrolled] = useState<string>("nav-unscrolled")
 

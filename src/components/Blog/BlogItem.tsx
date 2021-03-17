@@ -12,7 +12,7 @@ interface Props {
   key: string;
 }
 
-const BlogItem: React.FC<Props> = ({ data }) => {
+const BlogItem: React.FC<Props> = ({ data }): JSX.Element => {
   return (
     <Fade bottom>
     <a href={data.link} title={data.title} target="_blank" rel="noreferrer">

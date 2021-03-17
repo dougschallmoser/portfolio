@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import './Footer.css';
 
-const Footer: React.FC = () => {
+const Footer: React.FC = (): JSX.Element => {
   return (
     <Fade bottom>
     <section id="quote">

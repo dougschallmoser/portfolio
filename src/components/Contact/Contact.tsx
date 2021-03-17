@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import ContactForm from './ContactForm';
 import './Contact.css';
 
-const Contact: React.FC = () => {
+const Contact: React.FC = (): JSX.Element => {
 
   const hr = useRef<HTMLHRElement>(null);
 

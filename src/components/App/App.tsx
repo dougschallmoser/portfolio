@@ -9,7 +9,7 @@ import Contact from '../Contact/Contact';
 import Footer from '../Contact/Footer';
 import { GlobalStyle } from './App.styles';
 
-const App: React.FC = () => {
+const App: React.FC = (): JSX.Element => {
   return (
     <>
       <GlobalStyle />

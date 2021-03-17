@@ -5,7 +5,7 @@ interface Props {
   color?: string;
 }
 
-export const ReactIcon: React.FC<Props> = ({ cssName, color }) => {
+export const ReactIcon: React.FC<Props> = ({ cssName, color }): JSX.Element => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">

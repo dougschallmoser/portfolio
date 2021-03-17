@@ -17,7 +17,7 @@ interface Props {
   highlights: string[];
 }
 
-const Project: React.FC<Props> = ({ title, snippet, youtube, snapshot, github, live, languages, highlights }) => {
+const Project: React.FC<Props> = ({ title, snippet, youtube, snapshot, github, live, languages, highlights }): JSX.Element => {
 
   const [isOpen, setIsOpen] = useState(false);
 
