@@ -4,9 +4,9 @@ import './Splash.css';
 
 const Splash: React.FC = (): JSX.Element => {
 
-  const line = useRef<HTMLHRElement>(null);
+  const line = useRef<HTMLHRElement | null>(null);
 
-  const [buttonHover, setButtonHover] = useState(false);
+  const [buttonHover, setButtonHover] = useState<boolean>(false);
 
   const handleButtonHover = (): void => {
     if (line.current) {

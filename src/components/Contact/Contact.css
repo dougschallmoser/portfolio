@@ -30,11 +30,11 @@
   color: #fff;
   padding: 30px 32px;
   border-radius: 50%;
-  background:#c4c4c4;
+  background: #c4c4c4;
 }
 
 .contact-icons a:hover {
-  background:#c0a583;
+  background: #c0a583;
   animation: beat 1s 1 alternate;
   -webkit-animation: beat 1s 1 alternate;
   -moz-animation: beat 1s 1 alternate;
@@ -63,7 +63,7 @@
 }
 
 .contact-icon:not(:last-child) {
-  margin-right: 2em; 
+  margin-right: 2em;
   margin-bottom: 1em;
 }
 
@@ -107,7 +107,7 @@
   font-family: 'Barlow Condensed', sans-serif;
 }
 
-#contact-form input[type="text"] {
+#contact-form input[type='text'] {
   font-size: 1.5em;
   padding: 2% 2% 0 0;
   border-radius: 4px;
@@ -119,7 +119,7 @@
   transition: 1s;
 }
 
-#contact-form input[type="text"]:focus,
+#contact-form input[type='text']:focus,
 button:focus,
 #contact-message:focus {
   outline-style: none;
@@ -198,9 +198,7 @@ form div {
   animation: spin 2s linear infinite;
 }
 
-
 @media screen and (max-width: 800px) {
-
   #contact-form {
     width: 90vw;
     margin-top: 10%;
@@ -213,17 +211,17 @@ form div {
 
   .contact-icons a {
     padding: 18px 20px;
-    background:#c0a583;
+    background: #c0a583;
   }
 
   .contact-icons a:hover {
-    background:#353535;
+    background: #353535;
   }
 
   .contact-icon:not(:last-child) {
-    margin-right: 1.5em; 
+    margin-right: 1.5em;
   }
- 
+
   #contact-header {
     font-size: 3em;
   }

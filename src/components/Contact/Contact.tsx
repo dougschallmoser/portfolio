@@ -5,7 +5,7 @@ import './Contact.css';
 
 const Contact: React.FC = (): JSX.Element => {
 
-  const hr = useRef<HTMLHRElement>(null);
+  const hr = useRef<HTMLHRElement| null>(null);
 
   useLayoutEffect(() => {
     if (hr.current) {

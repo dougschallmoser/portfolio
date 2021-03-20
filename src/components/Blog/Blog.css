@@ -27,7 +27,7 @@ section:nth-child(6) {
   margin: 4em 4em;
   display: grid;
   grid-gap: 3em;
-  grid-template-columns: repeat(4, 1fr)
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .blog-grid a {
@@ -85,23 +85,21 @@ section:nth-child(6) {
   transition: 0.2s ease;
 }
 
-
 @media screen and (max-width: 1200px) {
   section:nth-child(6) {
     clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
   }
 
   .blog-grid {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 800px) {
-
   .blog-grid {
     margin: 2em 1em;
     grid-gap: 2em;
-    grid-template-columns: repeat(1, 1fr)
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .blog-item {

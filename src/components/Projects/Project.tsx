@@ -19,7 +19,7 @@ interface Props {
 
 const Project: React.FC<Props> = ({ title, snippet, youtube, snapshot, github, live, languages, highlights }): JSX.Element => {
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const toggleModal = (): void => {
     setIsOpen(!isOpen);

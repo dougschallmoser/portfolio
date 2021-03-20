@@ -4,7 +4,7 @@ import './About.css';
 
 const About: React.FC = (): JSX.Element => {
 
-  const hr = useRef<HTMLHRElement>(null);
+  const hr = useRef<HTMLHRElement | null>(null);
   const [clicked, setClicked] = useState<boolean>(false)
 
   useLayoutEffect(() => {
