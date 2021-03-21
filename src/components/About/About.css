@@ -18,6 +18,7 @@
 }
 
 #about-more {
+  background-color: #fff;
   padding: 10px 30px;
   border-radius: 20px;
   border: 1.5px solid #353535;
@@ -37,7 +38,14 @@
   color: #fff;
   background: #c0a583;
   border: 1.5px solid transparent;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: 0.5s ease;
+  transform: translate(-50%);
+}
+
+#about-more:active {
+  transform: translate(-50%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #about-more-content {
@@ -100,15 +108,12 @@
 }
 
 @media screen and (max-width: 1200px) {
-
   .about-content {
     margin: 5% 10%;
   }
-
 }
 
 @media screen and (max-width: 800px) {
-
   #about-mystory-container {
     display: block;
   }
@@ -120,7 +125,7 @@
   #about-mystory {
     font-size: 24px;
   }
-  
+
   #about-skills {
     font-size: 24px;
     padding-bottom: 25px;
