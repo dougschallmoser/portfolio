@@ -84,7 +84,7 @@
   position: relative;
   text-shadow: none;
   cursor: pointer;
-  padding: 8px 36px;
+  padding: 0.5rem 3rem;
   border-radius: 20px;
   border: 1.5px solid #fff;
   display: inline-block;
@@ -96,7 +96,7 @@
 }
 
 .splash-button a {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   background: none;
   text-decoration: none;
   color: #fff;
@@ -151,10 +151,6 @@
 
   .splash-bio {
     font-size: 1.5rem;
-  }
-
-  .splash-button a {
-    width: 8rem;
   }
 
   #splash {
