@@ -50,10 +50,10 @@
 }
 
 .splash-name {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   font-family: 'Barlow Condensed', sans-serif;
   color: #fff;
-  font-size: 6em;
+  font-size: 6rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   animation: fadeIn ease 2s;
   animation-fill-mode: forwards;
@@ -63,7 +63,7 @@
 
 .splash-bio {
   color: #fff;
-  font-size: 2em;
+  font-size: 2rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   animation: fadeIn ease 2s;
   animation-fill-mode: forwards;
@@ -76,7 +76,7 @@
 }
 
 .splash-location {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   color: #fff;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .splash-button a {
-  font-size: 0.75em;
+  font-size: 1.25rem;
   background: none;
   text-decoration: none;
   color: #fff;
@@ -119,7 +119,7 @@
 }
 
 .splash-line {
-  margin: 1em auto;
+  margin: 1rem auto;
   border: 1px solid #fff;
   width: 125px;
   background: #fff;
@@ -132,7 +132,7 @@
 }
 
 .splash-line-hover {
-  margin: 1em auto;
+  margin: 1rem auto;
   border: 1px solid #fff;
   width: 300px;
   background: #fff;
@@ -146,15 +146,15 @@
   }
 
   .splash-name {
-    font-size: 3.5em;
+    font-size: 3.5rem;
   }
 
   .splash-bio {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   .splash-button a {
-    width: 8em;
+    width: 8rem;
   }
 
   #splash {
