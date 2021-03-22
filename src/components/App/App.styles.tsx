@@ -7,6 +7,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Josefin Sans', sans-serif;
   }
 
+  html {
+    font-size: 18px;
+  }
+
   .line {
     margin: 1em auto;
     border: 1px solid #c0a583;
