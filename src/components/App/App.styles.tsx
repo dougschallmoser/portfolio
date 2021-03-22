@@ -4,11 +4,12 @@ export const GlobalStyle = createGlobalStyle`
   * {
     color: #353535;
     margin: 0;
+    padding: 0;
     font-family: 'Josefin Sans', sans-serif;
   }
 
   html {
-    font-size: 18px;
+    font-size: 105%;
   }
 
   .line {

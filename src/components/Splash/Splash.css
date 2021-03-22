@@ -153,6 +153,10 @@
     font-size: 1.5rem;
   }
 
+  .splash-button a {
+    font-size: 1.25rem;
+  }
+
   #splash {
     background-position: 75%;
     background-attachment: scroll;
