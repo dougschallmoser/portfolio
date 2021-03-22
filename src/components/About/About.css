@@ -1,7 +1,7 @@
 #about {
   position: relative;
   width: 100vw;
-  padding-top: 4em;
+  padding-top: 4rem;
 }
 
 .about-content {
@@ -10,17 +10,17 @@
 }
 
 .about-content p {
-  line-height: 1.5em;
-  font-size: 18px;
+  line-height: 1.4rem;
+  font-size: 1.4rem;
   color: #353535;
-  margin-bottom: 1em;
+  margin-bottom: 2rem;
   text-align: justify;
 }
 
 #about-more {
   background-color: #fff;
-  padding: 10px 30px;
-  border-radius: 20px;
+  padding: 0.75rem 3rem;
+  border-radius: 1.5rem;
   border: 1.5px solid #353535;
   margin-top: 1%;
   color: #353535;
@@ -30,7 +30,7 @@
   left: 50%;
   transform: translate(-50%);
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   transition: 0.5s ease;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .about-icons {
-  margin: 30px 0 15px 0;
+  margin: 3rem 0 1.5rem 0;
   position: relative;
   text-align: center;
 }
@@ -66,7 +66,7 @@
   width: 60px;
   margin-top: 1%;
   transition: 0.5s ease;
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #353535;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .about-icon:not(:last-child) {
-  margin-right: 2.2em;
+  margin-right: 2.3rem;
 }
 
 #about-mystory-container {
@@ -84,24 +84,24 @@
 
 #about-mystory {
   flex: 1;
-  font-size: 26px;
-  line-height: 1.2em;
+  font-size: 2rem;
+  line-height: 2rem;
   font-weight: 500;
   text-align: center;
 }
 
 #about-mystory p {
-  margin-top: 0.5em;
+  margin-top: 1rem;
 }
 
 #about-mystory:not(:last-child) {
-  padding-right: 1.5em;
+  padding-right: 1.5rem;
 }
 
 #about-skills {
-  font-size: 36px;
+  font-size: 2.5rem;
   margin-bottom: 2%;
-  margin-top: 1.5em;
+  margin-top: 1.5rem;
   font-weight: 500;
   text-align: center;
   color: #fff;
@@ -122,12 +122,8 @@
     padding-right: 0;
   }
 
-  #about-mystory {
-    font-size: 24px;
-  }
-
   #about-skills {
-    font-size: 24px;
+    font-size: 1.5rem;
     padding-bottom: 25px;
   }
 }
