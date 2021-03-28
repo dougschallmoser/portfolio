@@ -1,6 +1,7 @@
 import { useRef, useLayoutEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import ContactForm from './ContactForm';
+import { ContactForm } from './ContactForm';
+import { SCContact } from './styles';
 import './Contact.css';
 
 const Contact = (): JSX.Element => {
@@ -25,7 +26,7 @@ const Contact = (): JSX.Element => {
   }, [])
 
   return (
-    <section id="contact">
+    <SCContact>
       <div id="contact-header">REACH OUT</div>
       <hr ref={hr} className="line" />
       <ContactForm />
@@ -63,8 +64,8 @@ const Contact = (): JSX.Element => {
         </a>
       </div>
       </Fade>
-    </section>
+    </SCContact>
   )
 }
 
-export default Contact;
+export { Contact };

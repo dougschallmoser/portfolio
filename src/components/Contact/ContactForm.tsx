@@ -93,4 +93,4 @@ const ContactForm = (): JSX.Element => {
   )
 }
 
-export default ContactForm;
+export { ContactForm };

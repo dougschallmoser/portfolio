@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const NavWrapper = styled.section`
+export const SCNav = styled.section`
   .nav-unscrolled,
   .nav-scrolled {
     position: fixed;

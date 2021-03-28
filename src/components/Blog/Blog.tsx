@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { IPost } from './types';
-import BlogItem from './BlogItem';
+import { BlogItem } from './BlogItem';
+import { SCBlog } from './styles';
 import './Blog.css';
 
 const Blog = (): JSX.Element => {
@@ -36,15 +37,15 @@ const Blog = (): JSX.Element => {
 
   return (
     <Fade>
-      <section id="blog">
+      <SCBlog>
         <div id="blog-header">RECENT BLOG POSTS</div>
         <hr ref={hr} />
         <div className="blog-grid">
           {posts.slice(0, 8).map(post => <BlogItem data={post} key={post.pubDate} />)}
         </div>
-      </section>
+      </SCBlog>
     </Fade>
   )
 }
 
-export default Blog;
+export { Blog };

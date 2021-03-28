@@ -136,4 +136,4 @@ const Project = ({
   )
 }
 
-export default Project;
+export { Project };

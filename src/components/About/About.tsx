@@ -1,5 +1,6 @@
 import { useRef, useLayoutEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
+import { SCAbout } from './styles';
 import './About.css';
 
 const About = (): JSX.Element => {
@@ -29,7 +30,7 @@ const About = (): JSX.Element => {
   }
 
   return (
-    <section id="about">
+    <SCAbout>
       <div id="projects-header">MY STORY</div>
       <hr ref={hr} className="line" />
       <div className="about-content">
@@ -62,8 +63,8 @@ const About = (): JSX.Element => {
           </div>
         : null }
       </div>
-    </section>
+    </SCAbout>
   )
 }
 
-export default About;
+export { About };

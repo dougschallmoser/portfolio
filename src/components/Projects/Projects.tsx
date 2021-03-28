@@ -1,5 +1,6 @@
 import { useRef, useLayoutEffect } from 'react';
-import Project from './Project';
+import { Project } from './Project';
+import { SCProjects } from './styles';
 import './Projects.css';
 
 const Projects = (): JSX.Element => {
@@ -24,7 +25,7 @@ const Projects = (): JSX.Element => {
   }, [])
 
   return (
-    <section id="projects">
+    <SCProjects>
       <div id="projects-header">PROJECTS</div>
       <hr ref={hr} className="line" />
       <div className="projects-grid">
@@ -108,8 +109,8 @@ const Projects = (): JSX.Element => {
           languages={["ruby"]}
         />
       </div>
-    </section>
+    </SCProjects>
   )
 }
 
-export default Projects;
+export { Projects };

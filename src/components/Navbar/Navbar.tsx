@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll'
-import { NavWrapper } from './styles'
+import { SCNav } from './styles'
 
 const Navbar = (): JSX.Element => {
 
   const [scrolled, setScrolled] = useState<string>("nav-unscrolled")
 
   useEffect(() => {
-    document.addEventListener("scroll", e => {
+    document.addEventListener("scroll", (e) => {
       if (document.scrollingElement) {
         const scrollPosition: number = document.scrollingElement.scrollTop
         if (scrollPosition >= 60) {
@@ -24,7 +24,7 @@ const Navbar = (): JSX.Element => {
   }, [scrolled])
 
   return (
-    <NavWrapper>
+    <SCNav>
       <div className={scrolled}>
         {scrolled === 'nav-scrolled' && <div className="navlogo">
           <Link to="splash" smooth={true}>DOUG SCHALLMOSER</Link>
@@ -37,8 +37,8 @@ const Navbar = (): JSX.Element => {
           <Link to="about" smooth={true} offset={-58}>ABOUT</Link>
         </div>
       </div>
-    </NavWrapper>
+    </SCNav>
   )
 }
 
-export default Navbar;
+export { Navbar };

@@ -25,4 +25,4 @@ const BlogItem = ({ data }: BlogItemProps): JSX.Element => {
   )
 }
 
-export default BlogItem;
+export { BlogItem };

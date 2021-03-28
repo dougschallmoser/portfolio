@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import { Link } from 'react-scroll';
+import { SCSplash } from './styles';
 import './Splash.css';
 
 const Splash = (): JSX.Element => {
@@ -20,7 +21,7 @@ const Splash = (): JSX.Element => {
   }
 
   return (
-    <section id="splash-container">
+    <SCSplash>
       <div id="splash">
         <div className="splash-intro">
           <div className="splash-name">DOUG SCHALLMOSER</div>
@@ -39,8 +40,8 @@ const Splash = (): JSX.Element => {
         </div>
         <div className="splash-overlay" />
       </div>
-    </section>
+    </SCSplash>
   )
 }
 
-export default Splash;
+export { Splash };

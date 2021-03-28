@@ -11,12 +11,12 @@ import {
   PSIcon
   } from './SkillsIcons';
 import Fade from 'react-reveal/Fade';
-import './Skills.css';
+import { SCSkills } from './styles';
 
 const Skills = (): JSX.Element => {
   return (
     <Fade>
-      <section id="skills">
+      <SCSkills>
         <div className="about-icons">
           <div id="about-skills">SKILLS THAT KEEP ME CREATIVE</div>
           <ReactIcon cssName="about-icon" />
@@ -30,9 +30,9 @@ const Skills = (): JSX.Element => {
           <HTMLIcon cssName="about-icon" />
           <PSIcon cssName="about-icon" />
         </div>
-      </section>
+      </SCSkills>
     </Fade>
   )
 }
 
-export default Skills;
+export { Skills };

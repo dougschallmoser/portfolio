@@ -1,15 +1,3 @@
-section:nth-child(6) {
-  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-}
-
-#blog {
-  width: 100vw;
-  position: relative;
-  background: #353535;
-  padding-top: 10em;
-  padding-bottom: 10em;
-}
-
 #blog-header {
   font-family: 'Barlow Condensed', sans-serif;
   color: #353535;
@@ -86,10 +74,6 @@ section:nth-child(6) {
 }
 
 @media screen and (max-width: 1200px) {
-  section:nth-child(6) {
-    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
-  }
-
   .blog-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -104,11 +88,6 @@ section:nth-child(6) {
 
   .blog-item {
     height: 8em;
-  }
-
-  #blog {
-    padding-top: 6em;
-    padding-bottom: 6em;
   }
 
   #blog-header {
