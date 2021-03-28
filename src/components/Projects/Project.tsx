@@ -1,23 +1,22 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ReactIcon, TSIcon, JSIcon, RailsIcon, RubyIcon, ReduxIcon, PostgresIcon, CSSIcon, HTMLIcon, PSIcon } from '../Skills/SkillsIcons';
 import Fade from 'react-reveal/Fade';
 import Modal from "react-modal";
+import { ProjectProps } from './types';
 import './Projects.css';
 
 Modal.setAppElement("#root");
 
-interface Props {
-  title: string;
-  snippet: string;
-  youtube?: string;
-  github: string;
-  snapshot?: string;
-  live?: string;
-  languages: string[];
-  highlights: string[];
-}
-
-const Project: React.FC<Props> = ({ title, snippet, youtube, snapshot, github, live, languages, highlights }): JSX.Element => {
+const Project = ({ 
+  title,
+  snippet,
+  youtube,
+  snapshot,
+  github,
+  live,
+  languages,
+  highlights 
+  }: ProjectProps): JSX.Element => {
 
   const [isOpen, setIsOpen] = useState<boolean>(false);
 

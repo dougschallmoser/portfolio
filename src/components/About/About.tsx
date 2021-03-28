@@ -1,8 +1,8 @@
-import React, { useRef, useLayoutEffect, useState } from 'react';
+import { useRef, useLayoutEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import './About.css';
 
-const About: React.FC = (): JSX.Element => {
+const About = (): JSX.Element => {
 
   const hr = useRef<HTMLHRElement | null>(null);
   const [clicked, setClicked] = useState<boolean>(false)
@@ -45,19 +45,19 @@ const About: React.FC = (): JSX.Element => {
               <div id="about-mystory">
                 FROM CIVIL ....
                 <p>
-                  I graduated from Florida Gulf Coast University with B.S. degrees in Civil Engineering and Environmental Engineering. I went on to work for the Florida Department of Transportation as a civil engineer focusing on bridge repair and traffic operations. I learned many valuable things during this time, from technical engineering practices to project management skills. After obtaining my Professional Engineer (P.E.) license, I made the decision to leave my job to pursue my passion of programming.
+                  I graduated from Florida Gulf Coast University with B.S. degrees in Civil Engineering and Environmental Engineering. I went on to work for the Florida Department of Transportation as a civil engineer focusing on bridge repair and traffic operations. After obtaining my Professional Engineer (P.E.) license, I made the decision to leave my job to pursue my passion of programming.
                 </p>
               </div>
               <div id="about-mystory">
                 .... TO SOFTWARE 
                 <p>
-                  My first experience with programming came in high school where I dabbled in web development. In 2019, I began learning online from Harvard's computer science course "CS50". Before I knew it, I was hooked and wanted to pursue coding further. After relocating to Washington state in 2020, I enrolled in Flatiron School's Software Engineering program. I graduated the program in November 2020 having spent 1200+ hours learning and coding during the five-month long program.
+                  My first experience with programming came in high school where I dabbled in web development. In 2019, I began learning how to code online through Harvard's computer science course "CS50". Before I knew it, I was hooked and wanted to pursue coding further. I completed Flatiron School's Software Engineering program in 2020 and developed a real love for all things related to JavaScript.
                 </p>
               </div>
             </div>
           
             <p>
-            I am continuing my programming education by building new projects and adding to my software development knowledge base. My passion for coding, combined with my technical background in engineering, provides me with a unique skillset for approaching complex topics and tackling real-world problems.
+            I am currently a Front End Engineer at CUNA Mutual Group helping build mortgage loan software for credit unions. My passion for coding, combined with my technical background in engineering, provides me with a unique skillset for approaching complex topics and tackling real-world problems.
             </p>
           </div>
         : null }

@@ -10,7 +10,7 @@
 }
 
 .about-content p {
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   font-size: 1.4rem;
   color: #353535;
   margin-bottom: 2rem;
@@ -95,7 +95,7 @@
 }
 
 #about-mystory:not(:last-child) {
-  padding-right: 1.5rem;
+  padding-right: 2rem;
 }
 
 #about-skills {

@@ -1,8 +1,8 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { Link } from 'react-scroll';
 import './Splash.css';
 
-const Splash: React.FC = (): JSX.Element => {
+const Splash = (): JSX.Element => {
 
   const line = useRef<HTMLHRElement | null>(null);
 

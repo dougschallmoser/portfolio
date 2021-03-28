@@ -2,17 +2,12 @@ import React, { useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import * as EmailValidator from 'email-validator';
 import * as emailjs from 'emailjs-com';
+import { IForm } from './types';
 import './Contact.css';
 
-const ContactForm: React.FC = (): JSX.Element => {
+const ContactForm = (): JSX.Element => {
 
-  interface Form {
-    name: string,
-    email: string,
-    message: string
-  }
-
-  const [inputValues, setInputValues] = useState<Form>({
+  const [inputValues, setInputValues] = useState<IForm>({
     name: '',
     email: '',
     message: '',

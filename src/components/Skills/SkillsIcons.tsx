@@ -1,11 +1,6 @@
-import React from 'react';
+import { SkillsIconsProps } from './types';
 
-interface Props {
-  cssName: string;
-  color?: string;
-}
-
-export const ReactIcon: React.FC<Props> = ({ cssName, color }): JSX.Element => {
+export const ReactIcon = ({ cssName, color }: SkillsIconsProps): JSX.Element => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -16,7 +11,7 @@ export const ReactIcon: React.FC<Props> = ({ cssName, color }): JSX.Element => {
   )
 }
 
-export const TSIcon: React.FC<Props> = ({ cssName, color }) => {
+export const TSIcon = ({ cssName, color }: SkillsIconsProps): JSX.Element => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -27,7 +22,7 @@ export const TSIcon: React.FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const JSIcon: React.FC<Props> = ({ cssName, color }) => {
+export const JSIcon = ({ cssName, color }: SkillsIconsProps): JSX.Element => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -39,7 +34,7 @@ export const JSIcon: React.FC<Props> = ({ cssName, color }) => {
 }
 
 
-export const RailsIcon: React.FC<Props> = ({ cssName, color }) => {
+export const RailsIcon = ({ cssName, color }: SkillsIconsProps): JSX.Element => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -50,7 +45,7 @@ export const RailsIcon: React.FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const RubyIcon: React.FC<Props> = ({ cssName, color }) => {
+export const RubyIcon = ({ cssName, color }: SkillsIconsProps): JSX.Element => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -61,7 +56,7 @@ export const RubyIcon: React.FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const ReduxIcon: React.FC<Props> = ({ cssName, color }) => {
+export const ReduxIcon = ({ cssName, color }: SkillsIconsProps): JSX.Element => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -72,7 +67,7 @@ export const ReduxIcon: React.FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const PostgresIcon: React.FC<Props> = ({ cssName, color }) => {
+export const PostgresIcon = ({ cssName, color }: SkillsIconsProps): JSX.Element => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -83,7 +78,7 @@ export const PostgresIcon: React.FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const CSSIcon: React.FC<Props> = ({ cssName, color }) => {
+export const CSSIcon = ({ cssName, color }: SkillsIconsProps): JSX.Element => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -94,7 +89,7 @@ export const CSSIcon: React.FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const HTMLIcon: React.FC<Props> = ({ cssName, color }) => {
+export const HTMLIcon = ({ cssName, color }: SkillsIconsProps): JSX.Element => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">
@@ -105,7 +100,7 @@ export const HTMLIcon: React.FC<Props> = ({ cssName, color }) => {
   )
 }
 
-export const PSIcon: React.FC<Props> = ({ cssName, color }) => {
+export const PSIcon = ({ cssName, color }: SkillsIconsProps): JSX.Element => {
   return (
     <div className={cssName}>
       <svg viewBox="0 0 128 128">

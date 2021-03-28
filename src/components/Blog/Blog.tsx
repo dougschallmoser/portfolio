@@ -1,17 +1,12 @@
-import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
+import { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import Fade from 'react-reveal/Fade';
+import { IPost } from './types';
 import BlogItem from './BlogItem';
 import './Blog.css';
 
-type Post = {
-  link: string;
-  title: string;
-  pubDate: string;
-}
+const Blog = (): JSX.Element => {
 
-const Blog: React.FC = (): JSX.Element => {
-
-  const [posts, setPosts] = useState<Post[]>([])
+  const [posts, setPosts] = useState<IPost[]>([])
   const hr = useRef<HTMLHRElement>(null);
 
   useEffect(() => {

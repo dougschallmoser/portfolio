@@ -1,18 +1,10 @@
-import React from 'react';
 import Moment from 'react-moment';
 import Fade from 'react-reveal/Fade';
+import { BlogItemProps } from './types';
 import './Blog.css';
 
-interface Props {
-  data: {
-    link: string;
-    title: string;
-    pubDate: string;
-  };
-  key: string;
-}
 
-const BlogItem: React.FC<Props> = ({ data }): JSX.Element => {
+const BlogItem = ({ data }: BlogItemProps): JSX.Element => {
   return (
     <Fade bottom>
     <a href={data.link} title={data.title} target="_blank" rel="noreferrer">

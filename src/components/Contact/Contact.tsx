@@ -1,9 +1,9 @@
-import React, { useRef, useLayoutEffect } from 'react';
+import { useRef, useLayoutEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import ContactForm from './ContactForm';
 import './Contact.css';
 
-const Contact: React.FC = (): JSX.Element => {
+const Contact = (): JSX.Element => {
 
   const hr = useRef<HTMLHRElement| null>(null);
 
