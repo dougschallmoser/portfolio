@@ -43,11 +43,13 @@ export const SCNav = styled.section`
     float: left;
     font-size: 36px;
     margin-left: 3em;
+    transition: all 0.3s;
   }
 
   .nav-unscrolled .navlogo a:hover,
   .nav-scrolled .navlogo a:hover {
     color: #c0a583;
+    transition: all 0.3s;
   }
 
   .nav-unscrolled .navlogo a {
@@ -56,6 +58,14 @@ export const SCNav = styled.section`
 
   .nav-scrolled .navlogo a {
     color: #353535;
+    background-image: linear-gradient(
+      to right,
+      #353535,
+      #c0a583
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
   .navlinks {
