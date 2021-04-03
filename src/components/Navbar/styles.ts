@@ -49,7 +49,6 @@ export const SCNav = styled.section`
   .nav-unscrolled .navlogo a:hover,
   .nav-scrolled .navlogo a:hover {
     color: #c0a583;
-    transition: all 0.3s;
   }
 
   .nav-unscrolled .navlogo a {
