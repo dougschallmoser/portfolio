@@ -30,7 +30,7 @@ const About = (): JSX.Element => {
   }
 
   return (
-    <SCAbout>
+    <SCAbout id="about">
       <div id="projects-header">MY STORY</div>
       <hr ref={hr} className="line" />
       <div className="about-content">

@@ -37,7 +37,7 @@ const Blog = (): JSX.Element => {
 
   return (
     <Fade>
-      <SCBlog>
+      <SCBlog id="blog">
         <div id="blog-header">RECENT BLOG POSTS</div>
         <hr ref={hr} />
         <div className="blog-grid">

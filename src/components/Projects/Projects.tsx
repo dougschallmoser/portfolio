@@ -25,7 +25,7 @@ const Projects = (): JSX.Element => {
   }, [])
 
   return (
-    <SCProjects>
+    <SCProjects id="projects">
       <div id="projects-header">PROJECTS</div>
       <hr ref={hr} className="line" />
       <div className="projects-grid">
