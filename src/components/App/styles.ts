@@ -28,4 +28,9 @@ export const GlobalStyle = createGlobalStyle`
     width: 225px;
     transition: 3s ease;
   }
+
+  &::selection {
+    background-color: rgb(192, 165, 131);
+    color: white;
+  }
 `
